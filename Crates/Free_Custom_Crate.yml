@@ -11,8 +11,8 @@ lore:
 - '&a   25% &b5 diamonds'
 - '&8&l»&7&l&m----------------&8&l«'
 - '&f'
-material: CHEST
-glow: true
+material: RABBIT_FOOT
+glow: false
 disableStack: false
 keepItemOnDeath: false
 canBeUsedOnlyByTheOwner: false
@@ -20,6 +20,13 @@ storeItemInfo: false
 unbreakable: false
 usage: 1
 usageLimit: -1
+cancelEventIfNoPerm: false
+cancelEventIfNotOwner: false
+disabledWorlds: []
+recognitions: []
+config_5: true
+onlyOwnerBlackListedActivators: []
+isDurabilityBasedOnUsage: false
 dropOptions:
   glowDrop: false
   glowDropColor: WHITE
@@ -30,6 +37,10 @@ hiders:
   hideAttributes: false
   hidePotionEffects: false
   hideUsage: false
+  hideDestroys: false
+  hidePlacedOn: false
+  hideDye: false
+  hideArmorTrim: false
 enchantments: {}
 giveFirstJoin:
   giveFirstJoin: false
@@ -37,9 +48,6 @@ giveFirstJoin:
   giveFirstJoinSlot: 0
 restrictions:
   cancel-item-place: true
-cancelEventIfNoPerm: false
-cancelEventIfNotOwner: false
-disabledWorlds: []
 variables: {}
 activators:
   activator1:
@@ -48,23 +56,35 @@ activators:
     typeTarget: NO_TYPE_TARGET
     usageModification: -1
     cancelEvent: false
+    noActivatorRunIfTheEventIsCancelled: false
     silenceOutput: true
     autoUpdateItem: false
+    updateName: true
+    updateLore: true
+    updateDurability: false
+    updateAttributes: false
+    updateEnchants: false
+    updateCustomModelData: false
     cooldownOptions:
       cooldown: 0
       isCooldownInTicks: false
       cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
       displayCooldownMessage: true
       cancelEventIfInCooldown: false
+      pauseWhenOffline: false
+      pausePlaceholdersConditions: {}
     globalCooldownOptions:
       cooldown: 0
       isCooldownInTicks: false
       cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
       displayCooldownMessage: true
       cancelEventIfInCooldown: false
+      pauseWhenOffline: false
+      pausePlaceholdersConditions: {}
     otherEICooldowns: {}
     requiredItems: {}
     requiredExecutableItems: {}
+    requiredMagics: {}
     detailedSlots:
     - -1
     commands:
@@ -112,6 +132,18 @@ activators:
     customConditions: {}
     placeholdersConditions: {}
     variablesModification: {}
-recognitions: []
+displayConditions:
+  playerConditions: {}
+  worldConditions: {}
+  itemConditions: {}
+  placeholdersConditions: {}
+  enableFeature: false
+food:
+  nutrition: 0
+  saturation: 0
+  isMeat: false
+  canAlwaysEat: false
+  eatSeconds: 0
 attributes: {}
-config_5: true
+customModelData: 3
+config_update: true
