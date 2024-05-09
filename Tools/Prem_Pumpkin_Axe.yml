@@ -1,27 +1,28 @@
-name: '&5&loo &fMeteor Crossbow &5&loo'
+name: '&6Pumpkin Axe'
 lore:
-- '&7Shoots a frightening meteor'
-- '&7on the location'
-- ''
-- '&7&oCreated by: &fSpecial70'
-material: CROSSBOW
+- '§7Pumpkins Broken: §f%var_pumpkins-broken_int%'
+- §f
+- §7Breaking 1,000 pumpkins allows
+- §7the user to have a 20% chance of
+- §7getting double harvest.
+- §7Breaking 10,000 pumpkins
+- §7increase the rate to 40%
+material: DIAMOND_AXE
 glow: false
 disableStack: false
 keepItemOnDeath: false
 canBeUsedOnlyByTheOwner: false
+cancelEventIfNotOwner: false
+onlyOwnerBlackListedActivators: []
 storeItemInfo: false
 unbreakable: false
-usage: -1
+usage: 0
 usageLimit: -1
-durability: 465
 cancelEventIfNoPerm: false
-cancelEventIfNotOwner: false
 disabledWorlds: []
 recognitions: []
 config_5: true
 config_update: true
-onlyOwnerBlackListedActivators: []
-isDurabilityBasedOnUsage: false
 dropOptions:
   glowDrop: false
   glowDropColor: WHITE
@@ -42,146 +43,16 @@ giveFirstJoin:
   giveFirstJoinAmount: 1
   giveFirstJoinSlot: 0
 restrictions: {}
-variables: {}
+variables:
+  var0:
+    variableName: pumpkins-broken
+    type: NUMBER
+    default: 0.0
 activators:
-  activator1:
-    name: '&eActivator'
-    option: PROJECTILE_HIT_BLOCK
-    usageModification: 0
-    cancelEvent: false
-    noActivatorRunIfTheEventIsCancelled: false
-    silenceOutput: false
-    autoUpdateItem: false
-    updateName: true
-    updateLore: true
-    updateDurability: false
-    updateAttributes: false
-    updateEnchants: false
-    updateCustomModelData: false
-    cooldownOptions:
-      cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: false
-      cancelEventIfInCooldown: false
-      pauseWhenOffline: false
-      pausePlaceholdersConditions: {}
-    globalCooldownOptions:
-      cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
-      pauseWhenOffline: false
-      pausePlaceholdersConditions: {}
-    otherEICooldowns: {}
-    requiredItems:
-      errorMessage: ''
-    requiredExecutableItems:
-      errorMessage: ''
-    requiredMagics: {}
-    detailedSlots: []
-    commands:
-    - DELAYTICK 2
-    - execute at %projectile_uuid% run kill %projectile_uuid%
-    - DELAYTICK 98
-    - execute at %player% run particle explosion %block_x% %block_y%+20 %block_z%
-      .1 .1 .1 5 1
-    - DELAYTICK 2
-    - execute at %player% run particle explosion %block_x% %block_y%+16 %block_z%
-      .1 .1 .1 5 1
-    - DELAYTICK 2
-    - execute at %player% run particle explosion %block_x% %block_y%+12 %block_z%
-      .1 .1 .1 5 1
-    - DELAYTICK 2
-    - execute at %player% run particle explosion %block_x% %block_y%+8 %block_z% .1
-      .1 .1 5 1
-    - DELAYTICK 2
-    - execute at %player% run particle explosion %block_x% %block_y%+4 %block_z% .1
-      .1 .1 5 1
-    - DELAYTICK 2
-    - execute at %player% run particle explosion_emitter %block_x% %block_y% %block_z%
-      3 3 3 5 5
-    - execute at %player% run summon creeper %block_x% %block_y%+2 %block_z% {ExplosionRadius:5b,Fuse:0}
-    playerConditions: {}
-    worldConditions: {}
-    itemConditions: {}
-    customConditions: {}
-    placeholdersConditions: {}
-    mustBeAProjectileLaunchWithTheSameEI: true
-    detailedBlocks:
-      blocks: []
-      cancelEventIfNotValid: false
-      messageIfNotValid: ''
-    blockCommands:
-    - MINEINCUBE 3
-    blockConditions:
-      requiredItems: {}
-      requiredExecutableItems: {}
-    variablesModification: {}
-  activator2:
+  activator0:
     name: '&eActivator'
     option: PLAYER_BLOCK_BREAK
     usageModification: 0
-    cancelEvent: true
-    noActivatorRunIfTheEventIsCancelled: false
-    silenceOutput: false
-    autoUpdateItem: false
-    updateName: true
-    updateLore: true
-    updateDurability: false
-    updateAttributes: false
-    updateEnchants: false
-    updateCustomModelData: false
-    cooldownOptions:
-      cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: false
-      cancelEventIfInCooldown: false
-      pauseWhenOffline: false
-      pausePlaceholdersConditions: {}
-    globalCooldownOptions:
-      cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
-      pauseWhenOffline: false
-      pausePlaceholdersConditions: {}
-    otherEICooldowns: {}
-    requiredItems:
-      errorMessage: ''
-    requiredExecutableItems:
-      errorMessage: ''
-    requiredMagics: {}
-    detailedSlots:
-    - -1
-    commands:
-    - 'LOOP START: 10'
-    - execute at %player% run setblock %block_x_int% %block_y_int% %block_z_int% red_terracotta
-    - DELAYTICK 2
-    - execute at %player% run setblock %block_x_int% %block_y_int% %block_z_int% %block_lower%
-    - DELAYTICK 8
-    - LOOP END
-    playerConditions: {}
-    worldConditions: {}
-    itemConditions: {}
-    customConditions: {}
-    placeholdersConditions: {}
-    detailedBlocks:
-      blocks: []
-      cancelEventIfNotValid: false
-      messageIfNotValid: ''
-    blockCommands: []
-    blockConditions:
-      requiredItems: {}
-      requiredExecutableItems: {}
-    variablesModification: {}
-  activator0:
-    name: '&eActivator'
-    option: PLAYER_LAUNCH_PROJECTILE
-    usageModification: 0
     cancelEvent: false
     noActivatorRunIfTheEventIsCancelled: false
     silenceOutput: false
@@ -193,11 +64,11 @@ activators:
     updateEnchants: false
     updateCustomModelData: false
     cooldownOptions:
-      cooldown: 1
+      cooldown: 0
       isCooldownInTicks: false
       cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
       displayCooldownMessage: true
-      cancelEventIfInCooldown: true
+      cancelEventIfInCooldown: false
       pauseWhenOffline: false
       pausePlaceholdersConditions: {}
     globalCooldownOptions:
@@ -215,25 +86,188 @@ activators:
     detailedSlots:
     - -1
     commands: []
-    playerConditions: {}
+    playerConditions:
+      ifIsOnTheBlock:
+        blocks: []
     worldConditions: {}
     itemConditions: {}
     customConditions: {}
     placeholdersConditions: {}
-    detailedEntities: []
-    entityCommands: []
-    entityConditions: {}
+    detailedBlocks:
+      blocks: []
+      cancelEventIfNotValid: false
+    blockCommands: []
+    blockConditions:
+      ifMustBeNatural: true
+      ifMustBeNaturalMsg: ''
+      requiredItems: {}
+      requiredExecutableItems: {}
+    variablesModification:
+      varUpdt0:
+        variableName: pumpkins-broken
+        type: MODIFICATION
+        modification: 1.0
+  activator1:
+    name: '&eActivator'
+    option: PLAYER_BLOCK_BREAK
+    usageModification: 0
+    cancelEvent: false
+    noActivatorRunIfTheEventIsCancelled: false
+    silenceOutput: false
+    autoUpdateItem: false
+    updateName: true
+    updateLore: true
+    updateDurability: false
+    updateAttributes: false
+    updateEnchants: false
+    updateCustomModelData: false
+    cooldownOptions:
+      cooldown: 0
+      isCooldownInTicks: false
+      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
+      displayCooldownMessage: true
+      cancelEventIfInCooldown: false
+      pauseWhenOffline: false
+      pausePlaceholdersConditions: {}
+    globalCooldownOptions:
+      cooldown: 0
+      isCooldownInTicks: false
+      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
+      displayCooldownMessage: true
+      cancelEventIfInCooldown: false
+      pauseWhenOffline: false
+      pausePlaceholdersConditions: {}
+    otherEICooldowns: {}
+    requiredItems: {}
+    requiredExecutableItems: {}
+    requiredMagics: {}
+    detailedSlots:
+    - -1
+    commands: []
+    playerConditions:
+      ifIsOnTheBlock:
+        blocks: []
+    worldConditions: {}
+    itemConditions: {}
+    customConditions: {}
+    placeholdersConditions:
+      plchCdt0:
+        type: PLAYER_NUMBER
+        comparator: SUPERIOR_OR_EQUALS
+        part1: '%var_pumpkins-broken_int%'
+        part2: '1000'
+        cancelEventIfNotValid: false
+        messageIfNotValid: ''
+        messageIfNotValidForTarget: ''
+        stopCheckingOtherConditionsIfNotValid: true
+      plchCdt1:
+        type: PLAYER_NUMBER
+        comparator: INFERIOR
+        part1: '%var_pumpkins-broken_int%'
+        part2: '10000'
+        cancelEventIfNotValid: false
+        messageIfNotValid: ''
+        messageIfNotValidForTarget: ''
+        stopCheckingOtherConditionsIfNotValid: true
+      plchCdt2:
+        type: PLAYER_NUMBER
+        comparator: INFERIOR_OR_EQUALS
+        part1: '%rand:1|100%'
+        part2: '20'
+        cancelEventIfNotValid: false
+        messageIfNotValid: ''
+        messageIfNotValidForTarget: ''
+        stopCheckingOtherConditionsIfNotValid: true
+    detailedBlocks:
+      blocks: []
+      cancelEventIfNotValid: false
+    blockCommands:
+    - DROPITEM PUMPKIN 1
+    blockConditions:
+      ifMustBeNatural: true
+      ifMustBeNaturalMsg: ''
+      requiredItems: {}
+      requiredExecutableItems: {}
+    variablesModification: {}
+  activator2:
+    name: '&eActivator'
+    option: PLAYER_BLOCK_BREAK
+    usageModification: 0
+    cancelEvent: false
+    noActivatorRunIfTheEventIsCancelled: false
+    silenceOutput: false
+    autoUpdateItem: false
+    updateName: true
+    updateLore: true
+    updateDurability: false
+    updateAttributes: false
+    updateEnchants: false
+    updateCustomModelData: false
+    cooldownOptions:
+      cooldown: 0
+      isCooldownInTicks: false
+      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
+      displayCooldownMessage: true
+      cancelEventIfInCooldown: false
+      pauseWhenOffline: false
+      pausePlaceholdersConditions: {}
+    globalCooldownOptions:
+      cooldown: 0
+      isCooldownInTicks: false
+      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
+      displayCooldownMessage: true
+      cancelEventIfInCooldown: false
+      pauseWhenOffline: false
+      pausePlaceholdersConditions: {}
+    otherEICooldowns: {}
+    requiredItems: {}
+    requiredExecutableItems: {}
+    requiredMagics: {}
+    detailedSlots:
+    - -1
+    commands: []
+    playerConditions:
+      ifIsOnTheBlock:
+        blocks: []
+    worldConditions: {}
+    itemConditions: {}
+    customConditions: {}
+    placeholdersConditions:
+      plchCdt1:
+        type: PLAYER_NUMBER
+        comparator: SUPERIOR_OR_EQUALS
+        part1: '%var_pumpkins-broken_int%'
+        part2: '10000'
+        cancelEventIfNotValid: false
+        messageIfNotValid: ''
+        messageIfNotValidForTarget: ''
+        stopCheckingOtherConditionsIfNotValid: true
+      plchCdt2:
+        type: PLAYER_NUMBER
+        comparator: INFERIOR_OR_EQUALS
+        part1: '%rand:1|100%'
+        part2: '40'
+        cancelEventIfNotValid: false
+        messageIfNotValid: ''
+        messageIfNotValidForTarget: ''
+        stopCheckingOtherConditionsIfNotValid: true
+    detailedBlocks:
+      blocks: []
+      cancelEventIfNotValid: false
+    blockCommands:
+    - DROPITEM PUMPKIN 1
+    blockConditions:
+      ifMustBeNatural: true
+      ifMustBeNaturalMsg: ''
+      requiredItems: {}
+      requiredExecutableItems: {}
     variablesModification: {}
 displayConditions:
-  playerConditions: {}
+  playerConditions:
+    ifIsOnTheBlock:
+      blocks: []
   worldConditions: {}
   itemConditions: {}
   placeholdersConditions: {}
   enableFeature: false
-food:
-  nutrition: 0
-  saturation: 0
-  isMeat: false
-  canAlwaysEat: false
-  eatSeconds: 0
 attributes: {}

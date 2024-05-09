@@ -8,6 +8,7 @@
 		{"predicate": {"custom_model_data":1}, "model": "item/rabbit_foot/coin"},
 		{"predicate": {"custom_model_data":2}, "model": "item/rabbit_foot/magic_mask"},
 		{"predicate": {"custom_model_data":3}, "model": "item/rabbit_foot/crate_magic"},
-		{"predicate": {"custom_model_data":4}, "model": "item/rabbit_foot/crate_obscur"}
+		{"predicate": {"custom_model_data":4}, "model": "item/rabbit_foot/crate_obscur"},
+		{"predicate": {"custom_model_data":5}, "model": "item/rabbit_foot/giant_blade"}
     ]
 }
