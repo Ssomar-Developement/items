@@ -1,0 +1,90 @@
+name: '#FB7777P#F39675r#EBB573i#E3D471s#DBF36Fm#C1F583a #9EE9A2T#7ADDC0r#57D1DFo#4BBCF1u#6C94EAs#8D6DE2e#AE45DBr#CF1ED3s'
+cancel-anvil: true
+lore:
+- '&7Colours of the World'
+- '&8————————————————————'
+- '&fMere color, unspoiled by meaning, and'
+- '&funallied with definite form, can speak'
+- '&fto the soul in a thousand different ways'
+- '&f'
+- '&8» &7Grants:'
+- ' &f &f The wearer of the full set'
+- ' &f &f will buff nearby players in'
+- ' &f &f a 7 block radius with +10%'
+- ' &f &f increase in damage and +2%'
+- ' &f &f increase in resistance.'
+- ''
+- ' &f &f If there are multiple players'
+- ' &f &f wearing the full set that are'
+- ' &f &f staying near to each other, the'
+- ' &f &f buff will stack.'
+- ''
+- ' &f &f Buffed players will have a rainbow'
+- ' &f &f halo on top of their heads.'
+- '&f'
+- '&8—————— #FF97D6P#FFAEDFr#FFC5E8i#FFDCF1d#FFF3FAe #F4FDFFC#DEF9FFr#C9F5FFa#B3F1FFt#9DEDFFe
+  &8——————'
+material: NETHERITE_LEGGINGS
+glow: true
+glowDrop: false
+glowDropColor: WHITE
+displayNameOnDrop: false
+disableStack: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+usage: 0
+usePerDay: -1
+usageLimit: -1
+disable-world: []
+unbreakable: false
+canBeUsedOnlyByTheOwner: false
+storeItemInfos: false
+nbt:
+  '0':
+    key: Damage
+    type: INT
+    value: 0
+config_4_2: true
+config_update: true
+headDBID: ''
+activators:
+  activator1:
+    activator: PLAYER_EQUIP_THE_EI
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - execute at %player% run summon armor_stand ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["%player_uuid%"]}
+    cancelEventIfInvalidRequiredExecutableItems: false
+    mustBeAProjectileLaunchWithTheSameEI: false
+    cancelEvent: false
+    autoUpdateItem: false
+    silenceOutput: false
+    conditions:
+      playerConditions:
+        ifPlayerHasExecutableItem:
+          condition1:
+            executableItemID: MONJI_PRISMA_2
+            slot: 38
+          condition2:
+            executableItemID: MONJI_PRISMA_1
+            slot: 39
+          condition3:
+            executableItemID: MONJI_PRISMA_4
+            slot: 36
+        ifPlayerHasExecutableItemMsg: ''
+  activator3:
+    activator: PLAYER_UNEQUIP_THE_EI
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - minecraft:kill @e[type=armor_stand,tag=%player_uuid%]
+    cancelEventIfInvalidRequiredExecutableItems: false
+    mustBeAProjectileLaunchWithTheSameEI: false
+    cancelEvent: false
+    autoUpdateItem: false
+    silenceOutput: false

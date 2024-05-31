@@ -1,0 +1,211 @@
+name: '#FB7777O#F58C76u#F0A174t#EAB673s#E5CC71t#DFE170a#DAF66En#C8F87Cd#B0EF91i#98E7A6n#80DFBCg
+  #68D7D1P#50CEE6r#48C0F2i#5EA5EDd#758AE8e #8B6FE3F#A254DDl#B839D8a#CF1ED3g'
+lore:
+- '&7Colours of the World'
+- '&8————————————————————'
+- '&f'
+- '&fThis flag empowers the pride of'
+- '&fthose who are near it, making them'
+- '&fperform better for themselves and'
+- '&fthose around them towards a'
+- '&fbetter world.'
+- '&f'
+- '&8» &7Grants:'
+- ' &f &f Right-Click to spawn a totem'
+- ' &f &f that grants those who are near'
+- ' &f &f the totem in a 12 block radius'
+- ' &f &f several buffs for 30s'
+- '&f'
+- '&8» &7Cooldown: 30 Seconds'
+- '&f'
+- '&8—————— #FF97D6P#FFAEDFr#FFC5E8i#FFDCF1d#FFF3FAe #F4FDFFC#DEF9FFr#C9F5FFa#B3F1FFt#9DEDFFe
+  &8——————'
+material: WHITE_BANNER
+glow: false
+glowDrop: false
+glowDropColor: WHITE
+displayNameOnDrop: false
+disableStack: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+usage: 0
+usePerDay: -1
+usageLimit: -1
+disable-world: []
+unbreakable: false
+canBeUsedOnlyByTheOwner: false
+storeItemInfos: false
+nbt:
+  '0':
+    key: BlockEntityTag
+    type: COMPOUND
+banner:
+  pattern1:
+    '1':
+      string: color
+      object: ORANGE
+    '2':
+      string: pattern
+      object: hh
+  pattern2:
+    '1':
+      string: color
+      object: RED
+    '2':
+      string: pattern
+      object: ts
+  pattern3:
+    '1':
+      string: color
+      object: LIME
+    '2':
+      string: pattern
+      object: hhb
+  pattern4:
+    '1':
+      string: color
+      object: BLUE
+    '2':
+      string: pattern
+      object: bs
+  pattern5:
+    '1':
+      string: color
+      object: YELLOW
+    '2':
+      string: pattern
+      object: ms
+config_4_2: true
+config_update: true
+headDBID: ''
+hideEnchantments: false
+hideUnbreakable: false
+hideAttributes: false
+hidePotionEffects: true
+hideUsage: false
+cancel-item-drop: false
+cancel-item-place: true
+cancel-tool-interactions: false
+cancel-item-craft-no-custom: false
+cancel-item-craft: false
+cancel-deposit-in-chest: false
+cancel-deposit-in-furnace: false
+cancel-item-burn: false
+cancel-item-delete-by-cactus: false
+cancel-item-delete-by-lightning: false
+cancel-stone-cutter: false
+cancel-enchant: false
+cancel-brewing: false
+cancel-anvil: false
+cancel-rename-anvil: false
+cancel-enchant-anvil: false
+cancel-beacon: false
+cancel-cartography: false
+cancel-composter: false
+cancel-dispenser: false
+cancel-dropper: false
+cancel-hopper: false
+cancel-lectern: false
+cancel-loom: false
+cancel-merchant: false
+cancel-grind-stone: false
+cancel-item-frame: false
+cancel-smithing-table: false
+cancel-consumption: false
+cancel-swap-hand: false
+locked-in-inventory: false
+cancelEventIfNoPerm: false
+cancelEventIfNotOwner: false
+activators:
+  activator1:
+    activator: PLAYER_RIGHT_CLICK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - LAUNCH ARROW_MODULE
+    blockCommands: []
+    detailedBlocks: []
+    cancelEventIfNotDetailedBlocks: false
+    onlyAirClick: false
+    onlyBlockClick: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    mustBeAProjectileLaunchWithTheSameEI: false
+    cancelEvent: false
+    autoUpdateItem: false
+    silenceOutput: false
+    cooldown: 60
+    displayCooldownMessage: false
+    cancelEventIfInCooldown: false
+    isCooldownInTicks: false
+    cooldownMsg: ''
+  activator2:
+    activator: PLAYER_CUSTOM_LAUNCH
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - execute at %projectile_uuid% run playsound entity.ender_dragon.growl ambient
+      @a[distance=..20]
+    - execute at %player% as %projectile_uuid% run tp %projectile_uuid% %x% %y% %z%
+      ~ ~
+    - execute at %projectile_uuid% run summon armor_stand ~ ~ ~ {DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Invisible:1b,Tags:["%projectile_uuid%1","%projectile_uuid%"],ArmorItems:[{},{},{},{id:"minecraft:beacon",Count:1b}]}
+    - execute at %projectile_uuid% run summon armor_stand ~ ~-1 ~ {DisabledSlots:4144959,NoGravity:1b,Invulnerable:1b,Tags:["%projectile_uuid%2","%projectile_uuid%"],Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:white_banner",Count:1b,tag:{BlockEntityTag:{Patterns:[{Color:1,Pattern:"hh"},{Color:14,Pattern:"ts"},{Color:5,Pattern:"hhb"},{Color:11,Pattern:"bs"},{Color:4,Pattern:"ms"}]}}}]}
+    - execute at %projectile_uuid% run summon armor_stand ~ ~ ~ {DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Invisible:1b,Tags:["%projectile_uuid%3","%projectile_uuid%"],ArmorItems:[{},{},{},{id:"minecraft:beacon",Count:1b}]}
+    - execute at %projectile_uuid% run summon armor_stand ~ ~-1 ~ {DisabledSlots:4144959,NoGravity:1b,Invulnerable:1b,Tags:["%projectile_uuid%4","%projectile_uuid%"],Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:white_banner",Count:1b,tag:{BlockEntityTag:{Patterns:[{Color:1,Pattern:"hh"},{Color:14,Pattern:"ts"},{Color:5,Pattern:"hhb"},{Color:11,Pattern:"bs"},{Color:4,Pattern:"ms"}]}}}]}
+    - execute at %projectile_uuid% run summon armor_stand ~ ~ ~ {DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Invisible:1b,Tags:["%projectile_uuid%5","%projectile_uuid%"],ArmorItems:[{},{},{},{id:"minecraft:beacon",Count:1b}]}
+    - execute at %projectile_uuid% run summon armor_stand ~ ~-1 ~ {DisabledSlots:4144959,NoGravity:1b,Invulnerable:1b,Tags:["%projectile_uuid%6","%projectile_uuid%"],Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:white_banner",Count:1b,tag:{BlockEntityTag:{Patterns:[{Color:1,Pattern:"hh"},{Color:14,Pattern:"ts"},{Color:5,Pattern:"hhb"},{Color:11,Pattern:"bs"},{Color:4,Pattern:"ms"}]}}}]}
+    - execute at %projectile_uuid% run summon armor_stand ~ ~ ~ {DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Invisible:1b,Tags:["%projectile_uuid%7","%projectile_uuid%"],ArmorItems:[{},{},{},{id:"minecraft:beacon",Count:1b}]}
+    - execute at %projectile_uuid% run summon armor_stand ~ ~-1 ~ {DisabledSlots:4144959,NoGravity:1b,Invulnerable:1b,Tags:["%projectile_uuid%8","%projectile_uuid%"],Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:white_banner",Count:1b,tag:{BlockEntityTag:{Patterns:[{Color:1,Pattern:"hh"},{Color:14,Pattern:"ts"},{Color:5,Pattern:"hhb"},{Color:11,Pattern:"bs"},{Color:4,Pattern:"ms"}]}}}]}
+    - execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%1] run tp @e[type=armor_stand,tag=%projectile_uuid%1]
+      %projectile_x% %projectile_y%-3 %projectile_z%-1 180 0
+    - execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%2] run tp @e[type=armor_stand,tag=%projectile_uuid%2]
+      %projectile_x% %projectile_y%-3 %projectile_z%-1.25 180 0
+    - execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%3] run tp @e[type=armor_stand,tag=%projectile_uuid%3]
+      %projectile_x%+1 %projectile_y%-3 %projectile_z% 270 0
+    - execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%4] run tp @e[type=armor_stand,tag=%projectile_uuid%4]
+      %projectile_x%+1.25 %projectile_y%-3 %projectile_z% 270 0
+    - execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%5] run tp @e[type=armor_stand,tag=%projectile_uuid%5]
+      %projectile_x% %projectile_y%-3 %projectile_z%+1 0 0
+    - execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%6] run tp @e[type=armor_stand,tag=%projectile_uuid%6]
+      %projectile_x% %projectile_y%-3 %projectile_z%+1.25 0 0
+    - execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%7] run tp @e[type=armor_stand,tag=%projectile_uuid%7]
+      %projectile_x%-1 %projectile_y%-3 %projectile_z% 90 0
+    - execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%8] run tp @e[type=armor_stand,tag=%projectile_uuid%8]
+      %projectile_x%-1.25 %projectile_y%-3 %projectile_z% 90 0
+    entityCommands:
+    - execute at %projectile_uuid% run summon armor_stand ~ ~ ~ {DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Invisible:1b,Tags:["%projectile_uuid%9","%projectile_uuid%"]}
+    - execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%9] run tp @e[type=armor_stand,tag=%projectile_uuid%9]
+      %projectile_x% %projectile_y% %projectile_z%
+    - 'LOOP START: 600'
+    - execute at @e[type=armor_stand,tag=%projectile_uuid%9] as @e[type=armor_stand,tag=%projectile_uuid%9]
+      run tp @e[type=armor_stand,tag=%projectile_uuid%9] ~ ~ ~ ~10 0
+    - execute at @e[type=armor_stand,tag=%projectile_uuid%9] run particle firework
+      ^ ^1 ^1 .01 .01 .01 0 1
+    - execute at @e[type=armor_stand,tag=%projectile_uuid%9] run particle firework
+      ^ ^1 ^-1 .01 .01 .01 0 1
+    - execute at @e[type=armor_stand,tag=%projectile_uuid%9] run particle firework
+      ^1 ^1 ^ .01 .01 .01 0 1
+    - execute at @e[type=armor_stand,tag=%projectile_uuid%9] run particle firework
+      ^-1 ^1 ^ .01 .01 .01 0 1
+    - execute at %projectile_uuid% run particle firework ~ ~5 ~ .1 5 .1 0.2 10
+    - execute at %projectile_uuid% run effect give @a[distance=..12] speed 2 0
+    - execute at %projectile_uuid% run effect give @a[distance=..12] haste 2 0
+    - execute at %projectile_uuid% run effect give @a[distance=..12] regeneration
+      2 0
+    - execute at %projectile_uuid% run effect give @a[distance=..12] resistance 2
+      0
+    - execute at %projectile_uuid% run effect give @a[distance=..12] strength 2 0
+    - DELAYTICK 2
+    - LOOP END
+    - minecraft:kill @e[tag=%projectile_uuid%]
+    - minecraft:kill %projectile_uuid%
+    detailedEntities: []
+    cancelEventIfInvalidRequiredExecutableItems: false
+    mustBeAProjectileLaunchWithTheSameEI: false
+    cancelEvent: false
+    autoUpdateItem: false
+    silenceOutput: false
