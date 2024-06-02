@@ -99,7 +99,7 @@ activators:
     usageModification: 0
     cancelEvent: false
     noActivatorRunIfTheEventIsCancelled: false
-    silenceOutput: false
+    silenceOutput: true
     autoUpdateItem: false
     updateName: true
     updateLore: true
