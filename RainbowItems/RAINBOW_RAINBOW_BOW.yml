@@ -1,0 +1,829 @@
+name: '#FB7777R#EFA474a#E4D071i#D8FD6En#A5EC9Bb#73DAC7o#40C9F4w #7090E9B#9F57DEo#CF1ED3w'
+cancel-anvil: true
+lore:
+- '&7Colours of the World'
+- '&8————————————————————'
+- '&f'
+- '&fThis bow has harnessed the great'
+- '&fpower of beauty of the world making'
+- '&feach shot produce a different color.'
+- '&fWhen used alot, the group of arrows'
+- '&fthat came from this bow forms a very'
+- '&fbeautiful sight in the sky.'
+- '&f'
+- '&8» &7Grants:'
+- ' &f &f Arrow trails and explosion'
+- ' &f &f colors cycle from red to purple.'
+- '&f'
+- '&8—————— #FF97D6P#FFAEDFr#FFC5E8i#FFDCF1d#FFF3FAe #F4FDFFC#DEF9FFr#C9F5FFa#B3F1FFt#9DEDFFe
+  &8——————'
+material: BOW
+glow: true
+glowDrop: false
+glowDropColor: WHITE
+displayNameOnDrop: false
+disableStack: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+usage: 0
+usePerDay: -1
+usageLimit: -1
+disable-world: []
+unbreakable: false
+canBeUsedOnlyByTheOwner: false
+storeItemInfos: false
+nbt:
+  '0':
+    key: Damage
+    type: INT
+    value: 0
+config_4_2: true
+config_update: true
+headDBID: ''
+durability: 384
+activators:
+  activator11:
+    activator: PROJECTILE_HIT_BLOCK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - execute at %projectile_uuid% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;16711680]}]}}}}
+    - minecraft:kill %projectile_uuid%
+    mustBeAProjectileLaunchWithTheSameEI: false
+    blockCommands: []
+    detailedBlocks: []
+    cancelEventIfNotDetailedBlocks: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    autoUpdateItem: false
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_STRING
+          part1: '%projectile_name%'
+          comparator: EQUALS
+          part2: 1a
+          messageIfNotValid: ''
+          cancelEventIfNotValid: false
+  activator12:
+    activator: PROJECTILE_HIT_PLAYER
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - execute at %target% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;16711680]}]}}}}
+    mustBeAProjectileLaunchWithTheSameEI: false
+    blockCommands: []
+    detailedBlocks: []
+    cancelEventIfNotDetailedBlocks: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    autoUpdateItem: false
+    silenceOutput: false
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_STRING
+          part1: '%projectile_name%'
+          comparator: EQUALS
+          part2: 1a
+          messageIfNotValid: ''
+          cancelEventIfNotValid: false
+  activator13:
+    activator: PROJECTILE_HIT_ENTITY
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - execute at %entity_uuid% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;16711680]}]}}}}
+    mustBeAProjectileLaunchWithTheSameEI: false
+    blockCommands: []
+    detailedBlocks: []
+    cancelEventIfNotDetailedBlocks: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    autoUpdateItem: false
+    silenceOutput: false
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_STRING
+          part1: '%projectile_name%'
+          comparator: EQUALS
+          part2: 1a
+          messageIfNotValid: ''
+          cancelEventIfNotValid: false
+  activator21:
+    activator: PROJECTILE_HIT_BLOCK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - execute at %projectile_uuid% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;16755200]}]}}}}
+    - minecraft:kill %projectile_uuid%
+    mustBeAProjectileLaunchWithTheSameEI: false
+    blockCommands: []
+    detailedBlocks: []
+    cancelEventIfNotDetailedBlocks: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    autoUpdateItem: false
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_STRING
+          part1: '%projectile_name%'
+          comparator: EQUALS
+          part2: 2a
+          messageIfNotValid: ''
+          cancelEventIfNotValid: false
+  activator22:
+    activator: PROJECTILE_HIT_PLAYER
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - execute at %target% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;16755200]}]}}}}
+    mustBeAProjectileLaunchWithTheSameEI: false
+    blockCommands: []
+    detailedBlocks: []
+    cancelEventIfNotDetailedBlocks: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    autoUpdateItem: false
+    silenceOutput: false
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_STRING
+          part1: '%projectile_name%'
+          comparator: EQUALS
+          part2: 2a
+          messageIfNotValid: ''
+          cancelEventIfNotValid: false
+  activator23:
+    activator: PROJECTILE_HIT_ENTITY
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - execute at %entity_uuid% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;16755200]}]}}}}
+    mustBeAProjectileLaunchWithTheSameEI: false
+    blockCommands: []
+    detailedBlocks: []
+    cancelEventIfNotDetailedBlocks: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    autoUpdateItem: false
+    silenceOutput: false
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_STRING
+          part1: '%projectile_name%'
+          comparator: EQUALS
+          part2: 2a
+          messageIfNotValid: ''
+          cancelEventIfNotValid: false
+  activator31:
+    activator: PROJECTILE_HIT_BLOCK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - execute at %projectile_uuid% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;15073024]}]}}}}
+    - minecraft:kill %projectile_uuid%
+    mustBeAProjectileLaunchWithTheSameEI: false
+    blockCommands: []
+    detailedBlocks: []
+    cancelEventIfNotDetailedBlocks: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    autoUpdateItem: false
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_STRING
+          part1: '%projectile_name%'
+          comparator: EQUALS
+          part2: 3a
+          messageIfNotValid: ''
+          cancelEventIfNotValid: false
+  activator32:
+    activator: PROJECTILE_HIT_PLAYER
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - execute at %target% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;15073024]}]}}}}
+    mustBeAProjectileLaunchWithTheSameEI: false
+    blockCommands: []
+    detailedBlocks: []
+    cancelEventIfNotDetailedBlocks: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    autoUpdateItem: false
+    silenceOutput: false
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_STRING
+          part1: '%projectile_name%'
+          comparator: EQUALS
+          part2: 3a
+          messageIfNotValid: ''
+          cancelEventIfNotValid: false
+  activator33:
+    activator: PROJECTILE_HIT_ENTITY
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - execute at %entity_uuid% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;15073024]}]}}}}
+    mustBeAProjectileLaunchWithTheSameEI: false
+    blockCommands: []
+    detailedBlocks: []
+    cancelEventIfNotDetailedBlocks: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    autoUpdateItem: false
+    silenceOutput: false
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_STRING
+          part1: '%projectile_name%'
+          comparator: EQUALS
+          part2: 3a
+          messageIfNotValid: ''
+          cancelEventIfNotValid: false
+  activator41:
+    activator: PROJECTILE_HIT_BLOCK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - execute at %projectile_uuid% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;65314]}]}}}}
+    - minecraft:kill %projectile_uuid%
+    mustBeAProjectileLaunchWithTheSameEI: false
+    blockCommands: []
+    detailedBlocks: []
+    cancelEventIfNotDetailedBlocks: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    autoUpdateItem: false
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_STRING
+          part1: '%projectile_name%'
+          comparator: EQUALS
+          part2: 4a
+          messageIfNotValid: ''
+          cancelEventIfNotValid: false
+  activator42:
+    activator: PROJECTILE_HIT_PLAYER
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - execute at %target% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;65314]}]}}}}
+    mustBeAProjectileLaunchWithTheSameEI: false
+    blockCommands: []
+    detailedBlocks: []
+    cancelEventIfNotDetailedBlocks: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    autoUpdateItem: false
+    silenceOutput: false
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_STRING
+          part1: '%projectile_name%'
+          comparator: EQUALS
+          part2: 4a
+          messageIfNotValid: ''
+          cancelEventIfNotValid: false
+  activator43:
+    activator: PROJECTILE_HIT_ENTITY
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - execute at %entity_uuid% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;65314]}]}}}}
+    mustBeAProjectileLaunchWithTheSameEI: false
+    blockCommands: []
+    detailedBlocks: []
+    cancelEventIfNotDetailedBlocks: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    autoUpdateItem: false
+    silenceOutput: false
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_STRING
+          part1: '%projectile_name%'
+          comparator: EQUALS
+          part2: 4a
+          messageIfNotValid: ''
+          cancelEventIfNotValid: false
+  activator51:
+    activator: PROJECTILE_HIT_BLOCK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - execute at %projectile_uuid% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;240639]}]}}}}
+    - minecraft:kill %projectile_uuid%
+    mustBeAProjectileLaunchWithTheSameEI: false
+    blockCommands: []
+    detailedBlocks: []
+    cancelEventIfNotDetailedBlocks: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    autoUpdateItem: false
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_STRING
+          part1: '%projectile_name%'
+          comparator: EQUALS
+          part2: 5a
+          messageIfNotValid: ''
+          cancelEventIfNotValid: false
+  activator52:
+    activator: PROJECTILE_HIT_PLAYER
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - execute at %target% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;240639]}]}}}}
+    mustBeAProjectileLaunchWithTheSameEI: false
+    blockCommands: []
+    detailedBlocks: []
+    cancelEventIfNotDetailedBlocks: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    autoUpdateItem: false
+    silenceOutput: false
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_STRING
+          part1: '%projectile_name%'
+          comparator: EQUALS
+          part2: 5a
+          messageIfNotValid: ''
+          cancelEventIfNotValid: false
+  activator53:
+    activator: PROJECTILE_HIT_ENTITY
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - execute at %entity_uuid% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;240639]}]}}}}
+    mustBeAProjectileLaunchWithTheSameEI: false
+    blockCommands: []
+    detailedBlocks: []
+    cancelEventIfNotDetailedBlocks: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    autoUpdateItem: false
+    silenceOutput: false
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_STRING
+          part1: '%projectile_name%'
+          comparator: EQUALS
+          part2: 5a
+          messageIfNotValid: ''
+          cancelEventIfNotValid: false
+  activator61:
+    activator: PROJECTILE_HIT_BLOCK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - execute at %projectile_uuid% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;6226943]}]}}}}
+    - minecraft:kill %projectile_uuid%
+    mustBeAProjectileLaunchWithTheSameEI: false
+    blockCommands: []
+    detailedBlocks: []
+    cancelEventIfNotDetailedBlocks: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    autoUpdateItem: false
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_STRING
+          part1: '%projectile_name%'
+          comparator: EQUALS
+          part2: 6a
+          messageIfNotValid: ''
+          cancelEventIfNotValid: false
+  activator62:
+    activator: PROJECTILE_HIT_PLAYER
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - execute at %target% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;6226943]}]}}}}
+    mustBeAProjectileLaunchWithTheSameEI: false
+    blockCommands: []
+    detailedBlocks: []
+    cancelEventIfNotDetailedBlocks: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    autoUpdateItem: false
+    silenceOutput: false
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_STRING
+          part1: '%projectile_name%'
+          comparator: EQUALS
+          part2: 6a
+          messageIfNotValid: ''
+          cancelEventIfNotValid: false
+  activator63:
+    activator: PROJECTILE_HIT_ENTITY
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - execute at %entity_uuid% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;6226943]}]}}}}
+    mustBeAProjectileLaunchWithTheSameEI: false
+    blockCommands: []
+    detailedBlocks: []
+    cancelEventIfNotDetailedBlocks: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    autoUpdateItem: false
+    silenceOutput: false
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_STRING
+          part1: '%projectile_name%'
+          comparator: EQUALS
+          part2: 6a
+          messageIfNotValid: ''
+          cancelEventIfNotValid: false
+  activator71:
+    activator: PROJECTILE_HIT_BLOCK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - execute at %projectile_uuid% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;12779775]}]}}}}
+    - minecraft:kill %projectile_uuid%
+    mustBeAProjectileLaunchWithTheSameEI: false
+    blockCommands: []
+    detailedBlocks: []
+    cancelEventIfNotDetailedBlocks: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    autoUpdateItem: false
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_STRING
+          part1: '%projectile_name%'
+          comparator: EQUALS
+          part2: 7a
+          messageIfNotValid: ''
+          cancelEventIfNotValid: false
+  activator72:
+    activator: PROJECTILE_HIT_PLAYER
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - execute at %target% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;12779775]}]}}}}
+    mustBeAProjectileLaunchWithTheSameEI: false
+    blockCommands: []
+    detailedBlocks: []
+    cancelEventIfNotDetailedBlocks: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    autoUpdateItem: false
+    silenceOutput: false
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_STRING
+          part1: '%projectile_name%'
+          comparator: EQUALS
+          part2: 7a
+          messageIfNotValid: ''
+          cancelEventIfNotValid: false
+  activator73:
+    activator: PROJECTILE_HIT_ENTITY
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - execute at %entity_uuid% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;12779775]}]}}}}
+    mustBeAProjectileLaunchWithTheSameEI: false
+    blockCommands: []
+    detailedBlocks: []
+    cancelEventIfNotDetailedBlocks: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    autoUpdateItem: false
+    silenceOutput: false
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_STRING
+          part1: '%projectile_name%'
+          comparator: EQUALS
+          part2: 7a
+          messageIfNotValid: ''
+          cancelEventIfNotValid: false
+  activator7:
+    activator: PLAYER_LAUNCH_PROJECTILE
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - execute at %player% run data merge entity %projectile_uuid% {CustomName:"\"7a\""}
+    - 'LOOP START: 100'
+    - execute at %projectile_uuid% run particle dust 0.7 0 0.7 1 ~ ~ ~ .01 .01 .01
+      0 5
+    - DELAYTICK 1
+    - LOOP END
+    entityCommands: []
+    detailedEntities: []
+    cancelEventIfInvalidRequiredExecutableItems: false
+    mustBeAProjectileLaunchWithTheSameEI: false
+    cancelEvent: false
+    autoUpdateItem: false
+    silenceOutput: false
+    variablesModification:
+      x:
+        type: SET
+        modification: '8'
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_STRING
+          part1: '%var_x_int%'
+          comparator: EQUALS
+          part2: '7'
+          messageIfNotValid: ''
+          cancelEventIfNotValid: false
+  activator6:
+    activator: PLAYER_LAUNCH_PROJECTILE
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - execute at %player% run data merge entity %projectile_uuid% {CustomName:"\"6a\""}
+    - 'LOOP START: 100'
+    - execute at %projectile_uuid% run particle dust 0.45 0 0.9 1 ~ ~ ~ .01 .01 .01
+      0 5
+    - DELAYTICK 1
+    - LOOP END
+    entityCommands: []
+    detailedEntities: []
+    cancelEventIfInvalidRequiredExecutableItems: false
+    mustBeAProjectileLaunchWithTheSameEI: false
+    cancelEvent: false
+    autoUpdateItem: false
+    silenceOutput: false
+    variablesModification:
+      x:
+        type: SET
+        modification: '7'
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_STRING
+          part1: '%var_x_int%'
+          comparator: EQUALS
+          part2: '6'
+          messageIfNotValid: ''
+          cancelEventIfNotValid: false
+  activator5:
+    activator: PLAYER_LAUNCH_PROJECTILE
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - execute at %player% run data merge entity %projectile_uuid% {CustomName:"\"5a\""}
+    - 'LOOP START: 100'
+    - execute at %projectile_uuid% run particle dust 0 0 1 1 ~ ~ ~ .01 .01 .01 0 5
+    - DELAYTICK 1
+    - LOOP END
+    entityCommands: []
+    detailedEntities: []
+    cancelEventIfInvalidRequiredExecutableItems: false
+    mustBeAProjectileLaunchWithTheSameEI: false
+    cancelEvent: false
+    autoUpdateItem: false
+    silenceOutput: false
+    variablesModification:
+      x:
+        type: SET
+        modification: '6'
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_STRING
+          part1: '%var_x_int%'
+          comparator: EQUALS
+          part2: '5'
+          messageIfNotValid: ''
+          cancelEventIfNotValid: false
+  activator4:
+    activator: PLAYER_LAUNCH_PROJECTILE
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - execute at %player% run data merge entity %projectile_uuid% {CustomName:"\"4a\""}
+    - 'LOOP START: 100'
+    - execute at %projectile_uuid% run particle dust 0 1 0 1 ~ ~ ~ .01 .01 .01 0 5
+    - DELAYTICK 1
+    - LOOP END
+    entityCommands: []
+    detailedEntities: []
+    cancelEventIfInvalidRequiredExecutableItems: false
+    mustBeAProjectileLaunchWithTheSameEI: false
+    cancelEvent: false
+    autoUpdateItem: false
+    silenceOutput: false
+    variablesModification:
+      x:
+        type: SET
+        modification: '5'
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_STRING
+          part1: '%var_x_int%'
+          comparator: EQUALS
+          part2: '4'
+          messageIfNotValid: ''
+          cancelEventIfNotValid: false
+  activator3:
+    activator: PLAYER_LAUNCH_PROJECTILE
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - execute at %player% run data merge entity %projectile_uuid% {CustomName:"\"3a\""}
+    - 'LOOP START: 100'
+    - execute at %projectile_uuid% run particle dust 1 1 0.2 1 ~ ~ ~ .01 .01 .01 0
+      5
+    - DELAYTICK 1
+    - LOOP END
+    entityCommands: []
+    detailedEntities: []
+    cancelEventIfInvalidRequiredExecutableItems: false
+    mustBeAProjectileLaunchWithTheSameEI: false
+    cancelEvent: false
+    autoUpdateItem: false
+    silenceOutput: false
+    variablesModification:
+      x:
+        type: SET
+        modification: '4'
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_STRING
+          part1: '%var_x_int%'
+          comparator: EQUALS
+          part2: '3'
+          messageIfNotValid: ''
+          cancelEventIfNotValid: false
+  activator2:
+    activator: PLAYER_LAUNCH_PROJECTILE
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - execute at %player% run data merge entity %projectile_uuid% {CustomName:"\"2a\""}
+    - 'LOOP START: 100'
+    - execute at %projectile_uuid% run particle dust 1 0.5 0 1 ~ ~ ~ .01 .01 .01 0
+      5
+    - DELAYTICK 1
+    - LOOP END
+    entityCommands: []
+    detailedEntities: []
+    cancelEventIfInvalidRequiredExecutableItems: false
+    mustBeAProjectileLaunchWithTheSameEI: false
+    cancelEvent: false
+    autoUpdateItem: false
+    silenceOutput: false
+    variablesModification:
+      x:
+        type: SET
+        modification: '3'
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_STRING
+          part1: '%var_x_int%'
+          comparator: EQUALS
+          part2: '2'
+          messageIfNotValid: ''
+          cancelEventIfNotValid: false
+  activator1:
+    activator: PLAYER_LAUNCH_PROJECTILE
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - execute at %player% run data merge entity %projectile_uuid% {CustomName:"\"1a\""}
+    - 'LOOP START: 100'
+    - execute at %projectile_uuid% run particle dust 1 0 0 1 ~ ~ ~ .01 .01 .01 0 5
+    - DELAYTICK 1
+    - LOOP END
+    entityCommands: []
+    detailedEntities: []
+    cancelEventIfInvalidRequiredExecutableItems: false
+    mustBeAProjectileLaunchWithTheSameEI: false
+    cancelEvent: false
+    autoUpdateItem: false
+    silenceOutput: false
+    variablesModification:
+      x:
+        type: SET
+        modification: '2'
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_STRING
+          part1: '%var_x_int%'
+          comparator: EQUALS
+          part2: '1'
+          messageIfNotValid: ''
+          cancelEventIfNotValid: false
+  activator8:
+    activator: LOOP
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands: []
+    cancelEventIfInvalidRequiredExecutableItems: false
+    delay: 5
+    delayInTick: true
+    mustBeAProjectileLaunchWithTheSameEI: false
+    cancelEvent: false
+    autoUpdateItem: false
+    silenceOutput: false
+    variablesModification:
+      x:
+        type: SET
+        modification: '1'
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_STRING
+          part1: '%var_x_int%'
+          comparator: EQUALS
+          part2: '8'
+          messageIfNotValid: ''
+          cancelEventIfNotValid: false
+variables:
+  x:
+    type: NUMBER
+    default: 1
