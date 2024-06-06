@@ -79,7 +79,7 @@ activators:
     - -1
     - 40
     commands:
-    - ei giveslot %player% Prem_Firework 1 %slot% %usage%
+    - ei giveslot %player% Prem_Firework_v1_20_5 1 %slot% %usage%
     playerConditions: {}
     worldConditions: {}
     itemConditions:
@@ -203,17 +203,17 @@ activators:
     - 40
     commands:
     - 'RANDOM RUN: 1'
-    - execute at %player% run summon firework_rocket %x% %y%+3 %z% {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:0,Trail:0,Colors:[I;1973019,11743532],FadeColors:[I;1973019,11743532]}]}}}}
-    - execute at %player% run summon firework_rocket %x% %y%+3 %z% {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:0,Trail:0,FadeColors:[I;11743532,3887386]}]}}}}
-    - execute at %player% run summon firework_rocket %x% %y%+3 %z% {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:0,Trail:0,FadeColors:[I;3887386,5320730]}]}}}}
-    - execute at %player% run summon firework_rocket %x% %y%+3 %z% {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:0,Trail:0,FadeColors:[I;5320730,2437522]}]}}}}
-    - execute at %player% run summon firework_rocket %x% %y%+3 %z% {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:0,Trail:0,FadeColors:[I;2437522,8073150]}]}}}}
-    - execute at %player% run summon firework_rocket %x% %y%+3 %z% {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:0,Trail:0,FadeColors:[I;8073150,2651799]}]}}}}
-    - execute at %player% run summon firework_rocket %x% %y%+3 %z% {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:0,Trail:0,FadeColors:[I;2651799,11250603]}]}}}}
-    - execute at %player% run summon firework_rocket %x% %y%+3 %z% {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:0,Trail:0,FadeColors:[I;11250603,4408131]}]}}}}
-    - execute at %player% run summon firework_rocket %x% %y%+3 %z% {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:0,Trail:0,FadeColors:[I;4408131,14188952]}]}}}}
-    - execute at %player% run summon firework_rocket %x% %y%+3 %z% {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:0,Trail:0,FadeColors:[I;14188952,4312372]}]}}}}
-    - execute at %player% run summon firework_rocket %x% %y%+3 %z% {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:0,Trail:0,FadeColors:[I;4312372,14602026]}]}}}}
+    - execute at %player% run summon firework_rocket %x% %y%+3 %z% {LifeTime:20,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"large_ball",has_trail:false,fade_colors:[I;1973019,11743532]}]}}}}
+    - execute at %player% run summon firework_rocket %x% %y%+3 %z% {LifeTime:20,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"large_ball",has_trail:false,fade_colors:[I;11743532,3887386]}]}}}}
+    - execute at %player% run summon firework_rocket %x% %y%+3 %z% {LifeTime:20,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"large_ball",has_trail:false,fade_colors:[I;3887386,5320730]}]}}}}
+    - execute at %player% run summon firework_rocket %x% %y%+3 %z% {LifeTime:20,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"large_ball",has_trail:false,fade_colors:[I;5320730,2437522]}]}}}}
+    - execute at %player% run summon firework_rocket %x% %y%+3 %z% {LifeTime:20,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"large_ball",has_trail:false,fade_colors:[I;2437522,8073150]}]}}}}
+    - execute at %player% run summon firework_rocket %x% %y%+3 %z% {LifeTime:20,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"large_ball",has_trail:false,fade_colors:[I;8073150,2651799]}]}}}}
+    - execute at %player% run summon firework_rocket %x% %y%+3 %z% {LifeTime:20,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"large_ball",has_trail:false,fade_colors:[I;11250603,11250603]}]}}}}
+    - execute at %player% run summon firework_rocket %x% %y%+3 %z% {LifeTime:20,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"large_ball",has_trail:false,fade_colors:[I;11250603,4408131]}]}}}}
+    - execute at %player% run summon firework_rocket %x% %y%+3 %z% {LifeTime:20,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"large_ball",has_trail:false,fade_colors:[I;4408131,14188952]}]}}}}
+    - execute at %player% run summon firework_rocket %x% %y%+3 %z% {LifeTime:20,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"large_ball",has_trail:false,fade_colors:[I;14188952,4312372]}]}}}}
+    - execute at %player% run summon firework_rocket %x% %y%+3 %z% {LifeTime:20,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"large_ball",has_trail:false,fade_colors:[I;4312372,14602026]}]}}}}
     - RANDOM END
     playerConditions:
       ifNotGliding: true

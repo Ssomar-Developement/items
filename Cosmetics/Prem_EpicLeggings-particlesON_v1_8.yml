@@ -1,17 +1,17 @@
-name: '&4✦ &cEpic helmet &4✦'
+name: '&1✦ &9Epic leggings &1✦'
 lore:
-- '&c&l---&7&l>>&c&l-----&7&l<<&c&l---'
+- '&9&l---&7&l>>&9&l-----&7&l<<&9&l---'
 - ''
-- '&4✦ &7Epic:'
-- '  &4➤ &cSpeed 3'
-- '  &4➤ &c+1 health bonus'
+- '&1✦ &7Epic:'
+- '  &1➤ &9Haste 2'
+- '  &1➤ &9+ 2.5 armor bonus'
 - ''
-- '&4✦ &7Particle: &cTrue'
-- '&7&oClick to change to False'
+- '&1✦ &7Particle: &9True'
+- '&7&oRight Click to change to False'
 - ''
-- '&c&l---&7&l>>&c&l-----&7&l<<&c&l---'
-- '&8Signed by: &4%player%'
-material: LEATHER_HELMET
+- '&9&l---&7&l>>&9&l-----&7&l<<&9&l---'
+- '&8Signed by: &1%player%'
+material: LEATHER_LEGGINGS
 glow: false
 disableStack: false
 keepItemOnDeath: false
@@ -67,9 +67,9 @@ activators:
     requiredItems: {}
     requiredExecutableItems: {}
     detailedSlots:
-    - 39
+    - 37
     commands:
-    - effect give %player% minecraft:speed 2 3 true
+    - effect give %player% minecraft:haste 2 2 true
     - execute at %player% run particle minecraft:flame ~ ~3 ~ 0.5 0.5 0.5 0.001 10
       normal
     playerConditions: {}
@@ -105,7 +105,7 @@ activators:
     requiredExecutableItems: {}
     detailedSlots: []
     commands:
-    - ei giveslot %player% Prem_EpicHelmet-particlesOFF 1 %slot%
+    - ei giveslot %player% Prem_EpicLeggings-particlesOFF_v1_8 1 %slot%
     playerConditions: {}
     worldConditions: {}
     itemConditions: {}
@@ -113,13 +113,13 @@ activators:
     placeholdersConditions: {}
     variablesModification: {}
 recognitions: []
-armorColor: 14031903
+armorColor: 5135577
 attributes:
   attribute1:
-    attribute: GENERIC_MAX_HEALTH
+    attribute: GENERIC_ARMOR
     operation: ADD_NUMBER
-    amount: 2.0
-    slot: HEAD
+    amount: 5.0
+    slot: LEGS
     uuid: aace69d0-38e6-412a-92c8-12632e77d140
 config_5: true
 config_update: true
