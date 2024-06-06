@@ -27,11 +27,6 @@ cancelEventIfNoPerm: false
 cancelEventIfNotOwner: false
 disabledWorlds: []
 recognitions: []
-nbt:
-  '0':
-    key: Damage
-    type: INT
-    value: 0
 config_5: true
 config_update: true
 dropOptions:
@@ -101,7 +96,7 @@ activators:
     typeTarget: NO_TYPE_TARGET
     usageModification: 0
     cancelEvent: false
-    silenceOutput: false
+    silenceOutput: true
     autoUpdateItem: false
     cooldownOptions:
       cooldown: 0
@@ -143,7 +138,7 @@ activators:
     option: PLAYER_CUSTOM_LAUNCH
     usageModification: 0
     cancelEvent: false
-    silenceOutput: false
+    silenceOutput: true
     autoUpdateItem: false
     cooldownOptions:
       cooldown: 0
@@ -207,7 +202,7 @@ activators:
     option: PLAYER_CUSTOM_LAUNCH
     usageModification: 0
     cancelEvent: false
-    silenceOutput: false
+    silenceOutput: true
     autoUpdateItem: false
     cooldownOptions:
       cooldown: 0
@@ -300,7 +295,7 @@ activators:
     option: PLAYER_CUSTOM_LAUNCH
     usageModification: 0
     cancelEvent: false
-    silenceOutput: false
+    silenceOutput: TRUE
     autoUpdateItem: false
     cooldownOptions:
       cooldown: 0
@@ -489,7 +484,7 @@ activators:
     option: LOOP
     usageModification: 0
     cancelEvent: false
-    silenceOutput: false
+    silenceOutput: TRUE
     autoUpdateItem: false
     cooldownOptions:
       cooldown: 0

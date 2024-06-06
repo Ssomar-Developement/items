@@ -1,8 +1,8 @@
-name: '&aSpeedy Boots'
+name: '&aSpeedy Helmet'
 lore:
 - '&7Full Set Bonus:'
 - '&7- Makes the user run faster!'
-material: DIAMOND_BOOTS
+material: DIAMOND_HELMET
 glow: false
 disableStack: false
 keepItemOnDeath: false
@@ -13,6 +13,11 @@ storeItemInfo: false
 unbreakable: false
 usage: 0
 usageLimit: -1
+cancelEventIfNoPerm: false
+disabledWorlds: []
+recognitions: []
+config_5: true
+config_update: true
 dropOptions:
   glowDrop: false
   glowDropColor: WHITE
@@ -33,8 +38,6 @@ giveFirstJoin:
   giveFirstJoinAmount: 1
   giveFirstJoinSlot: 0
 restrictions: {}
-cancelEventIfNoPerm: false
-disabledWorlds: []
 variables: {}
 activators:
   activator0:
@@ -73,20 +76,20 @@ activators:
     playerConditions:
       ifHasExecutableItems:
         CHESTPLATE:
-          executableItem: ARMOR2
+          executableItem: Prem_Speedy_02_v1_8__1_20_4
           amount: 1
           detailedSlots:
           - 38
         LEGGINGS:
-          executableItem: ARMOR3
+          executableItem: Prem_Speedy_03_v1_8__1_20_4
           amount: 1
           detailedSlots:
           - 37
-        HELMET:
-          executableItem: ARMOR1
+        BOOTS:
+          executableItem: Prem_Speedy_04_v1_8__1_20_4
           amount: 1
           detailedSlots:
-          - 39
+          - 36
       ifHasExecutableItemsMsg: ''
     worldConditions: {}
     itemConditions: {}
@@ -132,7 +135,6 @@ activators:
     customConditions: {}
     placeholdersConditions: {}
     variablesModification: {}
-recognitions: []
 displayConditions:
   playerConditions: {}
   worldConditions: {}
@@ -144,6 +146,4 @@ armorTrim:
   enableArmorTrim: false
   trimMaterial: DIAMOND
   pattern: EYE
-config_5: true
-config_update: true
 config_5_98: true

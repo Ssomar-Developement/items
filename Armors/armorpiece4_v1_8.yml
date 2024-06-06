@@ -5,14 +5,14 @@ lore:
 - '&%var_2%[2] Chestplate'
 - '&%var_3%[3] Leggings'
 - '&%var_4%[4] Boots'
-material: DIAMOND_CHESTPLATE
+material: DIAMOND_BOOTS
 glow: false
 disableStack: false
 keepItemOnDeath: false
 canBeUsedOnlyByTheOwner: false
 storeItemInfo: false
 unbreakable: false
-usage: 1
+usage: 0
 usageLimit: -1
 cancelEventIfNoPerm: false
 cancelEventIfNotOwner: false
@@ -29,7 +29,7 @@ hiders:
   hideUnbreakable: false
   hideAttributes: false
   hidePotionEffects: false
-  hideUsage: true
+  hideUsage: false
 enchantments: {}
 giveFirstJoin:
   giveFirstJoin: false
@@ -38,7 +38,7 @@ giveFirstJoin:
 restrictions: {}
 variables:
   chest:
-    variableName: headvar
+    variableName: chestvar
     type: STRING
     default: '0'
   legs:
@@ -46,7 +46,7 @@ variables:
     type: STRING
     default: '0'
   boots:
-    variableName: bootsvar
+    variableName: headvar
     type: STRING
     default: '0'
   var3:
@@ -126,7 +126,7 @@ activators:
     - 33
     - 34
     - 35
-    - 36
+    - 38
     - 37
     - 39
     - 40
@@ -139,7 +139,7 @@ activators:
       plchCdt0:
         type: PLAYER_STRING
         comparator: DIFFERENT
-        part1: '%var_1%'
+        part1: '%var_4%'
         part2: '7'
         cancelEventIfNotValid: false
         messageIfNotValid: ''
@@ -147,7 +147,7 @@ activators:
     delayInTick: false
     variablesModification:
       varUpdt0:
-        variableName: '2'
+        variableName: '4'
         type: SET
         modification: '7'
   activator1:
@@ -182,13 +182,13 @@ activators:
       plchCdt0:
         type: PLAYER_STRING
         comparator: DIFFERENT
-        part1: '%var_2%'
+        part1: '%var_4%'
         part2: a
         cancelEventIfNotValid: false
         messageIfNotValid: ''
     variablesModification:
       varUpdt0:
-        variableName: '2'
+        variableName: '4'
         type: SET
         modification: a
   head1:
@@ -218,7 +218,7 @@ activators:
     playerConditions:
       ifHasExecutableItems:
         hasExecutableItem0:
-          executableItem: armorpiece1
+          executableItem: armorpiece1_v1_8
           amount: 1
           detailedSlots:
           - 39
@@ -272,7 +272,7 @@ activators:
     playerConditions:
       ifHasNotExecutableItems:
         hasNotExecutableItem0:
-          executableItem: armorpiece1
+          executableItem: armorpiece1_v1_8
           amount: 1
           detailedSlots:
           - 39
@@ -326,7 +326,7 @@ activators:
     playerConditions:
       ifHasExecutableItems:
         hasExecutableItem0:
-          executableItem: armorpiece3
+          executableItem: armorpiece3_v1_8
           amount: 1
           detailedSlots:
           - 37
@@ -380,7 +380,7 @@ activators:
     playerConditions:
       ifHasNotExecutableItems:
         hasNotExecutableItem0:
-          executableItem: armorpiece3
+          executableItem: armorpiece3_v1_8
           amount: 1
           detailedSlots:
           - 37
@@ -407,7 +407,7 @@ activators:
         variableName: '3'
         type: SET
         modification: '7'
-  boots1:
+  chest1:
     name: '&eActivator'
     option: LOOP
     usageModification: 0
@@ -434,10 +434,10 @@ activators:
     playerConditions:
       ifHasExecutableItems:
         hasExecutableItem0:
-          executableItem: armorpiece4
+          executableItem: armorpiece2_v1_8
           amount: 1
           detailedSlots:
-          - 36
+          - 38
       ifHasExecutableItemsMsg: ''
     worldConditions: {}
     itemConditions: {}
@@ -446,7 +446,7 @@ activators:
       plchCdt0:
         type: PLAYER_STRING
         comparator: DIFFERENT
-        part1: '%var_bootsvar%'
+        part1: '%var_chestvar%'
         part2: '1'
         cancelEventIfNotValid: false
         messageIfNotValid: ''
@@ -454,14 +454,14 @@ activators:
     delayInTick: false
     variablesModification:
       varUpdt1:
-        variableName: bootsvar
+        variableName: chestvar
         type: SET
         modification: '1'
       varUpdt0:
-        variableName: '4'
+        variableName: '2'
         type: SET
         modification: a
-  boots2:
+  chest2:
     name: '&eActivator'
     option: LOOP
     usageModification: 0
@@ -488,10 +488,10 @@ activators:
     playerConditions:
       ifHasNotExecutableItems:
         hasNotExecutableItem0:
-          executableItem: armorpiece4
+          executableItem: armorpiece2_v1_8
           amount: 1
           detailedSlots:
-          - 36
+          - 38
       ifHasNotExecutableItemsMsg: ''
     worldConditions: {}
     itemConditions: {}
@@ -500,7 +500,7 @@ activators:
       plchCdt0:
         type: PLAYER_STRING
         comparator: DIFFERENT
-        part1: '%var_bootsvar%'
+        part1: '%var_chestvar%'
         part2: '0'
         cancelEventIfNotValid: false
         messageIfNotValid: ''
@@ -508,11 +508,11 @@ activators:
     delayInTick: false
     variablesModification:
       varUpdt1:
-        variableName: bootsvar
+        variableName: chestvar
         type: SET
         modification: '0'
       varUpdt0:
-        variableName: '4'
+        variableName: '2'
         type: SET
         modification: '7'
   activator2:
@@ -563,7 +563,7 @@ activators:
         type: SET
         modification: '0'
       varUpdt6:
-        variableName: bootsvar
+        variableName: chestvar
         type: SET
         modification: '0'
       varUpdt1:
