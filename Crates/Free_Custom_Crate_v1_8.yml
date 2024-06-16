@@ -1,30 +1,30 @@
-name: '&6✪  &e&lLotery item &6✪'
+name: '&7&l(&e&l❖&7&l)>> &7&oEpic box'
 lore:
-- '&8&m------------------------------'
-- '&7'
-- '&6➤ &e&oClick to execute me !'
-- '&7'
-- '&7&oInfo:'
-- '&6» &a33% &eNothing :('
-- '&6» &a33% &e5 Diamonds'
-- '&6» &a33% &eEffect strenght 2 (30 secs)'
-- '&7'
-- '&8&m------------------------------'
-material: RABBIT_FOOT
+- '&f'
+- '&8&l»&7&l&m----------------&8&l«'
+- '&e     Click to open !'
+- '&f'
+- '&7&oLoots:'
+- '&a   20% &e20 gold ingots'
+- '&a   15% &215 emeralds'
+- '&a   40% &810 coal'
+- '&a   25% &b5 diamonds'
+- '&8&l»&7&l&m----------------&8&l«'
+- '&f'
+material: CHEST
 glow: false
 disableStack: false
-keepItemOnDeath: true
+keepItemOnDeath: false
 canBeUsedOnlyByTheOwner: false
 storeItemInfo: false
 unbreakable: false
-usage: -1
+usage: 1
 usageLimit: -1
 cancelEventIfNoPerm: false
 cancelEventIfNotOwner: false
 disabledWorlds: []
 recognitions: []
 config_5: true
-config_update: true
 onlyOwnerBlackListedActivators: []
 isDurabilityBasedOnUsage: false
 dropOptions:
@@ -57,7 +57,7 @@ activators:
     usageModification: -1
     cancelEvent: false
     noActivatorRunIfTheEventIsCancelled: false
-    silenceOutput: false
+    silenceOutput: true
     autoUpdateItem: false
     updateName: true
     updateLore: true
@@ -66,7 +66,7 @@ activators:
     updateEnchants: false
     updateCustomModelData: false
     cooldownOptions:
-      cooldown: 600
+      cooldown: 0
       isCooldownInTicks: false
       cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
       displayCooldownMessage: true
@@ -87,21 +87,44 @@ activators:
     requiredMagics: {}
     detailedSlots:
     - -1
-    - 40
     commands:
-    - SENDMESSAGE §6✪ §eGood job §a%player% §e! You have execute the %item% !
-    - DELAY 1
-    - SENDMESSAGE §6✪ §eOPENING §a3 §esecs!
-    - DELAY 1
-    - SENDMESSAGE §6✪ §eOPENING §a2 §esecs!
-    - DELAY 1
-    - SENDMESSAGE §6✪ §eOPENING §a1 §esec!
-    - DELAY 1
+    - SENDMESSAGE You have executed %item%
+    - execute at %player% run playsound minecraft:entity.firework_rocket.launch voice
+      %player%
+    - title %player% times 0 60 0
+    - title %player% title {"text":"&e&l\"You have executed"}
+    - title %player% subtitle {"text":"&e&lMoney Pouch - Tier I"}
+    - DELAY 2
+    - title %player% title {"text":"&c&lRolling"}
+    - title %player% subtitle {"text":"&2&l$ &k&l2 3 4 5 6 7"}
+    - execute at %player% run playsound minecraft:entity.experience_orb.pickup voice
+      %player%
+    - 'LOOP START: 30'
+    - DELAYTICK 2
+    - execute at %player% run playsound minecraft:block.note_block.bass ambient %player%
+    - LOOP END
     - 'RANDOM RUN: 1'
-    - SENDMESSAGE §6✪ §cNOTHING :(
-    - give %player% diamond 5 // §6✪ §eYou have earn §a5 Diamonds
-    - effect give %player% strength 30 1 // §6✪ §eYou are now boost with §astrength
-      2 §efor 30 seconds
+    - 'LOOP START: 20'
+    - title %player% times 0 60 0 +++ title %player% title {"text":"20 GOLD INGOTS
+      ","color":"gold"}+++ title %player% subtitle {"text":""} +++ execute at %player%
+      run playsound minecraft:entity.villager.yes voice %player% +++ give %player%
+      gold_ingot 20
+    - LOOP END
+    - 'LOOP START: 15'
+    - title %player% times 0 60 0 +++ title %player% title {"text":"15 EMERALDS ","color":"green"}+++
+      title %player% subtitle {"text":""} +++ execute at %player% run playsound minecraft:entity.villager.yes
+      voice %player% +++ give %player% emerald 15
+    - LOOP END
+    - 'LOOP START: 40'
+    - title %player% times 0 60 0 +++ title %player% title {"text":"10 COAL ","color":"gray"}+++
+      title %player% subtitle {"text":""} +++ execute at %player% run playsound minecraft:entity.villager.no
+      voice %player% +++ give %player% coal 10
+    - LOOP END
+    - 'LOOP START: 25'
+    - title %player% times 0 60 0 +++ title %player% title {"text":"5 DIAMONDS ","color":"blue"}+++
+      title %player% subtitle {"text":""} +++ execute at %player% run playsound minecraft:entity.villager.yes
+      voice %player% +++ give %player% diamond 5
+    - LOOP END
     - RANDOM END
     playerConditions: {}
     worldConditions: {}
@@ -121,11 +144,5 @@ food:
   isMeat: false
   canAlwaysEat: false
   eatSeconds: 0
-attributes:
-  attribute1:
-    attribute: GENERIC_MOVEMENT_SPEED
-    operation: ADD_NUMBER
-    amount: 0.1
-    slot: HAND
-    uuid: 8774b141-8029-41c3-907f-a1f6b8769500
-customModelData: 4
+attributes: {}
+config_update: true

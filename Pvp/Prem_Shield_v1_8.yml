@@ -39,7 +39,7 @@ activators:
     option: PLAYER_SELECT_THE_EI
     usageModification: 0
     cancelEvent: false
-    silenceOutput: false
+    silenceOutput: true
     autoUpdateItem: false
     cooldownOptions:
       cooldown: 0
@@ -56,10 +56,9 @@ activators:
     otherEICooldowns: {}
     requiredItems: {}
     requiredExecutableItems: {}
-    detailedSlots:
-    - 40
-    - -1
+    detailedSlots: []
     commands:
+    - SENDMESSAGE &a select
     - execute at %player% run summon armor_stand ~ ~ ~ {DisabledSlots:4144959,Invulnerable:1b,ShowArms:1b,Marker:1b,Invisible:1b,Tags:["%player_uuid%"]}
     - execute at %player% run summon armor_stand ~ ~ ~ {DisabledSlots:4144959,Invulnerable:1b,ShowArms:1b,Invisible:1b,Tags:["%player_uuid%1"],Pose:{RightArm:[90f,270f,0f]},HandItems:[{id:"minecraft:shield",Count:1b},{}]}
     - execute at %player% run summon armor_stand ~ ~ ~ {DisabledSlots:4144959,Invulnerable:1b,ShowArms:1b,Invisible:1b,Tags:["%player_uuid%2"],Pose:{RightArm:[90f,90f,0f]},HandItems:[{id:"minecraft:shield",Count:1b},{}]}
@@ -89,7 +88,7 @@ activators:
     option: LOOP
     usageModification: 0
     cancelEvent: false
-    silenceOutput: false
+    silenceOutput: true
     autoUpdateItem: false
     cooldownOptions:
       cooldown: 0
@@ -136,7 +135,7 @@ activators:
     option: PLAYER_DESELECT_THE_EI
     usageModification: 0
     cancelEvent: false
-    silenceOutput: false
+    silenceOutput: true
     autoUpdateItem: false
     cooldownOptions:
       cooldown: 0
@@ -172,7 +171,7 @@ activators:
     option: PLAYER_DESELECT_THE_EI
     usageModification: 0
     cancelEvent: false
-    silenceOutput: false
+    silenceOutput: true
     autoUpdateItem: false
     cooldownOptions:
       cooldown: 0
@@ -208,7 +207,7 @@ activators:
     option: PLAYER_DEATH
     usageModification: 0
     cancelEvent: false
-    silenceOutput: false
+    silenceOutput: true
     autoUpdateItem: false
     cooldownOptions:
       cooldown: 0
@@ -246,7 +245,7 @@ activators:
     detailedClick: RIGHT_OR_LEFT
     usageModification: 0
     cancelEvent: false
-    silenceOutput: false
+    silenceOutput: true
     autoUpdateItem: false
     cooldownOptions:
       cooldown: 0
@@ -281,7 +280,7 @@ activators:
     option: PLAYER_DROP_THE_EI
     usageModification: 0
     cancelEvent: false
-    silenceOutput: false
+    silenceOutput: true
     autoUpdateItem: false
     cooldownOptions:
       cooldown: 0

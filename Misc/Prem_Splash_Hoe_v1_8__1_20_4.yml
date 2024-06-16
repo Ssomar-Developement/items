@@ -1,8 +1,13 @@
-name: '&4&l>> &fBooooooom &4<<'
+name: '&8&l>> &fHoe Splash &8l<<'
 lore:
-- '&7Click and &crun !'
-material: TNT
-glow: true
+- '&7Launch an invisible projectile'
+- '&8Require: &aProtocolLib'
+- '&7And make a splash animation'
+- '&7when a block is hit !'
+- ''
+- '&7&oCreated by: &fSpecial70'
+material: IRON_HOE
+glow: false
 disableStack: false
 keepItemOnDeath: false
 canBeUsedOnlyByTheOwner: false
@@ -10,6 +15,7 @@ storeItemInfo: false
 unbreakable: false
 usage: 0
 usageLimit: -1
+durability: 250
 dropOptions:
   glowDrop: false
   glowDropColor: WHITE
@@ -29,23 +35,11 @@ restrictions: {}
 cancelEventIfNoPerm: false
 cancelEventIfNotOwner: false
 disabledWorlds: []
-variables:
-  x:
-    variableName: x
-    type: NUMBER
-    default: 0.0
-  y:
-    variableName: y
-    type: NUMBER
-    default: 0.0
-  z:
-    variableName: z
-    type: NUMBER
-    default: 0.0
+variables: {}
 activators:
-  activator2:
+  activator1:
     name: '&eActivator'
-    option: PLAYER_ALL_CLICK
+    option: PLAYER_RIGHT_CLICK
     typeTarget: NO_TYPE_TARGET
     usageModification: 0
     cancelEvent: false
@@ -70,32 +64,23 @@ activators:
       errorMessage: ''
     detailedSlots:
     - -1
-    commands: []
+    commands:
+    - 'LOOP START: 5'
+    - LAUNCH DEFAULT_INVISIBLE_ARROW_NO_GRAVITY_SPEED
+    - DELAYTICK 1
+    - LOOP END
     playerConditions: {}
     worldConditions: {}
     itemConditions: {}
     customConditions: {}
     placeholdersConditions: {}
-    variablesModification:
-      varModif2:
-        variableName: z
-        type: SET
-        modification: '%z%'
-      varModif1:
-        variableName: y
-        type: SET
-        modification: '%y%'
-      varModif0:
-        variableName: x
-        type: SET
-        modification: '%x%'
-  activator1:
+    variablesModification: {}
+  activator2:
     name: '&eActivator'
-    option: PLAYER_ALL_CLICK
-    typeTarget: NO_TYPE_TARGET
-    usageModification: -1
+    option: PROJECTILE_HIT_BLOCK
+    usageModification: 0
     cancelEvent: false
-    silenceOutput: false
+    silenceOutput: true
     autoUpdateItem: false
     cooldownOptions:
       cooldown: 0
@@ -114,21 +99,24 @@ activators:
       errorMessage: ''
     requiredExecutableItems:
       errorMessage: ''
-    detailedSlots:
-    - -1
+    detailedSlots: []
     commands:
-    - 'LOOP START: 50'
-    - execute at %player% run particle witch %var_x% %var_y% %var_z% 10 0.1 10 0 300
-    - execute at %player% run particle soul_fire_flame %var_x% %var_y%+10 %var_z%
-      0.1 10 0.1 0 300
-    - DELAYTICK 2
-    - LOOP END
-    - execute at %player% run summon fireball %var_x% %var_y%+50 %var_z% {ExplosionPower:10b,power:[0.0,-0.2,0.0]}
+    - execute at %projectile_uuid% if block ~ ~ ~ water run particle block water ~ ~ ~ .1 2 .1 0.3 50
+    - execute at %projectile_uuid% if block ~ ~ ~ lava run particle block lava ~ ~ ~ .1 2 .1 0.3 50
+    - execute at %projectile_uuid% if block ~ ~ ~ air run particle block %block_lower% ~ ~ ~ .1 2 .1 0.3 50
+    - execute at %projectile_uuid% run kill %projectile_uuid%
     playerConditions: {}
     worldConditions: {}
     itemConditions: {}
     customConditions: {}
     placeholdersConditions: {}
+    mustBeAProjectileLaunchWithTheSameEI: true
+    detailedBlocks:
+      blocks: []
+      cancelEventIfNotValid: false
+      messageIfNotValid: ''
+    blockCommands: []
+    blockConditions: {}
     variablesModification: {}
 recognitions: []
 attributes: {}

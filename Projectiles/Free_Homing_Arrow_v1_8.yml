@@ -1,21 +1,21 @@
-name: '&4&l>> &fChecker &4&l<<'
+name: '&3☄ &b&lHoming arrow / firework &3☄'
 lore:
-- '&7Take the item in your hand'
-- '&7If a player is in a radius of'
-- '&720 around you, the item will glow'
-- '&7and send you a message !'
-- ''
-- '&7&oCreated by: &fSpecial70'
-material: GLASS
+- '&8&m------------------------'
+- '&7'
+- '&3➤ &b&oNo need to be a pro player !'
+- '&7&o(Use fireworks, it''s more visual)'
+- '&7&o(fireworks: offhand)'
+- '&7'
+- '&8&m------------------------'
+material: CROSSBOW
 glow: false
 disableStack: false
 keepItemOnDeath: false
 canBeUsedOnlyByTheOwner: false
 storeItemInfo: false
 unbreakable: false
-usage: 0
+usage: -1
 usageLimit: -1
-durability: 1561
 dropOptions:
   glowDrop: false
   glowDropColor: WHITE
@@ -39,10 +39,10 @@ variables: {}
 activators:
   activator1:
     name: '&eActivator'
-    option: LOOP
-    usageModification: 0
+    option: PLAYER_LAUNCH_PROJECTILE
+    usageModification: -1
     cancelEvent: false
-    silenceOutput: false
+    silenceOutput: true
     autoUpdateItem: false
     cooldownOptions:
       cooldown: 0
@@ -57,27 +57,31 @@ activators:
       displayCooldownMessage: true
       cancelEventIfInCooldown: false
     otherEICooldowns: {}
-    requiredItems:
-      errorMessage: ''
-    requiredExecutableItems:
-      errorMessage: ''
+    requiredItems: {}
+    requiredExecutableItems: {}
     detailedSlots:
     - -1
     commands:
-    - minecraft:item replace entity %player% weapon.mainhand with glass{PublicBukkitValues:{"executableitems:ei-id":"Prem_PlayerChecker"}}
-    - AROUND 20 false minecraft:item replace entity %player% weapon.mainhand with
-      glass{Enchantments:[{}],PublicBukkitValues:{"executableitems:ei-id":"Prem_PlayerChecker"}}
-      1
-    - AROUND 20 false minecraft:tellraw %player% {"text":"[!] %around_target% is in
-      radius [!]","color":"red","bold":true,"italic":false}
+    - DELAYTICK 10
+    - 'LOOP START: 100'
+    - execute at %projectile_uuid% facing entity @e[distance=..20,sort=nearest,limit=1,name=!%player%,type=!firework_rocket,type=!arrow,type=!item]
+      eyes run tp %projectile_uuid% ~ ~ ~ ~ ~
+    - DELAYTICK 1
+    - execute at %projectile_uuid% as %projectile_uuid% run tp ^ ^ ^1
+    - LOOP END
     playerConditions: {}
     worldConditions: {}
     itemConditions: {}
     customConditions: {}
     placeholdersConditions: {}
-    delay: 5
-    delayInTick: true
+    detailedEntities: []
+    entityCommands: []
+    entityConditions:
+      ifIsOnTheBlock: {}
+      ifIsNotOnTheBlock: {}
+      ifNotEntityType: []
     variablesModification: {}
 recognitions: []
+attributes: {}
 config_5: true
 config_update: true

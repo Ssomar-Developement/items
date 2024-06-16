@@ -10,8 +10,16 @@ keepItemOnDeath: false
 canBeUsedOnlyByTheOwner: false
 storeItemInfo: false
 unbreakable: false
-usage: 0
+usage: 1
 usageLimit: -1
+cancelEventIfNoPerm: false
+cancelEventIfNotOwner: false
+disabledWorlds: []
+recognitions: []
+config_5: true
+config_update: true
+onlyOwnerBlackListedActivators: []
+isDurabilityBasedOnUsage: false
 dropOptions:
   glowDrop: false
   glowDropColor: WHITE
@@ -21,17 +29,33 @@ hiders:
   hideUnbreakable: false
   hideAttributes: false
   hidePotionEffects: false
-  hideUsage: false
+  hideUsage: true
+  hideDestroys: false
+  hidePlacedOn: false
+  hideDye: false
+  hideArmorTrim: false
 enchantments: {}
 giveFirstJoin:
   giveFirstJoin: false
   giveFirstJoinAmount: 1
   giveFirstJoinSlot: 0
 restrictions: {}
-cancelEventIfNoPerm: false
-cancelEventIfNotOwner: false
-disabledWorlds: []
+cancelEventIfNoPermission: false
+whitelistedWorlds: []
 variables: {}
+displayConditions:
+  playerConditions: {}
+  worldConditions: {}
+  itemConditions: {}
+  placeholdersConditions: {}
+  enableFeature: false
+food:
+  nutrition: 1
+  saturation: 1
+  isMeat: false
+  canAlwaysEat: false
+  eatSeconds: 1
+attributes: {}
 activators:
   activator1:
     name: '&eActivator'
@@ -39,30 +63,46 @@ activators:
     typeTarget: NO_TYPE_TARGET
     usageModification: 0
     cancelEvent: false
+    noActivatorRunIfTheEventIsCancelled: false
     silenceOutput: false
     autoUpdateItem: false
+    updateName: true
+    updateLore: true
+    updateDurability: false
+    updateAttributes: false
+    updateEnchants: false
+    updateCustomModelData: false
+    updateArmorSettings: false
     cooldownOptions:
       cooldown: 0
       isCooldownInTicks: false
       cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
       displayCooldownMessage: false
       cancelEventIfInCooldown: false
+      pauseWhenOffline: false
+      pausePlaceholdersConditions: {}
     globalCooldownOptions:
       cooldown: 0
       isCooldownInTicks: false
       cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
       displayCooldownMessage: true
       cancelEventIfInCooldown: false
+      pauseWhenOffline: false
+      pausePlaceholdersConditions: {}
     otherEICooldowns: {}
     requiredItems:
       errorMessage: ''
     requiredExecutableItems:
       errorMessage: ''
+    requiredMagics: {}
     detailedSlots:
     - -1
     commands:
     - LAUNCH SNOWBALL
-    playerConditions: {}
+    playerConditions:
+      ifIsNotInTheAir: true
+      ifIsNotInTheAirMsg: '&4[INVALID CONDITION] &cYou can''t activate this item when
+        you are in the air'
     worldConditions: {}
     itemConditions: {}
     customConditions: {}
@@ -73,25 +113,38 @@ activators:
     option: PLAYER_CUSTOM_LAUNCH
     usageModification: 0
     cancelEvent: false
-    silenceOutput: false
+    noActivatorRunIfTheEventIsCancelled: false
+    silenceOutput: true
     autoUpdateItem: false
+    updateName: true
+    updateLore: true
+    updateDurability: false
+    updateAttributes: false
+    updateEnchants: false
+    updateCustomModelData: false
+    updateArmorSettings: false
     cooldownOptions:
       cooldown: 0
       isCooldownInTicks: false
       cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
       displayCooldownMessage: false
       cancelEventIfInCooldown: false
+      pauseWhenOffline: false
+      pausePlaceholdersConditions: {}
     globalCooldownOptions:
       cooldown: 0
       isCooldownInTicks: false
       cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
       displayCooldownMessage: true
       cancelEventIfInCooldown: false
+      pauseWhenOffline: false
+      pausePlaceholdersConditions: {}
     otherEICooldowns: {}
     requiredItems:
       errorMessage: ''
     requiredExecutableItems:
       errorMessage: ''
+    requiredMagics: {}
     detailedSlots:
     - -1
     commands:
@@ -106,12 +159,5 @@ activators:
     placeholdersConditions: {}
     detailedEntities: []
     entityCommands: []
-    entityConditions:
-      ifIsOnTheBlock: {}
-      ifIsNotOnTheBlock: {}
-      ifNotEntityType: []
+    entityConditions: {}
     variablesModification: {}
-recognitions: []
-attributes: {}
-config_5: true
-config_update: true

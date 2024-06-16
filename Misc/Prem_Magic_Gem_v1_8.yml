@@ -66,8 +66,8 @@ activators:
     cooldownOptions:
       cooldown: 0
       isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
+      cooldownMsg: ''
+      displayCooldownMessage: false
       cancelEventIfInCooldown: false
     globalCooldownOptions:
       cooldown: 0
@@ -77,7 +77,7 @@ activators:
       cancelEventIfInCooldown: false
     otherEICooldowns:
       cd0:
-        executableItem: Prem_Magic_Gem
+        executableItem: Prem_Magic_Gem_v1_8
         activators:
         - ALL
         cooldown: 1
@@ -120,8 +120,8 @@ activators:
     cooldownOptions:
       cooldown: 0
       isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
+      cooldownMsg: ''
+      displayCooldownMessage: false
       cancelEventIfInCooldown: false
     globalCooldownOptions:
       cooldown: 0
@@ -131,7 +131,7 @@ activators:
       cancelEventIfInCooldown: false
     otherEICooldowns:
       cd0:
-        executableItem: Prem_Magic_Gem
+        executableItem: Prem_Magic_Gem_v1_8
         activators:
         - ALL
         cooldown: 1
@@ -211,7 +211,7 @@ activators:
     option: PLAYER_BLOCK_BREAK
     usageModification: 0
     cancelEvent: false
-    silenceOutput: false
+    silenceOutput: true
     autoUpdateItem: false
     cooldownOptions:
       cooldown: 0
@@ -265,7 +265,7 @@ activators:
     option: PLAYER_BLOCK_BREAK
     usageModification: 0
     cancelEvent: false
-    silenceOutput: false
+    silenceOutput: true
     autoUpdateItem: false
     cooldownOptions:
       cooldown: 0
@@ -319,7 +319,7 @@ activators:
     option: LOOP
     usageModification: 0
     cancelEvent: false
-    silenceOutput: false
+    silenceOutput: true
     autoUpdateItem: false
     cooldownOptions:
       cooldown: 0
@@ -341,9 +341,9 @@ activators:
     detailedSlots:
     - 40
     commands:
-    - effect give %player% jump_boost 2 2 true
-    - effect give %player% speed 2 0 true
-    - effect give %player% regeneration 2 0 true
+    - minecraft:effect give %player% jump_boost 2 2 true
+    - minecraft:effect give %player% speed 2 0 true
+    - minecraft:effect give %player% regeneration 2 0 true
     playerConditions: {}
     worldConditions: {}
     itemConditions: {}
