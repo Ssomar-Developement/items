@@ -69,7 +69,7 @@ activators:
       execute at @e[type=item,distance=..2] run data merge entity @e[distance=..0.01,sort=nearest,limit=1]
       {PickupDelay:0}
     - execute at %player% positioned %block_x_int% %block_y_int% %block_z_int% run
-      tp @e[type=item,distance=..2] %x% %y% %z%
+      minecraft:tp @e[type=item,distance=..2] %x% %y% %z%
     playerConditions: {}
     worldConditions: {}
     itemConditions: {}
