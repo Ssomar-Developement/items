@@ -182,7 +182,7 @@ activators:
         messageIfNotValid: ''
     detailedEntities: []
     entityCommands:
-    - execute at %player% as %projectile_uuid% run tp %projectile_uuid% ^ ^1.6 ^3
+    - execute at %player% as %projectile_uuid% run minecraft:tp %projectile_uuid% ^ ^1.6 ^3
     - execute at %projectile_uuid% run particle flame ~ ~ ~ 0.1 0.1 0.1 0.2 10
     - execute at %projectile_uuid% run particle explosion ~ ~ ~ 0.1 0.1 0.1 0.2 3
     - execute at %projectile_uuid% run playsound entity.blaze.shoot ambient @a[distance=..5]
@@ -248,17 +248,17 @@ activators:
     entityCommands:
     - execute at %player% run playsound entity.blaze.shoot ambient %player%
     - execute at %player% run summon armor_stand ^ ^1.6 ^2 {NoGravity:1b,Silent:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["%projectile_uuid%"]}
-    - execute at %player% as @e[tag=%projectile_uuid%] run tp @e[tag=%projectile_uuid%]
+    - execute at %player% as @e[tag=%projectile_uuid%] run minecraft:tp @e[tag=%projectile_uuid%]
       ^ ^1.6 ^2 ~ ~
-    - execute at @e[tag=%projectile_uuid%] as @e[tag=%projectile_uuid%] run tp ^ ^
+    - execute at @e[tag=%projectile_uuid%] as @e[tag=%projectile_uuid%] run minecraft:tp ^ ^
       ^1
-    - execute at @e[tag=%projectile_uuid%] as %projectile_uuid% run tp %projectile_uuid%
+    - execute at @e[tag=%projectile_uuid%] as %projectile_uuid% run minecraft:tp %projectile_uuid%
       ~ ~ ~
     - DELAYTICK 2
     - 'LOOP START: 20'
-    - execute at @e[tag=%projectile_uuid%] as @e[tag=%projectile_uuid%] run tp ^ ^
+    - execute at @e[tag=%projectile_uuid%] as @e[tag=%projectile_uuid%] run minecraft:tp ^ ^
       ^1
-    - execute at @e[tag=%projectile_uuid%] as %projectile_uuid% run tp %projectile_uuid%
+    - execute at @e[tag=%projectile_uuid%] as %projectile_uuid% run minecraft:tp %projectile_uuid%
       ~ ~ ~
     - execute at @e[tag=%projectile_uuid%] run particle firework ^ ^ ^ 0.01 0.01 0.01
       0 1
@@ -274,15 +274,15 @@ activators:
       entity.generic.explode ambient @a[distance=..20,tag=!%projectile_uuid%] <+>
       execute at %around_target_uuid% run particle explosion_emitter ~ ~1 ~ 0.1 0.1
       0.1 0 1 <+> execute at %around_target_uuid% run particle flame ~ ~1 ~ 0.1 0.1
-      0.1 0.5 50 <+> execute at %around_target_uuid% run kill @e[tag=%projectile_uuid%]
-      <+> execute at %around_target_uuid% run kill %projectile_uuid% <+> DAMAGE 20
+      0.1 0.5 50 <+> execute at %around_target_uuid% run minecraft:kill @e[tag=%projectile_uuid%]
+      <+> execute at %around_target_uuid% run minecraft:kill %projectile_uuid% <+> DAMAGE 20
       <+> BURN 30
     - AROUND 0.5 CONDITIONS(%::player_name::%!=%player%) execute at %around_target_uuid% run playsound
       entity.generic.explode ambient @a[distance=..20,tag=!%projectile_uuid%] <+>
       execute at %around_target_uuid% run particle explosion_emitter ~ ~1 ~ 0.1 0.1
       0.1 0 1 <+> execute at %around_target_uuid% run particle flame ~ ~1 ~ 0.1 0.1
-      0.1 0.5 50 <+> execute at %around_target_uuid% run kill @e[tag=%projectile_uuid%]
-      <+> execute at %around_target_uuid% run kill %projectile_uuid% <+> DAMAGE 20
+      0.1 0.5 50 <+> execute at %around_target_uuid% run minecraft:kill @e[tag=%projectile_uuid%]
+      <+> execute at %around_target_uuid% run minecraft:kill %projectile_uuid% <+> DAMAGE 20
       <+> BURN 30
     - DELAYTICK 1
     - LOOP END
@@ -348,37 +348,37 @@ activators:
     - execute at %player% run summon armor_stand ~ ~ ~ {DisabledSlots:786432,NoGravity:1b,Silent:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["%projectile_uuid%e","%projectile_uuid%g"],ArmorItems:[{},{},{},{id:"minecraft:player_head",Count:1b,tag:{display:{Name:"{\"text\":\"Orb
       (Lime)\"}"},SkullOwner:{Id:[I;-1184607709,-2103752677,-1465363347,1565039543],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjAyYTExNjkzMDlmMDVlZjJmMDYxYjFmYTBmZTIyNWYyOWQ3M2EyNGY4ZjA3Y2NjMmE3MDVkZWVhY2EwNjlkMSJ9fX0="}]}}}}]}
     - 'LOOP START: 60'
-    - execute at %player% as @e[tag=%projectile_uuid%a] run tp @e[tag=%projectile_uuid%a]
+    - execute at %player% as @e[tag=%projectile_uuid%a] run minecraft:tp @e[tag=%projectile_uuid%a]
       ~ ~-1 ~
-    - execute at @e[tag=%projectile_uuid%a] as %projectile_uuid% run tp ~ ~ ~
-    - execute at @e[tag=%projectile_uuid%a] as @e[tag=%projectile_uuid%a] run tp @e[tag=%projectile_uuid%a]
+    - execute at @e[tag=%projectile_uuid%a] as %projectile_uuid% run minecraft:tp ~ ~ ~
+    - execute at @e[tag=%projectile_uuid%a] as @e[tag=%projectile_uuid%a] run minecraft:tp @e[tag=%projectile_uuid%a]
       ~ ~ ~ ~20 ~
-    - execute at @e[tag=%projectile_uuid%a] as @e[tag=%projectile_uuid%b] run tp ^
+    - execute at @e[tag=%projectile_uuid%a] as @e[tag=%projectile_uuid%b] run minecraft:tp ^
       ^ ^1
-    - execute at @e[tag=%projectile_uuid%a] as @e[tag=%projectile_uuid%c] run tp ^
+    - execute at @e[tag=%projectile_uuid%a] as @e[tag=%projectile_uuid%c] run minecraft:tp ^
       ^ ^-1
-    - execute at @e[tag=%projectile_uuid%a] as @e[tag=%projectile_uuid%d] run tp ^1
+    - execute at @e[tag=%projectile_uuid%a] as @e[tag=%projectile_uuid%d] run minecraft:tp ^1
       ^ ^
-    - execute at @e[tag=%projectile_uuid%a] as @e[tag=%projectile_uuid%e] run tp ^-1
+    - execute at @e[tag=%projectile_uuid%a] as @e[tag=%projectile_uuid%e] run minecraft:tp ^-1
       ^ ^
     - DELAYTICK 1
     - LOOP END
     - minecraft:kill @e[tag=%projectile_uuid%f]
-    - execute at %player% as @e[tag=%projectile_uuid%g] run tp @e[tag=%projectile_uuid%g]
+    - execute at %player% as @e[tag=%projectile_uuid%g] run minecraft:tp @e[tag=%projectile_uuid%g]
       ~ ~ ~ ~ ~
     - 'LOOP START: 3'
-    - execute at @e[tag=%projectile_uuid%g] as @e[tag=%projectile_uuid%g] run tp @e[tag=%projectile_uuid%g]
+    - execute at @e[tag=%projectile_uuid%g] as @e[tag=%projectile_uuid%g] run minecraft:tp @e[tag=%projectile_uuid%g]
       ^ ^ ^2
     - execute at %projectile_uuid% run particle flame ~ ~ ~ 0.5 0.5 0.5 0 10
-    - execute at @e[tag=%projectile_uuid%g] as %projectile_uuid% run tp ~ ~1 ~
+    - execute at @e[tag=%projectile_uuid%g] as %projectile_uuid% run minecraft:tp ~ ~1 ~
     - DELAYTICK 1
     - LOOP END
     - execute at %player% run playsound entity.blaze.shoot ambient %player%
     - 'LOOP START: 17'
-    - execute at @e[tag=%projectile_uuid%g] as @e[tag=%projectile_uuid%g] run tp @e[tag=%projectile_uuid%g]
+    - execute at @e[tag=%projectile_uuid%g] as @e[tag=%projectile_uuid%g] run minecraft:tp @e[tag=%projectile_uuid%g]
       ^ ^ ^2
     - execute at %projectile_uuid% run particle flame ~ ~ ~ 0.5 0.5 0.5 0 10
-    - execute at @e[tag=%projectile_uuid%g] as %projectile_uuid% run tp ~ ~1 ~
+    - execute at @e[tag=%projectile_uuid%g] as %projectile_uuid% run minecraft:tp ~ ~1 ~
     - MOB_AROUND 2 BLACKLIST(ARMOR_STAND) DAMAGE 15 <+> execute at %around_target_uuid%
       run particle flame ~ ~ ~ 0.1 0.1 0.1 0 10 <+> execute at %around_target_uuid%
       run particle explosion_emitter ~ ~ ~ 0.1 0.1 0.1 0 1 <+> execute at %around_target_uuid%

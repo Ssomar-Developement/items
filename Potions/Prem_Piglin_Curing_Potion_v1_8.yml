@@ -64,9 +64,9 @@ activators:
     - execute at %entity_uuid% if entity @e[distance=..0.01,type=zombified_piglin]
       run summon piglin ~ ~ ~
     - execute at %entity_uuid% if entity @e[distance=..0.01,type=zombified_piglin]
-      run tp %entity_uuid% ~ ~-256 ~
+      run minecraft:tp %entity_uuid% ~ ~-256 ~
     - execute at %entity_uuid% if entity @e[distance=..0.01,type=zombified_piglin]
-      run kill %entity_uuid%
+      run minecraft:kill %entity_uuid%
     playerConditions: {}
     worldConditions: {}
     itemConditions: {}
@@ -119,9 +119,9 @@ activators:
     - MOB_AROUND 3 execute at %around_target_uuid% if entity @e[distance=..0.01,type=zombified_piglin]
       run summon piglin ~ ~ ~
     - MOB_AROUND 3 execute at %around_target_uuid% if entity @e[distance=..0.01,type=zombified_piglin]
-      run tp %around_target_uuid% ~ ~-256 ~
+      run minecraft:tp %around_target_uuid% ~ ~-256 ~
     - MOB_AROUND 3 execute at %around_target_uuid% if entity @e[distance=..0.01,type=zombified_piglin]
-      run kill %around_target_uuid%
+      run minecraft:kill %around_target_uuid%
     blockConditions: {}
     variablesModification: {}
 recognitions: []

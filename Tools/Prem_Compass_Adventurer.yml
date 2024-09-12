@@ -151,7 +151,7 @@ activators:
     detailedSlots:
     - 40
     commands:
-    - execute at %player% facing %var_x% %var_y% %var_z% run tp %player% ~ ~ ~ ~ ~
+    - execute at %player% facing %var_x% %var_y% %var_z% run minecraft:tp %player% ~ ~ ~ ~ ~
     - execute at %player% run particle firework %var_x% %var_y% %var_z% 0.1 2 0.1
       0 50 normal %player%
     playerConditions:

@@ -65,9 +65,9 @@ activators:
     - DELAYTICK 10
     - 'LOOP START: 100'
     - execute at %projectile_uuid% facing entity @e[distance=..20,sort=nearest,limit=1,name=!%player%,type=!firework_rocket,type=!arrow,type=!item]
-      eyes run tp %projectile_uuid% ~ ~ ~ ~ ~
+      eyes run minecraft:tp %projectile_uuid% ~ ~ ~ ~ ~
     - DELAYTICK 1
-    - execute at %projectile_uuid% as %projectile_uuid% run tp ^ ^ ^1
+    - execute at %projectile_uuid% as %projectile_uuid% run minecraft:tp ^ ^ ^1
     - LOOP END
     playerConditions: {}
     worldConditions: {}

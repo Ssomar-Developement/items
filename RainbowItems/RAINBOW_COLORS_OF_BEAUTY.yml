@@ -256,23 +256,23 @@ activators:
     detailedEntities: []
     entityCommands:
     - execute at %player% run summon armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["%projectile_uuid%"]}
-    - execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%] run tp @e[type=armor_stand,tag=%projectile_uuid%]
+    - execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%] run minecraft:tp @e[type=armor_stand,tag=%projectile_uuid%]
       ~ ~1 ~ ~-120 ~
     - execute at %player% positioned %x% %y% %z% run playsound entity.player.attack.sweep
       ambient @a[distance=..10]
     - 'LOOP START: 12'
     - execute at @e[type=armor_stand,tag=%projectile_uuid%] as @e[type=armor_stand,tag=%projectile_uuid%]
-      run tp @e[type=armor_stand,tag=%projectile_uuid%] ~ ~ ~ ~20 ~
+      run minecraft:tp @e[type=armor_stand,tag=%projectile_uuid%] ~ ~ ~ ~20 ~
     - execute at @e[type=armor_stand,tag=%projectile_uuid%] run particle sweep_attack
       ^ ^ ^3 .5 .5 .5 0 3
     - execute at @e[type=armor_stand,tag=%projectile_uuid%] as %projectile_uuid% run
-      tp %projectile_uuid% ^ ^ ^3
+      minecraft:tp %projectile_uuid% ^ ^ ^3
     - MOB_AROUND 1 DAMAGE 5
     - AROUND 1 DAMAGE 5
     - DELAYTICK 1
     - LOOP END
     - execute at @e[type=armor_stand,tag=%projectile_uuid%] as @e[type=armor_stand,tag=%projectile_uuid%]
-      run tp @e[type=armor_stand,tag=%projectile_uuid%] ~ 0 ~
+      run minecraft:tp @e[type=armor_stand,tag=%projectile_uuid%] ~ 0 ~
     - minecraft:kill @e[type=armor_stand,tag=%projectile_uuid%]
     - minecraft:kill %projectile_uuid%
     entityConditions: {}
@@ -358,22 +358,22 @@ activators:
     detailedEntities: []
     entityCommands:
     - execute at %player% run summon armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["%projectile_uuid%"]}
-    - execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%] run tp @e[type=armor_stand,tag=%projectile_uuid%]
+    - execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%] run minecraft:tp @e[type=armor_stand,tag=%projectile_uuid%]
       ~ ~1 ~ ~120 ~
     - execute at %player% positioned %x% %y% %z% run playsound entity.player.attack.sweep
       ambient @a[distance=..10]
     - 'LOOP START: 12'
     - execute at @e[type=armor_stand,tag=%projectile_uuid%] as @e[type=armor_stand,tag=%projectile_uuid%]
-      run tp @e[type=armor_stand,tag=%projectile_uuid%] ~ ~ ~ ~-20 ~
+      run minecraft:tp @e[type=armor_stand,tag=%projectile_uuid%] ~ ~ ~ ~-20 ~
     - execute at @e[type=armor_stand,tag=%projectile_uuid%] run particle sweep_attack
       ^ ^ ^3 .5 .5 .5 0 3
     - execute at @e[type=armor_stand,tag=%projectile_uuid%] as %projectile_uuid% run
-      tp %projectile_uuid% ^ ^ ^3
+      minecraft:tp %projectile_uuid% ^ ^ ^3
     - MOB_AROUND 1 DAMAGE 2
     - DELAYTICK 1
     - LOOP END
     - execute at @e[type=armor_stand,tag=%projectile_uuid%] as @e[type=armor_stand,tag=%projectile_uuid%]
-      run tp @e[type=armor_stand,tag=%projectile_uuid%] ~ 0 ~
+      run minecraft:tp @e[type=armor_stand,tag=%projectile_uuid%] ~ 0 ~
     - minecraft:kill @e[type=armor_stand,tag=%projectile_uuid%]
     - minecraft:kill %projectile_uuid%
     entityConditions: {}
@@ -459,22 +459,22 @@ activators:
     detailedEntities: []
     entityCommands:
     - execute at %player% run summon armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["%projectile_uuid%"]}
-    - execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%] run tp @e[type=armor_stand,tag=%projectile_uuid%]
+    - execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%] run minecraft:tp @e[type=armor_stand,tag=%projectile_uuid%]
       ~ ~1 ~ ~120 ~
     - execute at %player% positioned %x% %y% %z% run playsound entity.player.attack.sweep
       ambient @a[distance=..10]
     - 'LOOP START: 12'
     - execute at @e[type=armor_stand,tag=%projectile_uuid%] as @e[type=armor_stand,tag=%projectile_uuid%]
-      run tp @e[type=armor_stand,tag=%projectile_uuid%] ~ ~ ~ ~-20 ~-5
+      run minecraft:tp @e[type=armor_stand,tag=%projectile_uuid%] ~ ~ ~ ~-20 ~-5
     - execute at @e[type=armor_stand,tag=%projectile_uuid%] run particle sweep_attack
       ^ ^ ^3 .5 .5 .5 0 3
     - execute at @e[type=armor_stand,tag=%projectile_uuid%] as %projectile_uuid% run
-      tp %projectile_uuid% ^ ^ ^3
+      minecraft:tp %projectile_uuid% ^ ^ ^3
     - MOB_AROUND 1 DAMAGE 2
     - DELAYTICK 1
     - LOOP END
     - execute at @e[type=armor_stand,tag=%projectile_uuid%] as @e[type=armor_stand,tag=%projectile_uuid%]
-      run tp @e[type=armor_stand,tag=%projectile_uuid%] ~ 0 ~
+      run minecraft:tp @e[type=armor_stand,tag=%projectile_uuid%] ~ 0 ~
     - minecraft:kill @e[type=armor_stand,tag=%projectile_uuid%]
     - minecraft:kill %projectile_uuid%
     entityConditions: {}
@@ -560,22 +560,22 @@ activators:
     detailedEntities: []
     entityCommands:
     - execute at %player% run summon armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["%projectile_uuid%"]}
-    - execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%] run tp @e[type=armor_stand,tag=%projectile_uuid%]
+    - execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%] run minecraft:tp @e[type=armor_stand,tag=%projectile_uuid%]
       ~ ~1 ~ ~-120 ~
     - execute at %player% positioned %x% %y% %z% run playsound entity.player.attack.sweep
       ambient @a[distance=..10]
     - 'LOOP START: 12'
     - execute at @e[type=armor_stand,tag=%projectile_uuid%] as @e[type=armor_stand,tag=%projectile_uuid%]
-      run tp @e[type=armor_stand,tag=%projectile_uuid%] ~ ~ ~ ~20 ~-5
+      run minecraft:tp @e[type=armor_stand,tag=%projectile_uuid%] ~ ~ ~ ~20 ~-5
     - execute at @e[type=armor_stand,tag=%projectile_uuid%] run particle sweep_attack
       ^ ^ ^3 .5 .5 .5 0 3
     - execute at @e[type=armor_stand,tag=%projectile_uuid%] as %projectile_uuid% run
-      tp %projectile_uuid% ^ ^ ^3
+      minecraft:tp %projectile_uuid% ^ ^ ^3
     - MOB_AROUND 1 DAMAGE 2
     - DELAYTICK 1
     - LOOP END
     - execute at @e[type=armor_stand,tag=%projectile_uuid%] as @e[type=armor_stand,tag=%projectile_uuid%]
-      run tp @e[type=armor_stand,tag=%projectile_uuid%] ~ 0 ~
+      run minecraft:tp @e[type=armor_stand,tag=%projectile_uuid%] ~ 0 ~
     - minecraft:kill @e[type=armor_stand,tag=%projectile_uuid%]
     - minecraft:kill %projectile_uuid%
     entityConditions: {}
@@ -661,22 +661,22 @@ activators:
     detailedEntities: []
     entityCommands:
     - execute at %player% run summon armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["%projectile_uuid%"]}
-    - execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%] run tp @e[type=armor_stand,tag=%projectile_uuid%]
+    - execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%] run minecraft:tp @e[type=armor_stand,tag=%projectile_uuid%]
       ~ ~1 ~ ~ ~45
     - execute at %player% positioned %x% %y% %z% run playsound entity.player.attack.sweep
       ambient @a[distance=..10]
     - 'LOOP START: 12'
     - execute at @e[type=armor_stand,tag=%projectile_uuid%] as @e[type=armor_stand,tag=%projectile_uuid%]
-      run tp @e[type=armor_stand,tag=%projectile_uuid%] ~ ~ ~ ~ ~-20
+      run minecraft:tp @e[type=armor_stand,tag=%projectile_uuid%] ~ ~ ~ ~ ~-20
     - execute at @e[type=armor_stand,tag=%projectile_uuid%] run particle sweep_attack
       ^ ^ ^3 .5 .5 .5 0 3
     - execute at @e[type=armor_stand,tag=%projectile_uuid%] as %projectile_uuid% run
-      tp %projectile_uuid% ^ ^ ^3
+      minecraft:tp %projectile_uuid% ^ ^ ^3
     - MOB_AROUND 1 DAMAGE 2
     - DELAYTICK 1
     - LOOP END
     - execute at @e[type=armor_stand,tag=%projectile_uuid%] as @e[type=armor_stand,tag=%projectile_uuid%]
-      run tp @e[type=armor_stand,tag=%projectile_uuid%] ~ 0 ~
+      run minecraft:tp @e[type=armor_stand,tag=%projectile_uuid%] ~ 0 ~
     - minecraft:kill @e[type=armor_stand,tag=%projectile_uuid%]
     - minecraft:kill %projectile_uuid%
     entityConditions: {}
@@ -762,23 +762,23 @@ activators:
     detailedEntities: []
     entityCommands:
     - execute at %player% run summon armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["%projectile_uuid%"]}
-    - execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%] run tp @e[type=armor_stand,tag=%projectile_uuid%]
+    - execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%] run minecraft:tp @e[type=armor_stand,tag=%projectile_uuid%]
       ~ ~1 ~ ~ ~-90
     - execute at %player% positioned %x% %y% %z% run playsound entity.player.attack.sweep
       ambient @a[distance=..10]
     - 'LOOP START: 12'
     - execute at @e[type=armor_stand,tag=%projectile_uuid%] as @e[type=armor_stand,tag=%projectile_uuid%]
-      run tp @e[type=armor_stand,tag=%projectile_uuid%] ~ ~ ~ ~ ~10
+      run minecraft:tp @e[type=armor_stand,tag=%projectile_uuid%] ~ ~ ~ ~ ~10
     - execute at @e[type=armor_stand,tag=%projectile_uuid%] run particle sweep_attack
       ^ ^ ^3 .5 .5 .5 0 3
     - execute at @e[type=armor_stand,tag=%projectile_uuid%] as %projectile_uuid% run
-      tp %projectile_uuid% ^ ^ ^3
+      minecraft:tp %projectile_uuid% ^ ^ ^3
     - MOB_AROUND 1 DAMAGE 2
     - DELAYTICK 1
     - LOOP END
     - minecraft:kill %projectile_uuid%
     - execute at @e[type=armor_stand,tag=%projectile_uuid%] as @e[type=armor_stand,tag=%projectile_uuid%]
-      run tp @e[type=armor_stand,tag=%projectile_uuid%] ~ 0 ~
+      run minecraft:tp @e[type=armor_stand,tag=%projectile_uuid%] ~ 0 ~
     - minecraft:kill @e[type=armor_stand,tag=%projectile_uuid%]
     - minecraft:kill %projectile_uuid%
     entityConditions: {}

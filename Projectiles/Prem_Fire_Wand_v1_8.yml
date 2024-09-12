@@ -127,7 +127,7 @@ activators:
     - execute at %projectile_uuid% run particle minecraft:flame ~ ~ ~ 0.1 0.1 0.1
       0.05 1 force
     - MOB_NEAREST 20 execute as %projectile_uuid% at %projectile_uuid% facing entity
-      %around_target_uuid% eyes run tp ^ ^0.35 ^0.8
+      %around_target_uuid% eyes run minecraft:tp ^ ^0.35 ^0.8
     - DELAYTICK 1
     - LOOP END
     entityConditions: {}

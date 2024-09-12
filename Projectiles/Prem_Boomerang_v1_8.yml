@@ -127,88 +127,88 @@ activators:
     - execute at %projectile_uuid% run summon armor_stand ~0.5 ~-0.5 ~ {NoGravity:1b,CustomName:'{"text":"%player%"}',Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["%projectile_uuid%123"],HandItems:[{id:"minecraft:bamboo",Count:1b},{}]}
     - execute at %player% run summon armor_stand ~ ~ ~ {NoGravity:1b,CustomName:'{"text":"%player%"}',Invulnerable:1b,Invisible:1b,Marker:1b,Tags:["%projectile_uuid%"],ArmorItems:[{},{},{},{}]}
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^0.0
+      run minecraft:tp ^ ^0.2 ^0.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^1.0
+      run minecraft:tp ^ ^0.2 ^1.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^2.0
+      run minecraft:tp ^ ^0.2 ^2.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^3.0
+      run minecraft:tp ^ ^0.2 ^3.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^4.0
+      run minecraft:tp ^ ^0.2 ^4.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^5.0
+      run minecraft:tp ^ ^0.2 ^5.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^6.0
+      run minecraft:tp ^ ^0.2 ^6.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^7.0
+      run minecraft:tp ^ ^0.2 ^7.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^8.0
+      run minecraft:tp ^ ^0.2 ^8.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^9.0
+      run minecraft:tp ^ ^0.2 ^9.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^10.0
+      run minecraft:tp ^ ^0.2 ^10.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^11.0
+      run minecraft:tp ^ ^0.2 ^11.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^12.0
+      run minecraft:tp ^ ^0.2 ^12.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^13.0
+      run minecraft:tp ^ ^0.2 ^13.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^14.0
+      run minecraft:tp ^ ^0.2 ^14.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^13.0
+      run minecraft:tp ^ ^0.2 ^13.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^12.0
+      run minecraft:tp ^ ^0.2 ^12.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^11.0
+      run minecraft:tp ^ ^0.2 ^11.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^10.0
+      run minecraft:tp ^ ^0.2 ^10.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^9.0
+      run minecraft:tp ^ ^0.2 ^9.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^8.0
+      run minecraft:tp ^ ^0.2 ^8.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^7.0
+      run minecraft:tp ^ ^0.2 ^7.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^6.0
+      run minecraft:tp ^ ^0.2 ^6.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^5.0
+      run minecraft:tp ^ ^0.2 ^5.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^4.0
+      run minecraft:tp ^ ^0.2 ^4.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^3.0
+      run minecraft:tp ^ ^0.2 ^3.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^2.0
+      run minecraft:tp ^ ^0.2 ^2.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^1.0
+      run minecraft:tp ^ ^0.2 ^1.0
     playerConditions: {}
     worldConditions: {}
     itemConditions: {}
@@ -218,18 +218,18 @@ activators:
     entityCommands:
     - 'LOOP START: 32'
     - execute as @e[type=minecraft:armor_stand, tag=%projectile_uuid%123] at %projectile_uuid%
-      run tp @s ~ ~0.5 ~
+      run minecraft:tp @s ~ ~0.5 ~
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%123] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%123] run tp @s ~ ~ ~ ~-90 ~
+      tag=%projectile_uuid%123] run minecraft:tp @s ~ ~ ~ ~-90 ~
     - execute as @e[type=minecraft:armor_stand, tag=%projectile_uuid%] at %player%
-      run tp @s ~0.25 ~ ~ ~ 0
+      run minecraft:tp @s ~0.25 ~ ~ ~ 0
     - AROUND 2 CONDITIONS(%::player_name::%!=%player%) false DAMAGE 3
     - MOB_AROUND 2 DAMAGE 5
     - DELAYTICK 1
     - LOOP END
-    - execute in <<%world%>> run kill @e[tag=%projectile_uuid%]
-    - execute in <<%world%>> run kill @e[tag=%projectile_uuid%123]
-    - execute in <<%world%>> run kill %projectile_uuid%
+    - execute in <<%world%>> run minecraft:kill @e[tag=%projectile_uuid%]
+    - execute in <<%world%>> run minecraft:kill @e[tag=%projectile_uuid%123]
+    - execute in <<%world%>> run minecraft:kill %projectile_uuid%
     entityConditions:
       ifIsOnTheBlock: {}
       ifIsNotOnTheBlock: {}

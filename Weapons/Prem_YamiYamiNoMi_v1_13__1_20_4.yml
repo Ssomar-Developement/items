@@ -131,12 +131,12 @@ activators:
     entityCommands:
     - execute at %projectile_uuid% run playsound entity.ender_dragon.flap ambient
       @a[distance=..10]
-    - execute at %player% as %projectile_uuid% run tp ^ ^ ^5
+    - execute at %player% as %projectile_uuid% run minecraft:tp ^ ^ ^5
     - DELAYTICK 1
     - 'LOOP START: 20'
     - execute at %projectile_uuid% run playsound entity.ender_dragon.flap ambient
       @a[distance=..10]
-    - execute at %player% as %projectile_uuid% run tp ^ ^ ^5
+    - execute at %player% as %projectile_uuid% run minecraft:tp ^ ^ ^5
     - AROUND 2 CONDITIONS(%::player_name::%!=%player%) CUSTOMDASH1 %projectile_x% %projectile_y% %projectile_z% <+> DAMAGE
       2
     - MOB_AROUND 3 BLACKLIST(ARMOR_STAND) CUSTOMDASH1 %projectile_x% %projectile_y%
@@ -144,7 +144,7 @@ activators:
     - execute at %projectile_uuid% run particle dust 0 0 0 2 ~ ~ ~ 2.5 2.5 2.5 0 50
     - DELAYTICK 2
     - LOOP END
-    - execute at %player% as %projectile_uuid% run tp ^ ^1 ^6
+    - execute at %player% as %projectile_uuid% run minecraft:tp ^ ^1 ^6
     - execute at %projectile_uuid% run playsound entity.ender_dragon.flap ambient
       @a[distance=..10]
     - AROUND 3 CONDITIONS(%::player_name::%!=%player%) CUSTOMDASH1 %projectile_x% %projectile_y% %projectile_z% <+> DAMAGE
@@ -153,7 +153,7 @@ activators:
       %projectile_z% <+> DAMAGE 1
     - execute at %projectile_uuid% run particle dust 0 0 0 2 ~ ~ ~ 2.5 2.5 2.5 0 50
     - DELAYTICK 2
-    - execute at %player% as %projectile_uuid% run tp ^ ^1.2 ^7
+    - execute at %player% as %projectile_uuid% run minecraft:tp ^ ^1.2 ^7
     - execute at %projectile_uuid% run playsound entity.ender_dragon.flap ambient
       @a[distance=..10]
     - AROUND 3 CONDITIONS(%::player_name::%!=%player%) CUSTOMDASH1 %projectile_x% %projectile_y% %projectile_z% <+> DAMAGE
@@ -162,7 +162,7 @@ activators:
       %projectile_z% <+> DAMAGE 1
     - execute at %projectile_uuid% run particle dust 0 0 0 2 ~ ~ ~ 2.5 2.5 2.5 0 50
     - DELAYTICK 2
-    - execute at %player% as %projectile_uuid% run tp ^ ^1.4 ^8
+    - execute at %player% as %projectile_uuid% run minecraft:tp ^ ^1.4 ^8
     - execute at %projectile_uuid% run playsound entity.ender_dragon.flap ambient
       @a[distance=..10]
     - AROUND 3 CONDITIONS(%::player_name::%!=%player%) CUSTOMDASH1 %projectile_x% %projectile_y% %projectile_z% <+> DAMAGE
@@ -171,7 +171,7 @@ activators:
       %projectile_z% <+> DAMAGE 1
     - execute at %projectile_uuid% run particle dust 0 0 0 2 ~ ~ ~ 2.5 2.5 2.5 0 50
     - DELAYTICK 2
-    - execute at %player% as %projectile_uuid% run tp ^ ^1.6 ^9
+    - execute at %player% as %projectile_uuid% run minecraft:tp ^ ^1.6 ^9
     - execute at %projectile_uuid% run playsound entity.ender_dragon.flap ambient
       @a[distance=..10]
     - AROUND 3 CONDITIONS(%::player_name::%!=%player%) CUSTOMDASH1 %projectile_x% %projectile_y% %projectile_z% <+> DAMAGE
@@ -180,7 +180,7 @@ activators:
       %projectile_z% <+> DAMAGE 1
     - execute at %projectile_uuid% run particle dust 0 0 0 2 ~ ~ ~ 2.5 2.5 2.5 0 50
     - DELAYTICK 2
-    - execute at %player% as %projectile_uuid% run tp ^ ^1.8 ^10
+    - execute at %player% as %projectile_uuid% run minecraft:tp ^ ^1.8 ^10
     - execute at %projectile_uuid% run playsound entity.ender_dragon.flap ambient
       @a[distance=..10]
     - AROUND 3 CONDITIONS(%::player_name::%!=%player%) CUSTOMDASH1 %projectile_x% %projectile_y% %projectile_z% <+> DAMAGE
@@ -189,7 +189,7 @@ activators:
       %projectile_z% <+> DAMAGE 1
     - execute at %projectile_uuid% run particle dust 0 0 0 2 ~ ~ ~ 2.5 2.5 2.5 0 50
     - DELAYTICK 2
-    - execute at %player% as %projectile_uuid% run tp ^ ^2 ^12
+    - execute at %player% as %projectile_uuid% run minecraft:tp ^ ^2 ^12
     - execute at %projectile_uuid% run playsound entity.ender_dragon.flap ambient
       @a[distance=..10]
     - AROUND 3 CONDITIONS(%::player_name::%!=%player%) CUSTOMDASH1 %projectile_x% %projectile_y% %projectile_z% <+> DAMAGE
@@ -432,7 +432,7 @@ activators:
       explosion ~ ~ ~ 0.01 0.01 0.01 0 1
     - execute at %player% run execute at @e[distance=..7,name=!%player%] run playsound
       entity.zombie.break_wooden_door ambient @a[distance=..7]
-    - execute at %player% run kill @e[distance=..7,name=!%player%]
+    - execute at %player% run minecraft:kill @e[distance=..7,name=!%player%]
     - execute at %player% positioned ~ ~1 ~ run particle large_smoke ^0.000 ^0.000
       ^2.000 0 %math_(%rand:5|10%)*0.1% 0 %math_(%rand:5|10%)*0.1% 0
     - execute at %player% positioned ~ ~1 ~ run particle large_smoke ^0.140 ^1.282
@@ -784,7 +784,7 @@ activators:
     - AROUND 5 false CUSTOMDASH1 %x% %y% %z% <+> DELAYTICK 10 <+> DAMAGE 35
     - MOB_AROUND 5 true CUSTOMDASH1 %x% %y% %z% <+> DELAYTICK 10 <+> DAMAGE 35
     - 'LOOP START: 10'
-    - execute at %player% as %projectile_uuid% run tp %projectile_uuid% ^ ^ ^15
+    - execute at %player% as %projectile_uuid% run minecraft:tp %projectile_uuid% ^ ^ ^15
     - DELAYTICK 1
     - LOOP END
     - execute at %player% run playsound entity.generic.explode ambient @a[distance=..15]

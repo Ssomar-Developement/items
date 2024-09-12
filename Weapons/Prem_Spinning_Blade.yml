@@ -132,7 +132,7 @@ activators:
     commands:
     - execute at %player% run summon armor_stand ~ ~ ~ {ShowArms:1b,Marker:1b,Invisible:1b,Tags:["%var_uuid%"],DisabledSlots:4144959,HandItems:[{id:"minecraft:rabbit_foot",count:1,components:{"minecraft:custom_model_data":5}},{}]}
     - 'LOOP START: 100'
-    - execute at @e[tag=%var_uuid%] as @e[tag=%var_uuid%] run tp @e[tag=%var_uuid%]
+    - execute at @e[tag=%var_uuid%] as @e[tag=%var_uuid%] run minecraft:tp @e[tag=%var_uuid%]
       %x% %y% %z% ~40 ~
     - DELAYTICK 1
     - LOOP END

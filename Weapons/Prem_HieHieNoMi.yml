@@ -150,10 +150,10 @@ activators:
     - effect give %player% slowness 1 100 true
     - execute at %player% run playsound block.dispenser.launch ambient %player%
     - execute at %player% run summon armor_stand ^ ^ ^2 {NoGravity:1b,Silent:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["%var_x_int%"]}
-    - execute at %player% as @e[tag=%var_x_int%] run tp @e[tag=%var_x_int%] ~ ~ ~
+    - execute at %player% as @e[tag=%var_x_int%] run minecraft:tp @e[tag=%var_x_int%] ~ ~ ~
       ~ ~
     - 'LOOP START: 20'
-    - execute at @e[tag=%var_x_int%] as @e[tag=%var_x_int%] run tp ^ ^ ^0.5
+    - execute at @e[tag=%var_x_int%] as @e[tag=%var_x_int%] run minecraft:tp ^ ^ ^0.5
     - execute at @e[tag=%var_x_int%] run execute at @e[distance=..2,name=!%player%,type=!armor_stand]
       run particle firework ~ ~ ~ 0.1 0.1 0.1 0.2 1
     - execute at @e[tag=%var_x_int%] as @e[tag=%var_x_int%] run particle soul_fire_flame
@@ -166,7 +166,7 @@ activators:
       ^0.5 ^1.6 ^ 0.01 0.01 0.01 0 1
     - execute at @e[tag=%var_x_int%] as @e[tag=%var_x_int%] run particle firework
       ^-0.5 ^1.6 ^ 0.01 0.01 0.01 0 1
-    - execute at @e[tag=%var_x_int%] as %projectile_uuid% run tp ~ ~ ~
+    - execute at @e[tag=%var_x_int%] as %projectile_uuid% run minecraft:tp ~ ~ ~
     - DELAYTICK 1
     - AROUND 1 CONDITIONS(%::player_name::%!=%player%) DAMAGE 5
     - MOB_AROUND 1 BLACKLIST(ARMOR_STAND) DAMAGE 5
@@ -794,13 +794,13 @@ activators:
       errorMessage: ''
     detailedSlots: []
     commands:
-    - execute at %player% as %player% run tp %x% %y% %z%
+    - execute at %player% as %player% run minecraft:tp %x% %y% %z%
     - DELAYTICK 1
     - JUMP 2
     - execute at %player% run playsound entity.ender_dragon.flap ambient %player%
     - execute at %player% run summon armor_stand ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["%player_uuid%a"]}
     - 'LOOP START: 30'
-    - execute at @e[tag=%player_uuid%a] as @e[tag=%player_uuid%a] run tp @e[tag=%player_uuid%a]
+    - execute at @e[tag=%player_uuid%a] as @e[tag=%player_uuid%a] run minecraft:tp @e[tag=%player_uuid%a]
       ~ ~ ~ ~20 ~
     - execute at @e[tag=%player_uuid%a] run particle firework ^ ^ ^2 0.01 0.01 0.01
       0 1
@@ -811,13 +811,13 @@ activators:
     - execute at @e[tag=%player_uuid%a] run particle firework ^-2 ^ ^ 0.01 0.01 0.01
       0 1
     - DELAYTICK 1
-    - execute at %player% as @e[tag=%player_uuid%a] run tp @e[tag=%player_uuid%a]
+    - execute at %player% as @e[tag=%player_uuid%a] run minecraft:tp @e[tag=%player_uuid%a]
       ~ ~ ~
     - LOOP END
     - DELAYTICK 2
     - JUMP -2
     - 'LOOP START: 8'
-    - execute at @e[tag=%player_uuid%a] as @e[tag=%player_uuid%a] run tp @e[tag=%player_uuid%a]
+    - execute at @e[tag=%player_uuid%a] as @e[tag=%player_uuid%a] run minecraft:tp @e[tag=%player_uuid%a]
       ~ ~ ~ ~20 ~
     - execute at @e[tag=%player_uuid%a] run particle firework ^ ^ ^1 0.01 0.01 0.01
       0 1
@@ -830,9 +830,9 @@ activators:
     - execute at %player% if block ~ ~ ~ water run execute at %player% as %player%
       run effect give %player% levitation 2 0
     - execute at %player% if block ~ ~ ~ water run execute at %player% as %player%
-      run tp ~ ~2 ~
+      run minecraft:tp ~ ~2 ~
     - DELAYTICK 1
-    - execute at %player% as @e[tag=%player_uuid%a] run tp @e[tag=%player_uuid%a]
+    - execute at %player% as @e[tag=%player_uuid%a] run minecraft:tp @e[tag=%player_uuid%a]
       ~ ~ ~
     - LOOP END
     - execute at %player% run particle explosion_emitter ~ ~ ~ 5 0.1 5 0 5

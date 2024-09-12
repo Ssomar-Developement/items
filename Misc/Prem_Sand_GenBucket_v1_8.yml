@@ -127,9 +127,9 @@ activators:
     - 'LOOP START: 320'
     - execute at @e[tag=%var_x%] if block ~ ~ ~ air run setblock ~ ~ ~ sand
     - execute at @e[tag=%var_x%] if block ~ ~1 ~ air run execute at @e[tag=%var_x%]
-      as @e[tag=%var_x%] run tp @e[tag=%var_x%] ~ ~1 ~
-    - execute at @e[tag=%var_x%] unless block ~ ~ ~ air run kill @e[tag=%var_x%]
-    - execute at @e[tag=%var_x%] unless block ~ 320 ~ air run kill @e[tag=%var_x%]
+      as @e[tag=%var_x%] run minecraft:tp @e[tag=%var_x%] ~ ~1 ~
+    - execute at @e[tag=%var_x%] unless block ~ ~ ~ air run minecraft:kill @e[tag=%var_x%]
+    - execute at @e[tag=%var_x%] unless block ~ 320 ~ air run minecraft:kill @e[tag=%var_x%]
     - DELAY 1
     - LOOP END
     playerConditions: {}

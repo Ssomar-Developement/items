@@ -103,16 +103,16 @@ activators:
     detailedEntities: []
     entityCommands:
     - execute at %player% run summon armor_stand ~ ~ ~ {DisabledSlots:2039583,NoGravity:1b,Silent:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["%projectile_uuid%"],HandItems:[{id:"minecraft:poppy",Count:1b,tag:{Enchantments:[{id:"minecraft:efficiency",lvl:1s}]}},{}]}
-    - execute at %player% as @e[tag=%projectile_uuid%] run tp @e[tag=%projectile_uuid%]
+    - execute at %player% as @e[tag=%projectile_uuid%] run minecraft:tp @e[tag=%projectile_uuid%]
       ~ ~ ~ ~ ~
     - DELAYTICK 1
     - 'LOOP START: 30'
-    - execute at @e[tag=%projectile_uuid%] as %projectile_uuid% run tp %projectile_uuid%
+    - execute at @e[tag=%projectile_uuid%] as %projectile_uuid% run minecraft:tp %projectile_uuid%
       ~ ~ ~
-    - execute at @e[tag=%projectile_uuid%] as @e[tag=%projectile_uuid%] run tp @e[tag=%projectile_uuid%]
+    - execute at @e[tag=%projectile_uuid%] as @e[tag=%projectile_uuid%] run minecraft:tp @e[tag=%projectile_uuid%]
       ^ ^ ^1
-    - execute at @e[tag=%projectile_uuid%] unless block ~ ~1 ~ air run kill %projectile_uuid%
-    - execute at @e[tag=%projectile_uuid%] unless block ~ ~1 ~ air run kill @e[tag=%projectile_uuid%]
+    - execute at @e[tag=%projectile_uuid%] unless block ~ ~1 ~ air run minecraft:kill %projectile_uuid%
+    - execute at @e[tag=%projectile_uuid%] unless block ~ ~1 ~ air run minecraft:kill @e[tag=%projectile_uuid%]
     - MOB_AROUND 1.5 BLACKLIST(ARMOR_STAND) DAMAGE 5 <+> execute at @e[tag=%projectile_uuid%]
       unless entity @a[distance=..0.01,tag=%projectile_uuid%mark] run data merge entity
       @e[tag=%projectile_uuid%,limit=1] {Tags:["%projectile_uuid%,%projectile_uuid%mark"]}
@@ -120,7 +120,7 @@ activators:
       run data merge entity %around_target_uuid% {Tags:["%projectile_uuid%a"]}
     - execute at @e[tag=%projectile_uuid%mark] as @e[tag=%projectile_uuid%mark] facing
       entity @e[distance=..10,limit=1,type=!player,type=!item,type=!armor_stand,type=!arrow,type=!experience_orb,tag=!%projectile_uuid%a]
-      eyes run tp @e[tag=%projectile_uuid%mark] ~ ~ ~ ~ ~
+      eyes run minecraft:tp @e[tag=%projectile_uuid%mark] ~ ~ ~ ~ ~
     - DELAYTICK 1
     - LOOP END
     - minecraft:kill %projectile_uuid%

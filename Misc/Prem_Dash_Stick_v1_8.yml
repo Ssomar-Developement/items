@@ -148,7 +148,7 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - execute at %player% as %projectile_uuid% run tp %projectile_uuid% ^ ^ ^10
+    - execute at %player% as %projectile_uuid% run minecraft:tp %projectile_uuid% ^ ^ ^10
     - DELAYTICK 1
     - CUSTOMDASH1 %projectile_x% %projectile_y% %projectile_z%
     - minecraft:kill %projectile_uuid%

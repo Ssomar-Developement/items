@@ -66,15 +66,15 @@ activators:
     - execute at %player% run summon armor_stand ~ ~ ~ {DisabledSlots:4144959,Invulnerable:1b,ShowArms:1b,Invisible:1b,Tags:["%player_uuid%4"],Pose:{RightArm:[90f,0f,0f]},HandItems:[{id:"minecraft:shield",Count:1b},{}]}
     - 'LOOP START: 20'
     - execute at @e[type=armor_stand,tag=%player_uuid%] as @e[type=armor_stand,tag=%player_uuid%]
-      run tp @e[type=armor_stand,tag=%player_uuid%] %x% %y% %z% ~18 0
+      run minecraft:tp @e[type=armor_stand,tag=%player_uuid%] %x% %y% %z% ~18 0
     - execute at @e[type=armor_stand,tag=%player_uuid%] as @e[type=armor_stand,tag=%player_uuid%1]
-      run tp @e[type=armor_stand,tag=%player_uuid%1] ^ ^ ^1 ~ ~
+      run minecraft:tp @e[type=armor_stand,tag=%player_uuid%1] ^ ^ ^1 ~ ~
     - execute at @e[type=armor_stand,tag=%player_uuid%] as @e[type=armor_stand,tag=%player_uuid%2]
-      run tp @e[type=armor_stand,tag=%player_uuid%2] ^ ^ ^-1 ~ ~
+      run minecraft:tp @e[type=armor_stand,tag=%player_uuid%2] ^ ^ ^-1 ~ ~
     - execute at @e[type=armor_stand,tag=%player_uuid%] as @e[type=armor_stand,tag=%player_uuid%3]
-      run tp @e[type=armor_stand,tag=%player_uuid%3] ^1 ^ ^ ~ ~
+      run minecraft:tp @e[type=armor_stand,tag=%player_uuid%3] ^1 ^ ^ ~ ~
     - execute at @e[type=armor_stand,tag=%player_uuid%] as @e[type=armor_stand,tag=%player_uuid%4]
-      run tp @e[type=armor_stand,tag=%player_uuid%4] ^-1 ^ ^ ~ ~
+      run minecraft:tp @e[type=armor_stand,tag=%player_uuid%4] ^-1 ^ ^ ~ ~
     - DELAYTICK 1
     - LOOP END
     playerConditions: {}
@@ -111,15 +111,15 @@ activators:
     commands:
     - 'LOOP START: 20'
     - execute at @e[type=armor_stand,tag=%player_uuid%] as @e[type=armor_stand,tag=%player_uuid%]
-      run tp @e[type=armor_stand,tag=%player_uuid%] %x% %y% %z% ~18 0
+      run minecraft:tp @e[type=armor_stand,tag=%player_uuid%] %x% %y% %z% ~18 0
     - execute at @e[type=armor_stand,tag=%player_uuid%] as @e[type=armor_stand,tag=%player_uuid%1]
-      run tp @e[type=armor_stand,tag=%player_uuid%1] ^ ^ ^1 ~ ~
+      run minecraft:tp @e[type=armor_stand,tag=%player_uuid%1] ^ ^ ^1 ~ ~
     - execute at @e[type=armor_stand,tag=%player_uuid%] as @e[type=armor_stand,tag=%player_uuid%2]
-      run tp @e[type=armor_stand,tag=%player_uuid%2] ^ ^ ^-1 ~ ~
+      run minecraft:tp @e[type=armor_stand,tag=%player_uuid%2] ^ ^ ^-1 ~ ~
     - execute at @e[type=armor_stand,tag=%player_uuid%] as @e[type=armor_stand,tag=%player_uuid%3]
-      run tp @e[type=armor_stand,tag=%player_uuid%3] ^1 ^ ^ ~ ~
+      run minecraft:tp @e[type=armor_stand,tag=%player_uuid%3] ^1 ^ ^ ~ ~
     - execute at @e[type=armor_stand,tag=%player_uuid%] as @e[type=armor_stand,tag=%player_uuid%4]
-      run tp @e[type=armor_stand,tag=%player_uuid%4] ^-1 ^ ^ ~ ~
+      run minecraft:tp @e[type=armor_stand,tag=%player_uuid%4] ^-1 ^ ^ ~ ~
     - DELAYTICK 1
     - LOOP END
     playerConditions: {}

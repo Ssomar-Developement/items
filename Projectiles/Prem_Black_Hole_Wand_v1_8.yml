@@ -124,10 +124,10 @@ activators:
     entityCommands:
     - 'LOOP START: 67'
     - execute at %projectile_uuid% run execute as @e[type=!player,type=!item,type=!arrow,type=!item_frame,type=!endermite,type=!minecraft:glow_item_frame,type=!minecraft:boat,type=!minecraft:minecart,type=!minecraft:armor_stand,distance=..25]
-      run execute as @s at @s facing entity %projectile_uuid% feet run tp ^ ^ ^0.75
+      run execute as @s at @s facing entity %projectile_uuid% feet run minecraft:tp ^ ^ ^0.75
     - DELAYTICK 1
     - execute at %projectile_uuid% run execute as @e[type=!player,type=!item,type=!arrow,type=!item_frame,type=!endermite,type=!minecraft:glow_item_frame,type=!minecraft:boat,type=!minecraft:minecart,type=!minecraft:armor_stand,distance=..25]
-      run execute as @s at @s facing entity %projectile_uuid% feet run tp ^ ^ ^0.75
+      run execute as @s at @s facing entity %projectile_uuid% feet run minecraft:tp ^ ^ ^0.75
     - DELAYTICK 2
     - MOB_AROUND 4 DAMAGE 2
     - LOOP END

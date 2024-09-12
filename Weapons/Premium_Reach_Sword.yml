@@ -98,7 +98,7 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - execute at %player% as %projectile_uuid% run tp %projectile_uuid% ^ ^1.6 ^6
+    - execute at %player% as %projectile_uuid% run minecraft:tp %projectile_uuid% ^ ^1.6 ^6
     playerConditions: {}
     worldConditions: {}
     itemConditions: {}

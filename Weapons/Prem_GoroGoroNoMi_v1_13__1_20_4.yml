@@ -273,10 +273,10 @@ activators:
     - minecraft:kill %projectile_uuid%
     - execute at %player% run summon armor_stand ^ ^ ^2 {NoGravity:1b,Silent:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["%projectile_uuid%"]}
     - execute at %player% run summon armor_stand ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["%projectile_uuid%a"]}
-    - execute at %player% as @e[tag=%projectile_uuid%] run tp @e[tag=%projectile_uuid%]
+    - execute at %player% as @e[tag=%projectile_uuid%] run minecraft:tp @e[tag=%projectile_uuid%]
       ~ ~ ~ ~ ~
     - 'LOOP START: 20'
-    - execute at @e[tag=%projectile_uuid%] as @e[tag=%projectile_uuid%] run tp @e[tag=%projectile_uuid%]
+    - execute at @e[tag=%projectile_uuid%] as @e[tag=%projectile_uuid%] run minecraft:tp @e[tag=%projectile_uuid%]
       ^ ^ ^1
     - execute at @e[tag=%projectile_uuid%] run particle firework ~ ~ ~ 0.01 0.01 0.01
       0 1
@@ -284,18 +284,18 @@ activators:
       0.01 0.01 0 1
     - execute at @e[tag=%projectile_uuid%] unless block ~ ~ ~ air unless block ~ ~1
       ~ air unless block ~ ~-1 ~ air run execute at @e[tag=%projectile_uuid%] as %player%
-      run tp ~ ~ ~
+      run minecraft:tp ~ ~ ~
     - execute at @e[tag=%projectile_uuid%] unless block ~ ~ ~ air unless block ~ ~1
       ~ air unless block ~ ~-1 ~ air run execute at %player% as %player% facing entity
-      @e[tag=%projectile_uuid%a] eyes run tp %player% ~ ~ ~ ~ ~
+      @e[tag=%projectile_uuid%a] eyes run minecraft:tp %player% ~ ~ ~ ~ ~
     - execute at @e[tag=%projectile_uuid%] unless block ~ ~ ~ air unless block ~ ~1
-      ~ air unless block ~ ~-1 ~ air run kill @e[tag=%projectile_uuid%a]
+      ~ air unless block ~ ~-1 ~ air run minecraft:kill @e[tag=%projectile_uuid%a]
     - execute at @e[tag=%projectile_uuid%] unless block ~ ~ ~ air unless block ~ ~1
-      ~ air unless block ~ ~-1 ~ air run kill @e[tag=%projectile_uuid%]
+      ~ air unless block ~ ~-1 ~ air run minecraft:kill @e[tag=%projectile_uuid%]
     - execute at @e[tag=%projectile_uuid%] unless block ^ ^ ^1 air unless block ^
-      ^1 ^1 air unless block ^ ^-1 ^1 air run kill @e[tag=%projectile_uuid%]
+      ^1 ^1 air unless block ^ ^-1 ^1 air run minecraft:kill @e[tag=%projectile_uuid%]
     - LOOP END
-    - execute at @e[tag=%projectile_uuid%] as %player% run tp ~ ~ ~
+    - execute at @e[tag=%projectile_uuid%] as %player% run minecraft:tp ~ ~ ~
     - CUSTOMDASH1 %x% %y%+1 %z%
     - minecraft:kill @e[tag=%projectile_uuid%]
     - minecraft:kill @e[tag=%projectile_uuid%a]
@@ -674,12 +674,12 @@ activators:
     entityCommands:
     - execute at %player% run playsound entity.egg.throw ambient @a[distance=..10]
     - execute at %player% run summon armor_stand ^ ^ ^2 {NoGravity:1b,Silent:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["%projectile_uuid%"]}
-    - execute at %player% as @e[tag=%projectile_uuid%] run tp @e[tag=%projectile_uuid%]
+    - execute at %player% as @e[tag=%projectile_uuid%] run minecraft:tp @e[tag=%projectile_uuid%]
       ~ ~ ~ ~ ~
     - 'LOOP START: 5'
-    - execute at @e[tag=%projectile_uuid%] as @e[tag=%projectile_uuid%] run tp @e[tag=%projectile_uuid%]
+    - execute at @e[tag=%projectile_uuid%] as @e[tag=%projectile_uuid%] run minecraft:tp @e[tag=%projectile_uuid%]
       ^ ^ ^2
-    - execute at @e[tag=%projectile_uuid%] as %projectile_uuid% run tp ~ ~ ~
+    - execute at @e[tag=%projectile_uuid%] as %projectile_uuid% run minecraft:tp ~ ~ ~
     - execute at @e[tag=%projectile_uuid%] run particle firework ~ ~ ~ 0.01 0.01 0.01
       0 1
     - execute at @e[tag=%projectile_uuid%] run particle dust 1 1 0.2 2 ~ ~ ~ 0.01
@@ -687,9 +687,9 @@ activators:
     - AROUND 0.5 CONDITIONS(%::player_name::%!=%player%) DAMAGE 25
     - MOB_AROUND 0.5 BLACKLIST(ARMOR_STAND) DAMAGE 25
     - DELAYTICK 1
-    - execute at @e[tag=%projectile_uuid%] as @e[tag=%projectile_uuid%] run tp @e[tag=%projectile_uuid%]
+    - execute at @e[tag=%projectile_uuid%] as @e[tag=%projectile_uuid%] run minecraft:tp @e[tag=%projectile_uuid%]
       ^ ^ ^2
-    - execute at @e[tag=%projectile_uuid%] as %projectile_uuid% run tp ~ ~ ~
+    - execute at @e[tag=%projectile_uuid%] as %projectile_uuid% run minecraft:tp ~ ~ ~
     - execute at @e[tag=%projectile_uuid%] run particle firework ~ ~ ~ 0.01 0.01 0.01
       0 1
     - execute at @e[tag=%projectile_uuid%] run particle dust 1 1 0.2 2 ~ ~ ~ 0.01
@@ -697,9 +697,9 @@ activators:
     - AROUND 0.5 CONDITIONS(%::player_name::%!=%player%) DAMAGE 25
     - MOB_AROUND 0.5 BLACKLIST(ARMOR_STAND) DAMAGE 25
     - DELAYTICK 1
-    - execute at @e[tag=%projectile_uuid%] as @e[tag=%projectile_uuid%] run tp @e[tag=%projectile_uuid%]
+    - execute at @e[tag=%projectile_uuid%] as @e[tag=%projectile_uuid%] run minecraft:tp @e[tag=%projectile_uuid%]
       ^ ^ ^2
-    - execute at @e[tag=%projectile_uuid%] as %projectile_uuid% run tp ~ ~ ~
+    - execute at @e[tag=%projectile_uuid%] as %projectile_uuid% run minecraft:tp ~ ~ ~
     - execute at @e[tag=%projectile_uuid%] run particle firework ~ ~ ~ 0.01 0.01 0.01
       0 1
     - execute at @e[tag=%projectile_uuid%] run particle dust 1 1 0.2 2 ~ ~ ~ 0.01
@@ -707,9 +707,9 @@ activators:
     - AROUND 0.5 CONDITIONS(%::player_name::%!=%player%) DAMAGE 25
     - MOB_AROUND 0.5 BLACKLIST(ARMOR_STAND) DAMAGE 25
     - DELAYTICK 1
-    - execute at @e[tag=%projectile_uuid%] as @e[tag=%projectile_uuid%] run tp @e[tag=%projectile_uuid%]
+    - execute at @e[tag=%projectile_uuid%] as @e[tag=%projectile_uuid%] run minecraft:tp @e[tag=%projectile_uuid%]
       ^ ^ ^2
-    - execute at @e[tag=%projectile_uuid%] as %projectile_uuid% run tp ~ ~ ~
+    - execute at @e[tag=%projectile_uuid%] as %projectile_uuid% run minecraft:tp ~ ~ ~
     - execute at @e[tag=%projectile_uuid%] run particle firework ~ ~ ~ 0.01 0.01 0.01
       0 1
     - execute at @e[tag=%projectile_uuid%] run particle dust 1 1 0.2 2 ~ ~ ~ 0.01
@@ -717,9 +717,9 @@ activators:
     - AROUND 0.5 CONDITIONS(%::player_name::%!=%player%) DAMAGE 25
     - MOB_AROUND 0.5 BLACKLIST(ARMOR_STAND) DAMAGE 25
     - DELAYTICK 1
-    - execute at @e[tag=%projectile_uuid%] as @e[tag=%projectile_uuid%] run tp @e[tag=%projectile_uuid%]
+    - execute at @e[tag=%projectile_uuid%] as @e[tag=%projectile_uuid%] run minecraft:tp @e[tag=%projectile_uuid%]
       ^ ^ ^2
-    - execute at @e[tag=%projectile_uuid%] as %projectile_uuid% run tp ~ ~ ~
+    - execute at @e[tag=%projectile_uuid%] as %projectile_uuid% run minecraft:tp ~ ~ ~
     - execute at @e[tag=%projectile_uuid%] run particle firework ~ ~ ~ 0.01 0.01 0.01
       0 1
     - execute at @e[tag=%projectile_uuid%] run particle dust 1 1 0.2 2 ~ ~ ~ 0.01

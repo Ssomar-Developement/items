@@ -111,391 +111,391 @@ activators:
     - data merge entity %projectile_uuid% {CustomName:'{"text":"%player%"}'}
     - execute at %player% run summon armor_stand ~ ~ ~ {NoGravity:1b,CustomName:'{"text":"%player%"}',Invulnerable:1b,Invisible:1b,Marker:1b,Tags:["%projectile_uuid%"],ArmorItems:[{},{},{},{}]}
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^0.0
+      run minecraft:tp ^ ^0.2 ^0.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%1] run tp ^1 ^0.2 ^0.0
+      tag=%projectile_uuid%1] run minecraft:tp ^1 ^0.2 ^0.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%2] run tp ^1 ^0.2 ^-0.5
+      tag=%projectile_uuid%2] run minecraft:tp ^1 ^0.2 ^-0.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%3] run tp ^1 ^0.2 ^-1.0
+      tag=%projectile_uuid%3] run minecraft:tp ^1 ^0.2 ^-1.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%4] run tp ^1 ^0.2 ^-1.5
+      tag=%projectile_uuid%4] run minecraft:tp ^1 ^0.2 ^-1.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%5] run tp ^1 ^0.2 ^-2.0
+      tag=%projectile_uuid%5] run minecraft:tp ^1 ^0.2 ^-2.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%6] run tp ^1 ^0.2 ^-2.5
+      tag=%projectile_uuid%6] run minecraft:tp ^1 ^0.2 ^-2.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%7] run tp ^1 ^0.2 ^-3.0
+      tag=%projectile_uuid%7] run minecraft:tp ^1 ^0.2 ^-3.0
     - execute at %projectile_uuid% run playsound minecraft:entity.generic.extinguish_fire
       master @a
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^1.0
+      run minecraft:tp ^ ^0.2 ^1.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%1] run tp ^1 ^0.2 ^1.0
+      tag=%projectile_uuid%1] run minecraft:tp ^1 ^0.2 ^1.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%2] run tp ^1 ^0.2 ^0.5
+      tag=%projectile_uuid%2] run minecraft:tp ^1 ^0.2 ^0.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%3] run tp ^1 ^0.2 ^
+      tag=%projectile_uuid%3] run minecraft:tp ^1 ^0.2 ^
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%4] run tp ^1 ^0.2 ^-0.5
+      tag=%projectile_uuid%4] run minecraft:tp ^1 ^0.2 ^-0.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%5] run tp ^1 ^0.2 ^-1
+      tag=%projectile_uuid%5] run minecraft:tp ^1 ^0.2 ^-1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%6] run tp ^1 ^0.2 ^-1.5
+      tag=%projectile_uuid%6] run minecraft:tp ^1 ^0.2 ^-1.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%7] run tp ^1 ^0.2 ^-2
+      tag=%projectile_uuid%7] run minecraft:tp ^1 ^0.2 ^-2
     - execute at %projectile_uuid% run playsound minecraft:entity.generic.extinguish_fire
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^2.0
+      run minecraft:tp ^ ^0.2 ^2.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%1] run tp ^1 ^0.2 ^2.0
+      tag=%projectile_uuid%1] run minecraft:tp ^1 ^0.2 ^2.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%2] run tp ^1 ^0.2 ^1.5
+      tag=%projectile_uuid%2] run minecraft:tp ^1 ^0.2 ^1.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%3] run tp ^1 ^0.2 ^1.0
+      tag=%projectile_uuid%3] run minecraft:tp ^1 ^0.2 ^1.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%4] run tp ^1 ^0.2 ^0.5
+      tag=%projectile_uuid%4] run minecraft:tp ^1 ^0.2 ^0.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%5] run tp ^1 ^0.2 ^0
+      tag=%projectile_uuid%5] run minecraft:tp ^1 ^0.2 ^0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%6] run tp ^1 ^0.2 ^-0.5
+      tag=%projectile_uuid%6] run minecraft:tp ^1 ^0.2 ^-0.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%7] run tp ^1 ^0.2 ^-1
+      tag=%projectile_uuid%7] run minecraft:tp ^1 ^0.2 ^-1
     - execute at %projectile_uuid% run playsound minecraft:entity.generic.extinguish_fire
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^3.0
+      run minecraft:tp ^ ^0.2 ^3.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%1] run tp ^1 ^0.2 ^3.0
+      tag=%projectile_uuid%1] run minecraft:tp ^1 ^0.2 ^3.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%2] run tp ^1 ^0.2 ^2.5
+      tag=%projectile_uuid%2] run minecraft:tp ^1 ^0.2 ^2.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%3] run tp ^1 ^0.2 ^2.0
+      tag=%projectile_uuid%3] run minecraft:tp ^1 ^0.2 ^2.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%4] run tp ^1 ^0.2 ^1.5
+      tag=%projectile_uuid%4] run minecraft:tp ^1 ^0.2 ^1.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%5] run tp ^1 ^0.2 ^1.0
+      tag=%projectile_uuid%5] run minecraft:tp ^1 ^0.2 ^1.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%6] run tp ^1 ^0.2 ^0.5
+      tag=%projectile_uuid%6] run minecraft:tp ^1 ^0.2 ^0.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%7] run tp ^1 ^0.2 ^0
+      tag=%projectile_uuid%7] run minecraft:tp ^1 ^0.2 ^0
     - execute at %projectile_uuid% run playsound minecraft:entity.generic.extinguish_fire
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^4.0
+      run minecraft:tp ^ ^0.2 ^4.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%1] run tp ^1 ^0.2 ^4.0
+      tag=%projectile_uuid%1] run minecraft:tp ^1 ^0.2 ^4.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%2] run tp ^1 ^0.2 ^3.5
+      tag=%projectile_uuid%2] run minecraft:tp ^1 ^0.2 ^3.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%3] run tp ^1 ^0.2 ^3.0
+      tag=%projectile_uuid%3] run minecraft:tp ^1 ^0.2 ^3.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%4] run tp ^1 ^0.2 ^2.5
+      tag=%projectile_uuid%4] run minecraft:tp ^1 ^0.2 ^2.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%5] run tp ^1 ^0.2 ^2.0
+      tag=%projectile_uuid%5] run minecraft:tp ^1 ^0.2 ^2.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%6] run tp ^1 ^0.2 ^1.5
+      tag=%projectile_uuid%6] run minecraft:tp ^1 ^0.2 ^1.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%7] run tp ^1 ^0.2 ^1.0
+      tag=%projectile_uuid%7] run minecraft:tp ^1 ^0.2 ^1.0
     - execute at %projectile_uuid% run playsound minecraft:entity.generic.extinguish_fire
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^5.0
+      run minecraft:tp ^ ^0.2 ^5.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%1] run tp ^1 ^0.2 ^5.0
+      tag=%projectile_uuid%1] run minecraft:tp ^1 ^0.2 ^5.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%2] run tp ^1 ^0.2 ^4.5
+      tag=%projectile_uuid%2] run minecraft:tp ^1 ^0.2 ^4.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%3] run tp ^1 ^0.2 ^4.0
+      tag=%projectile_uuid%3] run minecraft:tp ^1 ^0.2 ^4.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%4] run tp ^1 ^0.2 ^3.5
+      tag=%projectile_uuid%4] run minecraft:tp ^1 ^0.2 ^3.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%5] run tp ^1 ^0.2 ^3.0
+      tag=%projectile_uuid%5] run minecraft:tp ^1 ^0.2 ^3.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%6] run tp ^1 ^0.2 ^2.5
+      tag=%projectile_uuid%6] run minecraft:tp ^1 ^0.2 ^2.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%7] run tp ^1 ^0.2 ^2.0
+      tag=%projectile_uuid%7] run minecraft:tp ^1 ^0.2 ^2.0
     - execute at %projectile_uuid% run playsound minecraft:entity.generic.extinguish_fire
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^6.0
+      run minecraft:tp ^ ^0.2 ^6.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%1] run tp ^1 ^0.2 ^6.0
+      tag=%projectile_uuid%1] run minecraft:tp ^1 ^0.2 ^6.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%2] run tp ^1 ^0.2 ^5.5
+      tag=%projectile_uuid%2] run minecraft:tp ^1 ^0.2 ^5.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%3] run tp ^1 ^0.2 ^5.0
+      tag=%projectile_uuid%3] run minecraft:tp ^1 ^0.2 ^5.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%4] run tp ^1 ^0.2 ^4.5
+      tag=%projectile_uuid%4] run minecraft:tp ^1 ^0.2 ^4.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%5] run tp ^1 ^0.2 ^4.0
+      tag=%projectile_uuid%5] run minecraft:tp ^1 ^0.2 ^4.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%6] run tp ^1 ^0.2 ^3.5
+      tag=%projectile_uuid%6] run minecraft:tp ^1 ^0.2 ^3.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%7] run tp ^1 ^0.2 ^3.0
+      tag=%projectile_uuid%7] run minecraft:tp ^1 ^0.2 ^3.0
     - execute at %projectile_uuid% run playsound minecraft:entity.generic.extinguish_fire
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^7.0
+      run minecraft:tp ^ ^0.2 ^7.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%1] run tp ^1 ^0.2 ^7.0
+      tag=%projectile_uuid%1] run minecraft:tp ^1 ^0.2 ^7.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%2] run tp ^1 ^0.2 ^6.5
+      tag=%projectile_uuid%2] run minecraft:tp ^1 ^0.2 ^6.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%3] run tp ^1 ^0.2 ^6.0
+      tag=%projectile_uuid%3] run minecraft:tp ^1 ^0.2 ^6.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%4] run tp ^1 ^0.2 ^5.5
+      tag=%projectile_uuid%4] run minecraft:tp ^1 ^0.2 ^5.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%5] run tp ^1 ^0.2 ^5.0
+      tag=%projectile_uuid%5] run minecraft:tp ^1 ^0.2 ^5.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%6] run tp ^1 ^0.2 ^4.5
+      tag=%projectile_uuid%6] run minecraft:tp ^1 ^0.2 ^4.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%7] run tp ^1 ^0.2 ^4.0
+      tag=%projectile_uuid%7] run minecraft:tp ^1 ^0.2 ^4.0
     - execute at %projectile_uuid% run playsound minecraft:entity.generic.extinguish_fire
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^8.0
+      run minecraft:tp ^ ^0.2 ^8.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%1] run tp ^1 ^0.2 ^8.0
+      tag=%projectile_uuid%1] run minecraft:tp ^1 ^0.2 ^8.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%2] run tp ^1 ^0.2 ^7.5
+      tag=%projectile_uuid%2] run minecraft:tp ^1 ^0.2 ^7.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%3] run tp ^1 ^0.2 ^7.0
+      tag=%projectile_uuid%3] run minecraft:tp ^1 ^0.2 ^7.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%4] run tp ^1 ^0.2 ^6.5
+      tag=%projectile_uuid%4] run minecraft:tp ^1 ^0.2 ^6.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%5] run tp ^1 ^0.2 ^6.0
+      tag=%projectile_uuid%5] run minecraft:tp ^1 ^0.2 ^6.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%6] run tp ^1 ^0.2 ^5.5
+      tag=%projectile_uuid%6] run minecraft:tp ^1 ^0.2 ^5.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%7] run tp ^1 ^0.2 ^5.0
+      tag=%projectile_uuid%7] run minecraft:tp ^1 ^0.2 ^5.0
     - execute at %projectile_uuid% run playsound minecraft:entity.generic.extinguish_fire
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^9.0
+      run minecraft:tp ^ ^0.2 ^9.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%1] run tp ^1 ^0.2 ^9.0
+      tag=%projectile_uuid%1] run minecraft:tp ^1 ^0.2 ^9.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%2] run tp ^1 ^0.2 ^8.5
+      tag=%projectile_uuid%2] run minecraft:tp ^1 ^0.2 ^8.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%3] run tp ^1 ^0.2 ^8.0
+      tag=%projectile_uuid%3] run minecraft:tp ^1 ^0.2 ^8.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%4] run tp ^1 ^0.2 ^7.5
+      tag=%projectile_uuid%4] run minecraft:tp ^1 ^0.2 ^7.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%5] run tp ^1 ^0.2 ^7.0
+      tag=%projectile_uuid%5] run minecraft:tp ^1 ^0.2 ^7.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%6] run tp ^1 ^0.2 ^6.5
+      tag=%projectile_uuid%6] run minecraft:tp ^1 ^0.2 ^6.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%7] run tp ^1 ^0.2 ^6.0
+      tag=%projectile_uuid%7] run minecraft:tp ^1 ^0.2 ^6.0
     - execute at %projectile_uuid% run playsound minecraft:entity.generic.extinguish_fire
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^10.0
+      run minecraft:tp ^ ^0.2 ^10.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%1] run tp ^1 ^0.2 ^10.0
+      tag=%projectile_uuid%1] run minecraft:tp ^1 ^0.2 ^10.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%2] run tp ^1 ^0.2 ^9.5
+      tag=%projectile_uuid%2] run minecraft:tp ^1 ^0.2 ^9.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%3] run tp ^1 ^0.2 ^9.0
+      tag=%projectile_uuid%3] run minecraft:tp ^1 ^0.2 ^9.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%4] run tp ^1 ^0.2 ^8.5
+      tag=%projectile_uuid%4] run minecraft:tp ^1 ^0.2 ^8.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%5] run tp ^1 ^0.2 ^8.0
+      tag=%projectile_uuid%5] run minecraft:tp ^1 ^0.2 ^8.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%6] run tp ^1 ^0.2 ^7.5
+      tag=%projectile_uuid%6] run minecraft:tp ^1 ^0.2 ^7.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%7] run tp ^1 ^0.2 ^7.0
+      tag=%projectile_uuid%7] run minecraft:tp ^1 ^0.2 ^7.0
     - execute at %projectile_uuid% run playsound minecraft:entity.generic.extinguish_fire
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^11.0
+      run minecraft:tp ^ ^0.2 ^11.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%1] run tp ^1 ^0.2 ^11.0
+      tag=%projectile_uuid%1] run minecraft:tp ^1 ^0.2 ^11.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%2] run tp ^1 ^0.2 ^10.5
+      tag=%projectile_uuid%2] run minecraft:tp ^1 ^0.2 ^10.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%3] run tp ^1 ^0.2 ^10.0
+      tag=%projectile_uuid%3] run minecraft:tp ^1 ^0.2 ^10.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%4] run tp ^1 ^0.2 ^9.5
+      tag=%projectile_uuid%4] run minecraft:tp ^1 ^0.2 ^9.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%5] run tp ^1 ^0.2 ^9.0
+      tag=%projectile_uuid%5] run minecraft:tp ^1 ^0.2 ^9.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%6] run tp ^1 ^0.2 ^8.5
+      tag=%projectile_uuid%6] run minecraft:tp ^1 ^0.2 ^8.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%7] run tp ^1 ^0.2 ^8.0
+      tag=%projectile_uuid%7] run minecraft:tp ^1 ^0.2 ^8.0
     - execute at %projectile_uuid% run playsound minecraft:entity.generic.extinguish_fire
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^12.0
+      run minecraft:tp ^ ^0.2 ^12.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%1] run tp ^1 ^0.2 ^12.0
+      tag=%projectile_uuid%1] run minecraft:tp ^1 ^0.2 ^12.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%2] run tp ^1 ^0.2 ^11.5
+      tag=%projectile_uuid%2] run minecraft:tp ^1 ^0.2 ^11.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%3] run tp ^1 ^0.2 ^11.0
+      tag=%projectile_uuid%3] run minecraft:tp ^1 ^0.2 ^11.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%4] run tp ^1 ^0.2 ^10.5
+      tag=%projectile_uuid%4] run minecraft:tp ^1 ^0.2 ^10.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%5] run tp ^1 ^0.2 ^10.0
+      tag=%projectile_uuid%5] run minecraft:tp ^1 ^0.2 ^10.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%6] run tp ^1 ^0.2 ^9.5
+      tag=%projectile_uuid%6] run minecraft:tp ^1 ^0.2 ^9.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%7] run tp ^1 ^0.2 ^9.0
+      tag=%projectile_uuid%7] run minecraft:tp ^1 ^0.2 ^9.0
     - execute at %projectile_uuid% run playsound minecraft:entity.generic.extinguish_fire
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^13.0
+      run minecraft:tp ^ ^0.2 ^13.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%1] run tp ^1 ^0.2 ^13.0
+      tag=%projectile_uuid%1] run minecraft:tp ^1 ^0.2 ^13.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%2] run tp ^1 ^0.2 ^12.5
+      tag=%projectile_uuid%2] run minecraft:tp ^1 ^0.2 ^12.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%3] run tp ^1 ^0.2 ^12.0
+      tag=%projectile_uuid%3] run minecraft:tp ^1 ^0.2 ^12.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%4] run tp ^1 ^0.2 ^11.5
+      tag=%projectile_uuid%4] run minecraft:tp ^1 ^0.2 ^11.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%5] run tp ^1 ^0.2 ^11.0
+      tag=%projectile_uuid%5] run minecraft:tp ^1 ^0.2 ^11.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%6] run tp ^1 ^0.2 ^10.5
+      tag=%projectile_uuid%6] run minecraft:tp ^1 ^0.2 ^10.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%7] run tp ^1 ^0.2 ^10.0
+      tag=%projectile_uuid%7] run minecraft:tp ^1 ^0.2 ^10.0
     - execute at %projectile_uuid% run playsound minecraft:entity.generic.extinguish_fire
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^14.0
+      run minecraft:tp ^ ^0.2 ^14.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%1] run tp ^1 ^0.2 ^14.0
+      tag=%projectile_uuid%1] run minecraft:tp ^1 ^0.2 ^14.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%2] run tp ^1 ^0.2 ^13.5
+      tag=%projectile_uuid%2] run minecraft:tp ^1 ^0.2 ^13.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%3] run tp ^1 ^0.2 ^13.0
+      tag=%projectile_uuid%3] run minecraft:tp ^1 ^0.2 ^13.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%4] run tp ^1 ^0.2 ^12.5
+      tag=%projectile_uuid%4] run minecraft:tp ^1 ^0.2 ^12.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%5] run tp ^1 ^0.2 ^12.0
+      tag=%projectile_uuid%5] run minecraft:tp ^1 ^0.2 ^12.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%6] run tp ^1 ^0.2 ^11.5
+      tag=%projectile_uuid%6] run minecraft:tp ^1 ^0.2 ^11.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%7] run tp ^1 ^0.2 ^11.0
+      tag=%projectile_uuid%7] run minecraft:tp ^1 ^0.2 ^11.0
     - execute at %projectile_uuid% run playsound minecraft:entity.generic.extinguish_fire
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^15.0
+      run minecraft:tp ^ ^0.2 ^15.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%1] run tp ^1 ^0.2 ^15.0
+      tag=%projectile_uuid%1] run minecraft:tp ^1 ^0.2 ^15.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%2] run tp ^1 ^0.2 ^14.5
+      tag=%projectile_uuid%2] run minecraft:tp ^1 ^0.2 ^14.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%3] run tp ^1 ^0.2 ^14.0
+      tag=%projectile_uuid%3] run minecraft:tp ^1 ^0.2 ^14.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%4] run tp ^1 ^0.2 ^13.5
+      tag=%projectile_uuid%4] run minecraft:tp ^1 ^0.2 ^13.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%5] run tp ^1 ^0.2 ^13.0
+      tag=%projectile_uuid%5] run minecraft:tp ^1 ^0.2 ^13.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%6] run tp ^1 ^0.2 ^12.5
+      tag=%projectile_uuid%6] run minecraft:tp ^1 ^0.2 ^12.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%7] run tp ^1 ^0.2 ^12.0
+      tag=%projectile_uuid%7] run minecraft:tp ^1 ^0.2 ^12.0
     - execute at %projectile_uuid% run playsound minecraft:entity.generic.extinguish_fire
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^16.0
+      run minecraft:tp ^ ^0.2 ^16.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%1] run tp ^1 ^0.2 ^16.0
+      tag=%projectile_uuid%1] run minecraft:tp ^1 ^0.2 ^16.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%2] run tp ^1 ^0.2 ^15.5
+      tag=%projectile_uuid%2] run minecraft:tp ^1 ^0.2 ^15.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%3] run tp ^1 ^0.2 ^15.0
+      tag=%projectile_uuid%3] run minecraft:tp ^1 ^0.2 ^15.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%4] run tp ^1 ^0.2 ^14.5
+      tag=%projectile_uuid%4] run minecraft:tp ^1 ^0.2 ^14.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%5] run tp ^1 ^0.2 ^14.0
+      tag=%projectile_uuid%5] run minecraft:tp ^1 ^0.2 ^14.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%6] run tp ^1 ^0.2 ^13.5
+      tag=%projectile_uuid%6] run minecraft:tp ^1 ^0.2 ^13.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%7] run tp ^1 ^0.2 ^13.0
+      tag=%projectile_uuid%7] run minecraft:tp ^1 ^0.2 ^13.0
     - execute at %projectile_uuid% run playsound minecraft:entity.generic.extinguish_fire
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^17.0
+      run minecraft:tp ^ ^0.2 ^17.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%1] run tp ^1 ^0.2 ^17.0
+      tag=%projectile_uuid%1] run minecraft:tp ^1 ^0.2 ^17.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%2] run tp ^1 ^0.2 ^16.5
+      tag=%projectile_uuid%2] run minecraft:tp ^1 ^0.2 ^16.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%3] run tp ^1 ^0.2 ^16.0
+      tag=%projectile_uuid%3] run minecraft:tp ^1 ^0.2 ^16.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%4] run tp ^1 ^0.2 ^15.5
+      tag=%projectile_uuid%4] run minecraft:tp ^1 ^0.2 ^15.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%5] run tp ^1 ^0.2 ^15.0
+      tag=%projectile_uuid%5] run minecraft:tp ^1 ^0.2 ^15.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%6] run tp ^1 ^0.2 ^14.5
+      tag=%projectile_uuid%6] run minecraft:tp ^1 ^0.2 ^14.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%7] run tp ^1 ^0.2 ^14.0
+      tag=%projectile_uuid%7] run minecraft:tp ^1 ^0.2 ^14.0
     - execute at %projectile_uuid% run playsound minecraft:entity.generic.extinguish_fire
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^18.0
+      run minecraft:tp ^ ^0.2 ^18.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%1] run tp ^1 ^0.2 ^18.0
+      tag=%projectile_uuid%1] run minecraft:tp ^1 ^0.2 ^18.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%2] run tp ^1 ^0.2 ^17.5
+      tag=%projectile_uuid%2] run minecraft:tp ^1 ^0.2 ^17.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%3] run tp ^1 ^0.2 ^17.0
+      tag=%projectile_uuid%3] run minecraft:tp ^1 ^0.2 ^17.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%4] run tp ^1 ^0.2 ^16.5
+      tag=%projectile_uuid%4] run minecraft:tp ^1 ^0.2 ^16.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%5] run tp ^1 ^0.2 ^16.0
+      tag=%projectile_uuid%5] run minecraft:tp ^1 ^0.2 ^16.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%6] run tp ^1 ^0.2 ^15.5
+      tag=%projectile_uuid%6] run minecraft:tp ^1 ^0.2 ^15.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%7] run tp ^1 ^0.2 ^15.0
+      tag=%projectile_uuid%7] run minecraft:tp ^1 ^0.2 ^15.0
     - execute at %projectile_uuid% run playsound minecraft:entity.generic.extinguish_fire
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^19.0
+      run minecraft:tp ^ ^0.2 ^19.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%1] run tp ^1 ^0.2 ^19.0
+      tag=%projectile_uuid%1] run minecraft:tp ^1 ^0.2 ^19.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%2] run tp ^1 ^0.2 ^18.5
+      tag=%projectile_uuid%2] run minecraft:tp ^1 ^0.2 ^18.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%3] run tp ^1 ^0.2 ^18.0
+      tag=%projectile_uuid%3] run minecraft:tp ^1 ^0.2 ^18.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%4] run tp ^1 ^0.2 ^17.5
+      tag=%projectile_uuid%4] run minecraft:tp ^1 ^0.2 ^17.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%5] run tp ^1 ^0.2 ^17.0
+      tag=%projectile_uuid%5] run minecraft:tp ^1 ^0.2 ^17.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%6] run tp ^1 ^0.2 ^16.5
+      tag=%projectile_uuid%6] run minecraft:tp ^1 ^0.2 ^16.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%7] run tp ^1 ^0.2 ^16.0
+      tag=%projectile_uuid%7] run minecraft:tp ^1 ^0.2 ^16.0
     - execute at %projectile_uuid% run playsound minecraft:entity.generic.extinguish_fire
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^20.0
+      run minecraft:tp ^ ^0.2 ^20.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%1] run tp ^1 ^0.2 ^20.0
+      tag=%projectile_uuid%1] run minecraft:tp ^1 ^0.2 ^20.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%2] run tp ^1 ^0.2 ^19.5
+      tag=%projectile_uuid%2] run minecraft:tp ^1 ^0.2 ^19.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%3] run tp ^1 ^0.2 ^18.0
+      tag=%projectile_uuid%3] run minecraft:tp ^1 ^0.2 ^18.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%4] run tp ^1 ^0.2 ^18.5
+      tag=%projectile_uuid%4] run minecraft:tp ^1 ^0.2 ^18.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%5] run tp ^1 ^0.2 ^17.0
+      tag=%projectile_uuid%5] run minecraft:tp ^1 ^0.2 ^17.0
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%6] run tp ^1 ^0.2 ^17.5
+      tag=%projectile_uuid%6] run minecraft:tp ^1 ^0.2 ^17.5
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%7] run tp ^1 ^0.2 ^17.0
-    - execute in <<%world%>> run kill @e[tag=%projectile_uuid%]
-    - execute in <<%world%>> run kill %projectile_uuid%
-    - execute in <<%world%>> run kill @e[tag=%projectile_uuid%1]
-    - execute in <<%world%>> run kill @e[tag=%projectile_uuid%2]
-    - execute in <<%world%>> run kill @e[tag=%projectile_uuid%3]
-    - execute in <<%world%>> run kill @e[tag=%projectile_uuid%4]
-    - execute in <<%world%>> run kill @e[tag=%projectile_uuid%5]
-    - execute in <<%world%>> run kill @e[tag=%projectile_uuid%6]
-    - execute in <<%world%>> run kill @e[tag=%projectile_uuid%7]
+      tag=%projectile_uuid%7] run minecraft:tp ^1 ^0.2 ^17.0
+    - execute in <<%world%>> run minecraft:kill @e[tag=%projectile_uuid%]
+    - execute in <<%world%>> run minecraft:kill %projectile_uuid%
+    - execute in <<%world%>> run minecraft:kill @e[tag=%projectile_uuid%1]
+    - execute in <<%world%>> run minecraft:kill @e[tag=%projectile_uuid%2]
+    - execute in <<%world%>> run minecraft:kill @e[tag=%projectile_uuid%3]
+    - execute in <<%world%>> run minecraft:kill @e[tag=%projectile_uuid%4]
+    - execute in <<%world%>> run minecraft:kill @e[tag=%projectile_uuid%5]
+    - execute in <<%world%>> run minecraft:kill @e[tag=%projectile_uuid%6]
+    - execute in <<%world%>> run minecraft:kill @e[tag=%projectile_uuid%7]
     playerConditions: {}
     worldConditions: {}
     itemConditions: {}
@@ -504,7 +504,7 @@ activators:
     detailedEntities: []
     entityCommands:
     - execute as @e[type=minecraft:armor_stand, tag=%projectile_uuid%] at %player%
-      run tp @s ~0.25 ~ ~ ~ ~
+      run minecraft:tp @s ~0.25 ~ ~ ~ ~
     - 'LOOP START: 32'
     - execute at %projectile_uuid% run particle firework ~-0.5 ~1 ~ .2 .2 .2 0 10
     - MOB_AROUND 2 DAMAGE 2

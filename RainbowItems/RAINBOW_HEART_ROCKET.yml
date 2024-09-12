@@ -82,7 +82,7 @@ activators:
     commands:
     - execute at %projectile_uuid% run playsound minecraft:entity.firework_rocket.large_blast
       ambient @a[distance=..50] ~ ~ ~ 10
-    - execute at %projectile_uuid% facing entity %player% feet run tp %projectile_uuid%
+    - execute at %projectile_uuid% facing entity %player% feet run minecraft:tp %projectile_uuid%
       ~ ~ ~ ~ 0
     - execute at %projectile_uuid% run particle dust 1 0.03 0.9 4 ^ ^1 ^ .2 .2 .2
       0 10
@@ -465,7 +465,7 @@ activators:
     - LOOP END
     - execute at %projectile_uuid% run playsound minecraft:entity.firework_rocket.large_blast
       ambient @a[distance=..50] ~ ~ ~ 10
-    - execute at %projectile_uuid% facing entity %player% feet run tp %projectile_uuid%
+    - execute at %projectile_uuid% facing entity %player% feet run minecraft:tp %projectile_uuid%
       ~ ~ ~ ~ 0
     - execute at %projectile_uuid% run particle dust 1 0.03 0.9 4 ^ ^1 ^ .2 .2 .2
       0 10

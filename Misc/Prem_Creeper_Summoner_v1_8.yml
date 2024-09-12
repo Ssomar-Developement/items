@@ -109,12 +109,12 @@ activators:
     - execute at %player% run summon armor_stand ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["%var_x%"]}
     - execute at %player% run summon creeper ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,NoAI:1b,CanPickUpLoot:0b,Tags:["%var_x%"]}
     - execute at %player% run execute at %player% as @e[type=creeper,tag=%var_x%]
-      run tp @e[type=creeper,tag=%var_x%] ~ ~ ~ ~ 0
+      run minecraft:tp @e[type=creeper,tag=%var_x%] ~ ~ ~ ~ 0
     - 'LOOP START: 60'
     - execute at %player% run execute at @e[type=creeper,tag=%var_x%] as @e[type=creeper,tag=%var_x%]
-      run tp @e[type=creeper,tag=%var_x%] ^ ^ ^0.165
+      run minecraft:tp @e[type=creeper,tag=%var_x%] ^ ^ ^0.165
     - execute at @e[type=creeper,tag=%var_x%] if block ~ ~-0.1 ~ air run execute at
-      @e[type=creeper,tag=%var_x%] as @e[type=creeper,tag=%var_x%] run tp @e[type=creeper,tag=%var_x%]
+      @e[type=creeper,tag=%var_x%] as @e[type=creeper,tag=%var_x%] run minecraft:tp @e[type=creeper,tag=%var_x%]
       ~ ~-0.1 ~
     - execute at @e[type=creeper,tag=%var_x%] unless block ^ ^ ^0.1 air run data merge
       entity @e[type=creeper,tag=%var_x%,limit=1] {Fuse:0}

@@ -145,7 +145,7 @@ activators:
     commands:
     - 'LOOP START: 4'
     - execute at @e[tag=%player_uuid%parachute] as @e[tag=%player_uuid%parachute]
-      run tp @e[tag=%player_uuid%parachute] %x% %y%+1 %z%
+      run minecraft:tp @e[tag=%player_uuid%parachute] %x% %y%+1 %z%
     - DELAYTICK 5
     - LOOP END
     playerConditions: {}
