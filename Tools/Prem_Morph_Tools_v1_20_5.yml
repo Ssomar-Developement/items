@@ -178,7 +178,7 @@ activators:
         type: PLAYER_NUMBER
         comparator: SUPERIOR_OR_EQUALS
         part1: '%var_tools%'
-        part2: '6'
+        part2: '7'
         cancelEventIfNotValid: false
         messageIfNotValid: ''
         messageIfNotValidForTarget: ''
