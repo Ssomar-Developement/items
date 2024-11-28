@@ -1,14 +1,17 @@
-name: '&eDefault name'
+name: '&6&lMagic Wand (Black Hole)'
 lore:
-- '&b&oDefault lore'
-material: IRON_SWORD
+- '&6---------------------------'
+- '&6Shots black hole projectiles that drag mobs in!'
+- '&6Made by Orange#0513 (orange0513)'
+- §6---------------------------
+material: BLAZE_ROD
 glow: false
 disableStack: false
 keepItemOnDeath: false
 canBeUsedOnlyByTheOwner: false
 storeItemInfo: false
 unbreakable: false
-usage: 0
+usage: 1
 usageLimit: -1
 cancelEventIfNoPerm: false
 cancelEventIfNotOwner: false
@@ -21,13 +24,16 @@ dropOptions:
   glowDropColor: WHITE
   displayNameDrop: false
 hiders:
-  hideEnchantments: false
-  hideUnbreakable: false
-  hideAttributes: false
-  hidePotionEffects: false
-  hideUsage: false
+  hideEnchantments: true
+  hideUnbreakable: true
+  hideAttributes: true
+  hidePotionEffects: true
+  hideUsage: true
   hideDye: false
-enchantments: {}
+enchantments:
+  enchantment0:
+    enchantment: PROTECTION_FALL
+    level: 6
 giveFirstJoin:
   giveFirstJoin: false
   giveFirstJoinAmount: 1
@@ -36,18 +42,25 @@ restrictions: {}
 variables: {}
 activators:
   activator0:
-    name: '&eActivator'
-    option: PLAYER_LEFT_CLICK
+    name: Shot Black Hole
+    option: PLAYER_ALL_CLICK
     typeTarget: NO_TYPE_TARGET
     usageModification: 0
     cancelEvent: false
+    noActivatorRunIfTheEventIsCancelled: false
     silenceOutput: true
-    autoUpdateItem: false
+    autoUpdateItem: true
+    updateName: true
+    updateLore: true
+    updateDurability: false
+    updateAttributes: false
+    updateEnchants: false
+    updateCustomModelData: false
     cooldownOptions:
-      cooldown: 0
+      cooldown: 5
       isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
+      cooldownMsg: ''
+      displayCooldownMessage: false
       cancelEventIfInCooldown: false
     globalCooldownOptions:
       cooldown: 0
@@ -61,7 +74,9 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - LOCATED_LAUNCH DEFAULT_INVISIBLE_ARROW_NO_GRAVITY 0 0 0 0
+    - execute at %player_name% run playsound minecraft:entity.warden.sonic_boom player
+      @a[distance=..15] ~ ~ ~
+    - LAUNCH BLACK_HOLE_PROJECTILE
     playerConditions: {}
     worldConditions: {}
     itemConditions: {}
@@ -73,8 +88,15 @@ activators:
     option: PLAYER_CUSTOM_LAUNCH
     usageModification: 0
     cancelEvent: false
+    noActivatorRunIfTheEventIsCancelled: false
     silenceOutput: true
     autoUpdateItem: false
+    updateName: true
+    updateLore: true
+    updateDurability: false
+    updateAttributes: false
+    updateEnchants: false
+    updateCustomModelData: false
     cooldownOptions:
       cooldown: 0
       isCooldownInTicks: false
@@ -92,8 +114,7 @@ activators:
     requiredExecutableItems: {}
     detailedSlots:
     - -1
-    commands:
-    - execute at %player% as %projectile_uuid% run minecraft:tp %projectile_uuid% ^ ^1.6 ^6
+    commands: []
     playerConditions: {}
     worldConditions: {}
     itemConditions: {}
@@ -101,10 +122,17 @@ activators:
     placeholdersConditions: {}
     detailedEntities: []
     entityCommands:
+    - 'LOOP START: 67'
+    - execute at %projectile_uuid% run execute as @e[type=!player,type=!item,type=!arrow,type=!item_frame,type=!endermite,type=!minecraft:glow_item_frame,type=!minecraft:boat,type=!minecraft:minecart,type=!minecraft:armor_stand,distance=..25]
+      run execute as @s at @s facing entity %projectile_uuid% feet run minecraft:tp ^ ^ ^0.75
     - DELAYTICK 1
-    - AROUND 0.5 CONDITIONS(%::player_name::%!=%player%) DAMAGE 10
-    - MOB_AROUND 0.5 DAMAGE 10
-    - minecraft:kill %projectile_uuid%
+    - execute at %projectile_uuid% run execute as @e[type=!player,type=!item,type=!arrow,type=!item_frame,type=!endermite,type=!minecraft:glow_item_frame,type=!minecraft:boat,type=!minecraft:minecart,type=!minecraft:armor_stand,distance=..25]
+      run execute as @s at @s facing entity %projectile_uuid% feet run minecraft:tp ^ ^ ^0.75
+    - DELAYTICK 2
+    - MOB_AROUND 4 DAMAGE 2
+    - LOOP END
+    - DELAYTICK 5
+    - MOB_AROUND 5 FRONTDASH -3 1
     entityConditions: {}
     variablesModification: {}
 attributes: {}
