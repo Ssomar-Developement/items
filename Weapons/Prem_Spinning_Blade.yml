@@ -182,7 +182,7 @@ activators:
     - -1
     commands:
     - 'LOOP START: 20'
-    - MOB_AROUND 5 true DAMAGE 5
+    - MOB_AROUND distance:5 displayMsgIfNoEntity:false DAMAGE 5
     - DELAYTICK 5
     - LOOP END
     playerConditions: {}
