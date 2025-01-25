@@ -16,49 +16,66 @@ storeItemInfo: false
 unbreakable: false
 usage: -1
 usageLimit: -1
+cancelEventIfNoPerm: false
+cancelEventIfNotOwner: false
+disabledWorlds: []
+recognitions: []
+config_5: true
+config_update: true
+disableEnchantGlide: false
+onlyOwnerBlackListedActivators: []
+usageFeatures:
+  usage: -1
+  isRefreshableClean: false
+  usageLimit: -1
+isDurabilityBasedOnUsage: false
 dropOptions:
   glowDrop: false
   glowDropColor: WHITE
   displayNameDrop: false
+enchantments: {}
 hiders:
   hideEnchantments: false
   hideUnbreakable: false
   hideAttributes: false
-  hidePotionEffects: false
   hideUsage: false
-enchantments: {}
+  hideDestroys: false
+  hidePlacedOn: false
+  hideDye: false
+  hideArmorTrim: false
+  hideAdditionalTooltip: false
+  hideToolTip: false
 giveFirstJoin:
   giveFirstJoin: false
   giveFirstJoinAmount: 1
   giveFirstJoinSlot: 0
 restrictions:
-  cancel-anvil: true
-  cancel-enchant-anvil: true
-  cancel-item-delete-by-cactus: true
-  cancel-merchant: true
-  cancel-loom: true
-  cancel-smithing-table: true
-  cancel-item-burn: true
-  cancel-stone-cutter: true
-  cancel-composter: true
   cancel-item-place: true
-  cancel-item-frame: true
+  cancel-tool-interactions: true
   cancel-consumption: true
+  cancel-item-craft-no-custom: true
+  cancel-item-craft: true
+  cancel-deposit-in-furnace: true
+  cancel-stone-cutter: true
+  cancel-enchant: true
+  cancel-anvil: true
+  cancel-rename-anvil: true
+  cancel-enchant-anvil: true
   cancel-grind-stone: true
-  cancel-lectern: true
+  cancel-item-frame: true
+  cancel-smithing-table: true
+  cancel-brewing: true
   cancel-beacon: true
   cancel-cartography: true
-  cancel-enchant: true
+  cancel-composter: true
+  cancel-lectern: true
+  cancel-loom: true
+  cancel-merchant: true
+  cancel-item-burn: true
+  cancel-item-delete-by-cactus: true
   cancel-item-delete-by-lightning: true
-  cancel-item-craft: true
-  cancel-tool-interactions: true
-  cancel-item-craft-no-custom: true
-  cancel-brewing: true
-  cancel-rename-anvil: true
-  cancel-deposit-in-furnace: true
-cancelEventIfNoPerm: false
-cancelEventIfNotOwner: false
-disabledWorlds: []
+cancelEventIfNoPermission: false
+whitelistedWorlds: []
 variables: {}
 activators:
   activator1:
@@ -67,25 +84,42 @@ activators:
     typeTarget: NO_TYPE_TARGET
     usageModification: 0
     cancelEvent: false
+    noActivatorRunIfTheEventIsCancelled: false
     silenceOutput: false
     autoUpdateItem: false
+    updateMaterial: false
+    updateName: true
+    updateLore: true
+    updateDurability: false
+    updateAttributes: false
+    updateEnchants: false
+    updateCustomModelData: false
+    updateArmorSettings: false
+    updateHiders: false
     cooldownOptions:
       cooldown: 50
       isCooldownInTicks: true
       cooldownMsg: '&7Please wait &a%time% &7seconds to use &6Overload &7again!'
       displayCooldownMessage: false
       cancelEventIfInCooldown: false
+      pauseWhenOffline: false
+      pausePlaceholdersConditions: {}
+      enableVisualCooldown: false
     globalCooldownOptions:
       cooldown: 0
       isCooldownInTicks: false
       cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
       displayCooldownMessage: true
       cancelEventIfInCooldown: false
+      pauseWhenOffline: false
+      pausePlaceholdersConditions: {}
+      enableVisualCooldown: false
     otherEICooldowns: {}
     requiredItems:
       errorMessage: ''
     requiredExecutableItems:
       errorMessage: ''
+    requiredMagics: {}
     detailedSlots:
     - -1
     commands:
@@ -102,113 +136,130 @@ activators:
     option: PLAYER_CUSTOM_LAUNCH
     usageModification: 0
     cancelEvent: false
+    noActivatorRunIfTheEventIsCancelled: false
     silenceOutput: true
     autoUpdateItem: false
+    updateMaterial: false
+    updateName: true
+    updateLore: true
+    updateDurability: false
+    updateAttributes: false
+    updateEnchants: false
+    updateCustomModelData: false
+    updateArmorSettings: false
+    updateHiders: false
     cooldownOptions:
       cooldown: 0
       isCooldownInTicks: false
       cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
       displayCooldownMessage: false
       cancelEventIfInCooldown: false
+      pauseWhenOffline: false
+      pausePlaceholdersConditions: {}
+      enableVisualCooldown: false
     globalCooldownOptions:
       cooldown: 0
       isCooldownInTicks: false
       cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
       displayCooldownMessage: true
       cancelEventIfInCooldown: false
+      pauseWhenOffline: false
+      pausePlaceholdersConditions: {}
+      enableVisualCooldown: false
     otherEICooldowns: {}
     requiredItems:
       errorMessage: ''
     requiredExecutableItems:
       errorMessage: ''
+    requiredMagics: {}
     detailedSlots:
     - -1
     commands:
     - execute at %projectile_uuid% run summon armor_stand ~0.5 ~-0.5 ~ {NoGravity:1b,CustomName:'{"text":"%player%"}',Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["%projectile_uuid%123"],HandItems:[{id:"minecraft:bamboo",Count:1b},{}]}
     - execute at %player% run summon armor_stand ~ ~ ~ {NoGravity:1b,CustomName:'{"text":"%player%"}',Invulnerable:1b,Invisible:1b,Marker:1b,Tags:["%projectile_uuid%"],ArmorItems:[{},{},{},{}]}
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^0.0
+      run minecraft:tp ^ ^0.2 ^0.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^1.0
+      run minecraft:tp ^ ^0.2 ^1.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^2.0
+      run minecraft:tp ^ ^0.2 ^2.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^3.0
+      run minecraft:tp ^ ^0.2 ^3.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^4.0
+      run minecraft:tp ^ ^0.2 ^4.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^5.0
+      run minecraft:tp ^ ^0.2 ^5.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^6.0
+      run minecraft:tp ^ ^0.2 ^6.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^7.0
+      run minecraft:tp ^ ^0.2 ^7.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^8.0
+      run minecraft:tp ^ ^0.2 ^8.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^9.0
+      run minecraft:tp ^ ^0.2 ^9.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^10.0
+      run minecraft:tp ^ ^0.2 ^10.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^11.0
+      run minecraft:tp ^ ^0.2 ^11.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^12.0
+      run minecraft:tp ^ ^0.2 ^12.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^13.0
+      run minecraft:tp ^ ^0.2 ^13.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^14.0
+      run minecraft:tp ^ ^0.2 ^14.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^13.0
+      run minecraft:tp ^ ^0.2 ^13.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^12.0
+      run minecraft:tp ^ ^0.2 ^12.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^11.0
+      run minecraft:tp ^ ^0.2 ^11.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^10.0
+      run minecraft:tp ^ ^0.2 ^10.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^9.0
+      run minecraft:tp ^ ^0.2 ^9.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^8.0
+      run minecraft:tp ^ ^0.2 ^8.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^7.0
+      run minecraft:tp ^ ^0.2 ^7.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^6.0
+      run minecraft:tp ^ ^0.2 ^6.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^5.0
+      run minecraft:tp ^ ^0.2 ^5.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^4.0
+      run minecraft:tp ^ ^0.2 ^4.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^3.0
+      run minecraft:tp ^ ^0.2 ^3.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^2.0
+      run minecraft:tp ^ ^0.2 ^2.0
     - DELAYTICK 1
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run tp ^ ^0.2 ^1.0
+      run minecraft:tp ^ ^0.2 ^1.0
     playerConditions: {}
     worldConditions: {}
     itemConditions: {}
@@ -216,26 +267,56 @@ activators:
     placeholdersConditions: {}
     detailedEntities: []
     entityCommands:
+    - data merge entity %projectile_uuid% {NoGravity:1b,Motion:[0.0,0.0,0.0]}
     - 'LOOP START: 32'
     - execute as @e[type=minecraft:armor_stand, tag=%projectile_uuid%123] at %projectile_uuid%
-      run tp @s ~ ~0.5 ~
+      run minecraft:tp @s ~ ~0.5 ~
     - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%123] as @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%123] run tp @s ~ ~ ~ ~-90 ~
+      tag=%projectile_uuid%123] run minecraft:tp @s ~ ~ ~ ~-90 ~
     - execute as @e[type=minecraft:armor_stand, tag=%projectile_uuid%] at %player%
-      run tp @s ~0.25 ~ ~ ~ 0
+      run minecraft:tp @s ~0.25 ~ ~ ~ 0
     - AROUND 2 CONDITIONS(%::player_name::%!=%player%) false DAMAGE 3
     - MOB_AROUND 2 DAMAGE 5
     - DELAYTICK 1
     - LOOP END
-    - execute in <<%world%>> run kill @e[tag=%projectile_uuid%]
-    - execute in <<%world%>> run kill @e[tag=%projectile_uuid%123]
-    - execute in <<%world%>> run kill %projectile_uuid%
-    entityConditions:
-      ifIsOnTheBlock: {}
-      ifIsNotOnTheBlock: {}
-      ifNotEntityType: []
+    - execute in <<%world%>> run minecraft:kill @e[tag=%projectile_uuid%]
+    - execute in <<%world%>> run minecraft:kill @e[tag=%projectile_uuid%123]
+    - execute in <<%world%>> run minecraft:kill %projectile_uuid%
+    entityConditions: {}
     variablesModification: {}
-recognitions: []
+displayConditions:
+  playerConditions: {}
+  worldConditions: {}
+  itemConditions: {}
+  placeholdersConditions: {}
+  enableFeature: false
+food:
+  nutrition: 1
+  saturation: 1
+  isMeat: false
+  canAlwaysEat: false
+consumableFeatures:
+  enable: false
+  animation: EAT
+  hasConsumeParticles: false
+  consumeSeconds: 3
+itemRarity:
+  enableRarity: false
+  rarity: COMMON
+glider: false
+repairableFeatures:
+  enable: false
+  repairCost: 2
+equippableFeatures:
+  enable: false
+  slot: BODY
+  enableSound: false
+  sound: ITEM.ARMOR.EQUIP_DIAMOND
+  damageableOnHurt: false
+  dispensable: true
+  swappable: true
+  allowedEntities:
+  - PLAYER
 attributes: {}
-config_5: true
-config_update: true
+keepDefaultAttributes: false
+ignoreKeepDefaultAttributesFeature: true
