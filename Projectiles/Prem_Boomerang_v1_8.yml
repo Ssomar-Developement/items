@@ -216,6 +216,7 @@ activators:
     placeholdersConditions: {}
     detailedEntities: []
     entityCommands:
+    - data merge entity %projectile_uuid% {NoGravity:1b,Motion:[0.0,0.0,0.0]}
     - 'LOOP START: 32'
     - execute as @e[type=minecraft:armor_stand, tag=%projectile_uuid%123] at %projectile_uuid%
       run minecraft:tp @s ~ ~0.5 ~
