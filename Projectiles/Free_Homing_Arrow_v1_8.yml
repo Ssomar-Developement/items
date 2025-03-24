@@ -61,21 +61,21 @@ activators:
     requiredExecutableItems: {}
     detailedSlots:
     - -1
-    commands:
-    - DELAYTICK 10
-    - 'LOOP START: 100'
-    - execute at %projectile_uuid% facing entity @e[distance=..20,sort=nearest,limit=1,name=!%player%,type=!firework_rocket,type=!arrow,type=!item]
-      eyes run minecraft:tp %projectile_uuid% ~ ~ ~ ~ ~
-    - DELAYTICK 1
-    - execute at %projectile_uuid% as %projectile_uuid% run minecraft:tp ^ ^ ^1
-    - LOOP END
+    commands: []
     playerConditions: {}
     worldConditions: {}
     itemConditions: {}
     customConditions: {}
     placeholdersConditions: {}
     detailedEntities: []
-    entityCommands: []
+    entityCommands: 
+    - 'LOOP START: 100'
+    - MOB_NEAREST 10 score run-entity-command entity:%projectile_uuid% CUSTOMDASH1
+      %around_target_x% %around_target_y% %around_target_z%
+    - NEAREST 10 score run-entity-command entity:%projectile_uuid% IF %player%!=%around_target% CUSTOMDASH1
+      %around_target_x% %around_target_y% %around_target_z%
+    - DELAYTICK 1
+    - LOOP END
     entityConditions:
       ifIsOnTheBlock: {}
       ifIsNotOnTheBlock: {}
