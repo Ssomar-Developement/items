@@ -1,4 +1,4 @@
-name: '#FB7777P#F39675r#EBB573i#E3D471s#DBF36Fm#C1F583a #9EE9A2S#7ADDC0t#57D1DFo#4BBCF1m#6C94EAp#8D6DE2e#AE45DBr#CF1ED3s'
+name: '#FB7777P#F39675r#EBB573i#E3D471s#DBF36Fm#C1F583a #9EE9A2T#7ADDC0r#57D1DFo#4BBCF1u#6C94EAs#8D6DE2e#AE45DBr#CF1ED3s'
 lore:
 - '&7Colours of the World'
 - '&8————————————————————'
@@ -23,7 +23,7 @@ lore:
 - '&f'
 - '&8—————— #FF97D6P#FFAEDFr#FFC5E8i#FFDCF1d#FFF3FAe #F4FDFFC#DEF9FFr#C9F5FFa#B3F1FFt#9DEDFFe
   &8——————'
-material: NETHERITE_BOOTS
+material: NETHERITE_LEGGINGS
 glow: true
 disableStack: false
 keepItemOnDeath: false
@@ -85,20 +85,20 @@ activators:
     playerConditions:
       ifHasExecutableItems:
         condition1:
-          executableItem: RAINBOW_PRISMA_2
+          executableItem: RAINBOW_PRISMA_2_v1_20_5
           amount: 1
           detailedSlots:
           - 38
         condition2:
-          executableItem: RAINBOW_PRISMA_3
-          amount: 1
-          detailedSlots:
-          - 37
-        condition3:
-          executableItem: RAINBOW_PRISMA_1
+          executableItem: RAINBOW_PRISMA_1_v1_20_5
           amount: 1
           detailedSlots:
           - 39
+        condition3:
+          executableItem: RAINBOW_PRISMA_4_v1_20_5
+          amount: 1
+          detailedSlots:
+          - 36
     worldConditions: {}
     itemConditions: {}
     customConditions: {}

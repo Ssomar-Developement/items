@@ -85,17 +85,17 @@ activators:
     playerConditions:
       ifHasExecutableItems:
         condition1:
-          executableItem: RAINBOW_PRISMA_2
+          executableItem: RAINBOW_PRISMA_2_v1_20_5
           amount: 1
           detailedSlots:
           - 38
         condition2:
-          executableItem: RAINBOW_PRISMA_3
+          executableItem: RAINBOW_PRISMA_3_v1_20_5
           amount: 1
           detailedSlots:
           - 37
         condition3:
-          executableItem: RAINBOW_PRISMA_4
+          executableItem: RAINBOW_PRISMA_4_v1_20_5
           amount: 1
           detailedSlots:
           - 36
@@ -134,80 +134,80 @@ activators:
     - execute at @e[type=armor_stand,tag=%player_uuid%] as @e[type=armor_stand,tag=%player_uuid%]
       run minecraft:tp @e[type=armor_stand,tag=%player_uuid%] %x% %y%+2 %z% ~20 0
     - AROUND 7 false execute at @e[type=armor_stand,tag=%player_uuid%] positioned
-      %around_target_x% %around_target_y% %around_target_z% run particle minecraft:dust
-      1 0 0 2 ^ ^2 ^1 0.1 0.2 0.1 1 1
+      %around_target_x% %around_target_y% %around_target_z% run particle minecraft:dust{color:[1.0,0.0,0.0],scale:2.0}
+      ^ ^2 ^1 0.1 0.2 0.1 1 1
     - DELAYTICK 1
     - execute at @e[type=armor_stand,tag=%player_uuid%] as @e[type=armor_stand,tag=%player_uuid%]
       run minecraft:tp @e[type=armor_stand,tag=%player_uuid%] %x% %y%+2 %z% ~20 0
     - AROUND 7 false execute at @e[type=armor_stand,tag=%player_uuid%] positioned
-      %around_target_x% %around_target_y% %around_target_z% run particle minecraft:dust
-      1 0.5 0 2 ^ ^2 ^1 0.1 0.2 0.1 1 1
+      %around_target_x% %around_target_y% %around_target_z% run particle minecraft:dust{color:[1.0,0.5,0.0],scale:2.0}
+      ^ ^2 ^1 0.1 0.2 0.1 1 1
     - DELAYTICK 1
     - execute at @e[type=armor_stand,tag=%player_uuid%] as @e[type=armor_stand,tag=%player_uuid%]
       run minecraft:tp @e[type=armor_stand,tag=%player_uuid%] %x% %y%+2 %z% ~20 0
     - AROUND 7 false execute at @e[type=armor_stand,tag=%player_uuid%] positioned
-      %around_target_x% %around_target_y% %around_target_z% run particle minecraft:dust
-      1 0.8 0 2 ^ ^2 ^1 0.1 0.2 0.1 1 1
+      %around_target_x% %around_target_y% %around_target_z% run particle minecraft:dust{color:[1.0,0.8,0.0],scale:2.0}
+      ^ ^2 ^1 0.1 0.2 0.1 1 1
     - DELAYTICK 1
     - execute at @e[type=armor_stand,tag=%player_uuid%] as @e[type=armor_stand,tag=%player_uuid%]
       run minecraft:tp @e[type=armor_stand,tag=%player_uuid%] %x% %y%+2 %z% ~20 0
     - AROUND 7 false execute at @e[type=armor_stand,tag=%player_uuid%] positioned
-      %around_target_x% %around_target_y% %around_target_z% run particle minecraft:dust
-      1 1 0 2 ^ ^2 ^1 0.1 0.2 0.1 1 1
+      %around_target_x% %around_target_y% %around_target_z% run particle minecraft:dust{color:[1.0,1.0,0.0],scale:2.0}
+      ^ ^2 ^1 0.1 0.2 0.1 1 1
     - DELAYTICK 1
     - execute at @e[type=armor_stand,tag=%player_uuid%] as @e[type=armor_stand,tag=%player_uuid%]
       run minecraft:tp @e[type=armor_stand,tag=%player_uuid%] %x% %y%+2 %z% ~20 0
     - AROUND 7 false execute at @e[type=armor_stand,tag=%player_uuid%] positioned
-      %around_target_x% %around_target_y% %around_target_z% run particle minecraft:dust
-      0 1 0 2 ^ ^2 ^1 0.1 0.2 0.1 1 1
+      %around_target_x% %around_target_y% %around_target_z% run particle minecraft:dust{color:[0.0,1.0,0.0],scale:2.0}
+      ^ ^2 ^1 0.1 0.2 0.1 1 1
     - DELAYTICK 1
     - execute at @e[type=armor_stand,tag=%player_uuid%] as @e[type=armor_stand,tag=%player_uuid%]
       run minecraft:tp @e[type=armor_stand,tag=%player_uuid%] %x% %y%+2 %z% ~20 0
     - AROUND 7 false execute at @e[type=armor_stand,tag=%player_uuid%] positioned
-      %around_target_x% %around_target_y% %around_target_z% run particle minecraft:dust
-      0 2 0 2 ^ ^2 ^1 0.1 0.2 0.1 1 1
+      %around_target_x% %around_target_y% %around_target_z% run particle minecraft:dust{color:[0.0,2.0,0.0],scale:2.0}
+      ^ ^2 ^1 0.1 0.2 0.1 1 1
     - DELAYTICK 1
     - execute at @e[type=armor_stand,tag=%player_uuid%] as @e[type=armor_stand,tag=%player_uuid%]
       run minecraft:tp @e[type=armor_stand,tag=%player_uuid%] %x% %y%+2 %z% ~20 0
     - AROUND 7 false execute at @e[type=armor_stand,tag=%player_uuid%] positioned
-      %around_target_x% %around_target_y% %around_target_z% run particle minecraft:dust
-      0 1 3 2 ^ ^2 ^1 0.1 0.2 0.1 1 1
+      %around_target_x% %around_target_y% %around_target_z% run particle minecraft:dust{color:[0.0,1.0,3.0],scale:2.0}
+      ^ ^2 ^1 0.1 0.2 0.1 1 1
     - DELAYTICK 1
     - execute at @e[type=armor_stand,tag=%player_uuid%] as @e[type=armor_stand,tag=%player_uuid%]
       run minecraft:tp @e[type=armor_stand,tag=%player_uuid%] %x% %y%+2 %z% ~20 0
     - AROUND 7 false execute at @e[type=armor_stand,tag=%player_uuid%] positioned
-      %around_target_x% %around_target_y% %around_target_z% run particle minecraft:dust
-      0 1 2 2 ^ ^2 ^1 0.1 0.2 0.1 1 1
+      %around_target_x% %around_target_y% %around_target_z% run particle minecraft:dust{color:[0.0,1.0,2.0],scale:2.0}
+      ^ ^2 ^1 0.1 0.2 0.1 1 1
     - DELAYTICK 1
     - execute at @e[type=armor_stand,tag=%player_uuid%] as @e[type=armor_stand,tag=%player_uuid%]
       run minecraft:tp @e[type=armor_stand,tag=%player_uuid%] %x% %y%+2 %z% ~20 0
     - AROUND 7 false execute at @e[type=armor_stand,tag=%player_uuid%] positioned
-      %around_target_x% %around_target_y% %around_target_z% run particle minecraft:dust
-      0 1 1 2 ^ ^2 ^1 0.1 0.2 0.1 1 1
+      %around_target_x% %around_target_y% %around_target_z% run particle minecraft:dust{color:[0.0,1.0,1.0],scale:2.0}
+      ^ ^2 ^1 0.1 0.2 0.1 1 1
     - DELAYTICK 1
     - execute at @e[type=armor_stand,tag=%player_uuid%] as @e[type=armor_stand,tag=%player_uuid%]
       run minecraft:tp @e[type=armor_stand,tag=%player_uuid%] %x% %y%+2 %z% ~20 0
     - AROUND 7 false execute at @e[type=armor_stand,tag=%player_uuid%] positioned
-      %around_target_x% %around_target_y% %around_target_z% run particle minecraft:dust
-      0 0 1 2 ^ ^2 ^1 0.1 0.2 0.1 1 1
+      %around_target_x% %around_target_y% %around_target_z% run particle minecraft:dust{color:[0.0,0.0,1.0],scale:2.0}
+      ^ ^2 ^1 0.1 0.2 0.1 1 1
     - DELAYTICK 1
     - execute at @e[type=armor_stand,tag=%player_uuid%] as @e[type=armor_stand,tag=%player_uuid%]
       run minecraft:tp @e[type=armor_stand,tag=%player_uuid%] %x% %y%+2 %z% ~20 0
     - AROUND 7 false execute at @e[type=armor_stand,tag=%player_uuid%] positioned
-      %around_target_x% %around_target_y% %around_target_z% run particle minecraft:dust
-      1 0 1 2 ^ ^2 ^1 0.1 0.2 0.1 1 1
+      %around_target_x% %around_target_y% %around_target_z% run particle minecraft:dust{color:[1.0,0.0,1.0],scale:2.0}
+      ^ ^2 ^1 0.1 0.2 0.1 1 1
     - DELAYTICK 1
     - execute at @e[type=armor_stand,tag=%player_uuid%] as @e[type=armor_stand,tag=%player_uuid%]
       run minecraft:tp @e[type=armor_stand,tag=%player_uuid%] %x% %y%+2 %z% ~20 0
     - AROUND 7 false execute at @e[type=armor_stand,tag=%player_uuid%] positioned
-      %around_target_x% %around_target_y% %around_target_z% run particle minecraft:dust
-      1 0 2 2 ^ ^2 ^1 0.1 0.2 0.1 1 1
+      %around_target_x% %around_target_y% %around_target_z% run particle minecraft:dust{color:[1.0,0.0,2.0],scale:2.0}
+      ^ ^2 ^1 0.1 0.2 0.1 1 1
     - DELAYTICK 1
     - execute at @e[type=armor_stand,tag=%player_uuid%] as @e[type=armor_stand,tag=%player_uuid%]
       run minecraft:tp @e[type=armor_stand,tag=%player_uuid%] %x% %y%+2 %z% ~20 0
     - AROUND 7 false execute at @e[type=armor_stand,tag=%player_uuid%] positioned
-      %around_target_x% %around_target_y% %around_target_z% run particle minecraft:dust
-      2 0 2 2 ^ ^2 ^1 0.1 0.2 0.1 1 1
+      %around_target_x% %around_target_y% %around_target_z% run particle minecraft:dust{color:[2.0,0.0,2.0],scale:2.0}
+      ^ ^2 ^1 0.1 0.2 0.1 1 1
     - AROUND 7 false DAMAGE_BOOST 10 15
     - AROUND 7 false DAMAGE_RESISTANCE 2 15
     playerConditions: {}

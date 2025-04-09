@@ -85,17 +85,17 @@ activators:
     playerConditions:
       ifHasExecutableItems:
         condition1:
-          executableItem: MONJI_PRISMA_2
+          executableItem: RAINBOW_PRISMA_2
           amount: 1
           detailedSlots:
           - 38
         condition2:
-          executableItem: MONJI_PRISMA_1
+          executableItem: RAINBOW_PRISMA_1
           amount: 1
           detailedSlots:
           - 39
         condition3:
-          executableItem: MONJI_PRISMA_4
+          executableItem: RAINBOW_PRISMA_4
           amount: 1
           detailedSlots:
           - 36

@@ -85,17 +85,17 @@ activators:
     playerConditions:
       ifHasExecutableItems:
         condition1:
-          executableItem: RAINBOW_PRISMA_2
+          executableItem: RAINBOW_PRISMA_2_v1_20_5
           amount: 1
           detailedSlots:
           - 38
         condition2:
-          executableItem: RAINBOW_PRISMA_3
+          executableItem: RAINBOW_PRISMA_3_v1_20_5
           amount: 1
           detailedSlots:
           - 37
         condition3:
-          executableItem: RAINBOW_PRISMA_1
+          executableItem: RAINBOW_PRISMA_4_v1_20_5
           amount: 1
           detailedSlots:
           - 39
