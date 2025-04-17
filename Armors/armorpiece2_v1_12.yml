@@ -218,7 +218,7 @@ activators:
     playerConditions:
       ifHasExecutableItems:
         hasExecutableItem0:
-          executableItem: armorpiece1_v1_8
+          executableItem: armorpiece1_v1_12
           amount: 1
           detailedSlots:
           - 39
@@ -272,7 +272,7 @@ activators:
     playerConditions:
       ifHasNotExecutableItems:
         hasNotExecutableItem0:
-          executableItem: armorpiece1_v1_8
+          executableItem: armorpiece1_v1_12
           amount: 1
           detailedSlots:
           - 39
@@ -326,7 +326,7 @@ activators:
     playerConditions:
       ifHasExecutableItems:
         hasExecutableItem0:
-          executableItem: armorpiece3_v1_8
+          executableItem: armorpiece3_v1_12
           amount: 1
           detailedSlots:
           - 37
@@ -380,7 +380,7 @@ activators:
     playerConditions:
       ifHasNotExecutableItems:
         hasNotExecutableItem0:
-          executableItem: armorpiece3_v1_8
+          executableItem: armorpiece3_v1_12
           amount: 1
           detailedSlots:
           - 37
@@ -434,7 +434,7 @@ activators:
     playerConditions:
       ifHasExecutableItems:
         hasExecutableItem0:
-          executableItem: armorpiece4_v1_8
+          executableItem: armorpiece4_v1_12
           amount: 1
           detailedSlots:
           - 36
@@ -488,7 +488,7 @@ activators:
     playerConditions:
       ifHasNotExecutableItems:
         hasNotExecutableItem0:
-          executableItem: armorpiece4_v1_8
+          executableItem: armorpiece4_v1_12
           amount: 1
           detailedSlots:
           - 36

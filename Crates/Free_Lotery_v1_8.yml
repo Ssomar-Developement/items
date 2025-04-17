@@ -17,7 +17,7 @@ keepItemOnDeath: true
 canBeUsedOnlyByTheOwner: false
 storeItemInfo: false
 unbreakable: false
-usage: -1
+usage: 1
 usageLimit: -1
 cancelEventIfNoPerm: false
 cancelEventIfNotOwner: false

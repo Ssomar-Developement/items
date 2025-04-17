@@ -5,14 +5,14 @@ lore:
 - '&%var_2%[2] Chestplate'
 - '&%var_3%[3] Leggings'
 - '&%var_4%[4] Boots'
-material: DIAMOND_HELMET
+material: DIAMOND_LEGGINGS
 glow: false
 disableStack: false
 keepItemOnDeath: false
 canBeUsedOnlyByTheOwner: false
 storeItemInfo: false
 unbreakable: false
-usage: 1
+usage: 0
 usageLimit: -1
 cancelEventIfNoPerm: false
 cancelEventIfNotOwner: false
@@ -29,7 +29,7 @@ hiders:
   hideUnbreakable: false
   hideAttributes: false
   hidePotionEffects: false
-  hideUsage: true
+  hideUsage: false
 enchantments: {}
 giveFirstJoin:
   giveFirstJoin: false
@@ -42,7 +42,7 @@ variables:
     type: STRING
     default: '0'
   legs:
-    variableName: legsvar
+    variableName: headvar
     type: STRING
     default: '0'
   boots:
@@ -127,8 +127,8 @@ activators:
     - 34
     - 35
     - 36
-    - 37
     - 38
+    - 39
     - 40
     commands: []
     playerConditions: {}
@@ -147,7 +147,7 @@ activators:
     delayInTick: false
     variablesModification:
       varUpdt0:
-        variableName: '1'
+        variableName: '3'
         type: SET
         modification: '7'
   activator1:
@@ -182,15 +182,123 @@ activators:
       plchCdt0:
         type: PLAYER_STRING
         comparator: DIFFERENT
-        part1: '%var_1%'
+        part1: '%var_3%'
         part2: a
         cancelEventIfNotValid: false
         messageIfNotValid: ''
     variablesModification:
       varUpdt0:
+        variableName: '3'
+        type: SET
+        modification: a
+  head1:
+    name: '&eActivator'
+    option: LOOP
+    usageModification: 0
+    cancelEvent: false
+    silenceOutput: false
+    autoUpdateItem: false
+    cooldownOptions:
+      cooldown: 0
+      isCooldownInTicks: false
+      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
+      displayCooldownMessage: true
+      cancelEventIfInCooldown: false
+    globalCooldownOptions:
+      cooldown: 0
+      isCooldownInTicks: false
+      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
+      displayCooldownMessage: true
+      cancelEventIfInCooldown: false
+    otherEICooldowns: {}
+    requiredItems: {}
+    requiredExecutableItems: {}
+    detailedSlots: []
+    commands: []
+    playerConditions:
+      ifHasExecutableItems:
+        hasExecutableItem0:
+          executableItem: armorpiece1_v1_12
+          amount: 1
+          detailedSlots:
+          - 39
+      ifHasExecutableItemsMsg: ''
+    worldConditions: {}
+    itemConditions: {}
+    customConditions: {}
+    placeholdersConditions:
+      plchCdt0:
+        type: PLAYER_STRING
+        comparator: DIFFERENT
+        part1: '%var_headvar%'
+        part2: '1'
+        cancelEventIfNotValid: false
+        messageIfNotValid: ''
+    delay: 1
+    delayInTick: false
+    variablesModification:
+      varUpdt1:
+        variableName: headvar
+        type: SET
+        modification: '1'
+      varUpdt0:
         variableName: '1'
         type: SET
         modification: a
+  head2:
+    name: '&eActivator'
+    option: LOOP
+    usageModification: 0
+    cancelEvent: false
+    silenceOutput: false
+    autoUpdateItem: false
+    cooldownOptions:
+      cooldown: 0
+      isCooldownInTicks: false
+      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
+      displayCooldownMessage: true
+      cancelEventIfInCooldown: false
+    globalCooldownOptions:
+      cooldown: 0
+      isCooldownInTicks: false
+      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
+      displayCooldownMessage: true
+      cancelEventIfInCooldown: false
+    otherEICooldowns: {}
+    requiredItems: {}
+    requiredExecutableItems: {}
+    detailedSlots: []
+    commands: []
+    playerConditions:
+      ifHasNotExecutableItems:
+        hasNotExecutableItem0:
+          executableItem: armorpiece1_v1_12
+          amount: 1
+          detailedSlots:
+          - 39
+      ifHasNotExecutableItemsMsg: ''
+    worldConditions: {}
+    itemConditions: {}
+    customConditions: {}
+    placeholdersConditions:
+      plchCdt0:
+        type: PLAYER_STRING
+        comparator: DIFFERENT
+        part1: '%var_headvar%'
+        part2: '0'
+        cancelEventIfNotValid: false
+        messageIfNotValid: ''
+    delay: 1
+    delayInTick: false
+    variablesModification:
+      varUpdt1:
+        variableName: headvar
+        type: SET
+        modification: '0'
+      varUpdt0:
+        variableName: '1'
+        type: SET
+        modification: '7'
   chest1:
     name: '&eActivator'
     option: LOOP
@@ -218,7 +326,7 @@ activators:
     playerConditions:
       ifHasExecutableItems:
         hasExecutableItem0:
-          executableItem: armorpiece2_v1_8
+          executableItem: armorpiece2_v1_12
           amount: 1
           detailedSlots:
           - 38
@@ -272,7 +380,7 @@ activators:
     playerConditions:
       ifHasNotExecutableItems:
         hasNotExecutableItem0:
-          executableItem: armorpiece2_v1_8
+          executableItem: armorpiece2_v1_12
           amount: 1
           detailedSlots:
           - 38
@@ -297,114 +405,6 @@ activators:
         modification: '0'
       varUpdt0:
         variableName: '2'
-        type: SET
-        modification: '7'
-  legs1:
-    name: '&eActivator'
-    option: LOOP
-    usageModification: 0
-    cancelEvent: false
-    silenceOutput: false
-    autoUpdateItem: false
-    cooldownOptions:
-      cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
-    globalCooldownOptions:
-      cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
-    otherEICooldowns: {}
-    requiredItems: {}
-    requiredExecutableItems: {}
-    detailedSlots: []
-    commands: []
-    playerConditions:
-      ifHasExecutableItems:
-        hasExecutableItem0:
-          executableItem: armorpiece3
-          amount: 1
-          detailedSlots:
-          - 37
-      ifHasExecutableItemsMsg: ''
-    worldConditions: {}
-    itemConditions: {}
-    customConditions: {}
-    placeholdersConditions:
-      plchCdt0:
-        type: PLAYER_STRING
-        comparator: DIFFERENT
-        part1: '%var_legsvar%'
-        part2: '1'
-        cancelEventIfNotValid: false
-        messageIfNotValid: ''
-    delay: 1
-    delayInTick: false
-    variablesModification:
-      varUpdt1:
-        variableName: legsvar
-        type: SET
-        modification: '1'
-      varUpdt0:
-        variableName: '3'
-        type: SET
-        modification: a
-  legs2:
-    name: '&eActivator'
-    option: LOOP
-    usageModification: 0
-    cancelEvent: false
-    silenceOutput: false
-    autoUpdateItem: false
-    cooldownOptions:
-      cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
-    globalCooldownOptions:
-      cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
-    otherEICooldowns: {}
-    requiredItems: {}
-    requiredExecutableItems: {}
-    detailedSlots: []
-    commands: []
-    playerConditions:
-      ifHasNotExecutableItems:
-        hasNotExecutableItem0:
-          executableItem: armorpiece3_v1_8
-          amount: 1
-          detailedSlots:
-          - 37
-      ifHasNotExecutableItemsMsg: ''
-    worldConditions: {}
-    itemConditions: {}
-    customConditions: {}
-    placeholdersConditions:
-      plchCdt0:
-        type: PLAYER_STRING
-        comparator: DIFFERENT
-        part1: '%var_legsvar%'
-        part2: '0'
-        cancelEventIfNotValid: false
-        messageIfNotValid: ''
-    delay: 1
-    delayInTick: false
-    variablesModification:
-      varUpdt1:
-        variableName: legsvar
-        type: SET
-        modification: '0'
-      varUpdt0:
-        variableName: '3'
         type: SET
         modification: '7'
   boots1:
@@ -434,7 +434,7 @@ activators:
     playerConditions:
       ifHasExecutableItems:
         hasExecutableItem0:
-          executableItem: armorpiece4_v1_8
+          executableItem: armorpiece4_v1_12
           amount: 1
           detailedSlots:
           - 36
@@ -488,7 +488,7 @@ activators:
     playerConditions:
       ifHasNotExecutableItems:
         hasNotExecutableItem0:
-          executableItem: armorpiece4_v1_8
+          executableItem: armorpiece4_v1_12
           amount: 1
           detailedSlots:
           - 36
@@ -555,11 +555,11 @@ activators:
         type: SET
         modification: '7'
       varUpdt5:
-        variableName: legsvar
+        variableName: chestvar
         type: SET
         modification: '0'
       varUpdt4:
-        variableName: chestvar
+        variableName: headvar
         type: SET
         modification: '0'
       varUpdt6:
@@ -574,55 +574,4 @@ activators:
         variableName: '1'
         type: SET
         modification: '7'
-  activator3:
-    name: '&eActivator'
-    option: LOOP
-    usageModification: 0
-    cancelEvent: false
-    silenceOutput: false
-    autoUpdateItem: false
-    cooldownOptions:
-      cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
-    globalCooldownOptions:
-      cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
-    otherEICooldowns: {}
-    requiredItems: {}
-    requiredExecutableItems: {}
-    detailedSlots:
-    - 39
-    commands:
-    - effect give %player% haste 2 1 true
-    playerConditions:
-      ifHasExecutableItems:
-        hasExecutableItem0:
-          executableItem: armorpiece2_v1_8
-          amount: 1
-          detailedSlots:
-          - 38
-        hasExecutableItem2:
-          executableItem: armorpiece4_v1_8
-          amount: 1
-          detailedSlots:
-          - 36
-        hasExecutableItem1:
-          executableItem: armorpiece3_v1_8
-          amount: 1
-          detailedSlots:
-          - 37
-      ifHasExecutableItemsMsg: ''
-    worldConditions: {}
-    itemConditions: {}
-    customConditions: {}
-    placeholdersConditions: {}
-    delay: 1
-    delayInTick: false
-    variablesModification: {}
 attributes: {}
