@@ -85,17 +85,17 @@ activators:
     playerConditions:
       ifHasExecutableItems:
         condition1:
-          executableItem: RAINBOW_PRISMA_2
+          executableItem: RAINBOW_PRISMA_2_v1_13__1_20_4
           amount: 1
           detailedSlots:
           - 38
         condition2:
-          executableItem: RAINBOW_PRISMA_3
+          executableItem: RAINBOW_PRISMA_3_v1_13__1_20_4
           amount: 1
           detailedSlots:
           - 37
         condition3:
-          executableItem: RAINBOW_PRISMA_4
+          executableItem: RAINBOW_PRISMA_4_v1_13__1_20_4
           amount: 1
           detailedSlots:
           - 36
@@ -210,7 +210,23 @@ activators:
       2 0 2 2 ^ ^2 ^1 0.1 0.2 0.1 1 1
     - AROUND 7 false DAMAGE_BOOST 10 15
     - AROUND 7 false DAMAGE_RESISTANCE 2 15
-    playerConditions: {}
+    playerConditions: 
+      ifHasExecutableItems:
+        condition1:
+          executableItem: RAINBOW_PRISMA_2_v1_13__1_20_4
+          amount: 1
+          detailedSlots:
+          - 38
+        condition2:
+          executableItem: RAINBOW_PRISMA_3_v1_13__1_20_4
+          amount: 1
+          detailedSlots:
+          - 37
+        condition3:
+          executableItem: RAINBOW_PRISMA_4_v1_13__1_20_4
+          amount: 1
+          detailedSlots:
+          - 36
     worldConditions: {}
     itemConditions: {}
     customConditions: {}
