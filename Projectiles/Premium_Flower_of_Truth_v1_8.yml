@@ -18,7 +18,7 @@ disabledWorlds: []
 recognitions: []
 config_5: true
 config_update: true
-dropOptions:
+dropFeatures:
   glowDrop: false
   glowDropColor: WHITE
   displayNameDrop: false
@@ -45,13 +45,13 @@ activators:
     cancelEvent: false
     silenceOutput: false
     autoUpdateItem: false
-    cooldownOptions:
+    cooldownFeatures:
       cooldown: 0
       isCooldownInTicks: false
       cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
       displayCooldownMessage: true
       cancelEventIfInCooldown: false
-    globalCooldownOptions:
+    globalCooldownFeatures:
       cooldown: 0
       isCooldownInTicks: false
       cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
@@ -63,7 +63,7 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - LAUNCH DEFAULT_INVISIBLE_ARROW_NO_GRAVITY
+    - LAUNCHENTITY ARMOR_STAND
     playerConditions: {}
     worldConditions: {}
     itemConditions: {}
@@ -77,13 +77,13 @@ activators:
     cancelEvent: false
     silenceOutput: true
     autoUpdateItem: false
-    cooldownOptions:
+    cooldownFeatures:
       cooldown: 0
       isCooldownInTicks: false
       cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
       displayCooldownMessage: true
       cancelEventIfInCooldown: false
-    globalCooldownOptions:
+    globalCooldownFeatures:
       cooldown: 0
       isCooldownInTicks: false
       cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
@@ -102,29 +102,23 @@ activators:
     placeholdersConditions: {}
     detailedEntities: []
     entityCommands:
-    - execute at %player% run summon armor_stand ~ ~ ~ {DisabledSlots:2039583,NoGravity:1b,Silent:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["%projectile_uuid%"],HandItems:[{id:"minecraft:poppy",Count:1b,tag:{Enchantments:[{id:"minecraft:efficiency",lvl:1s}]}},{}]}
-    - execute at %player% as @e[tag=%projectile_uuid%] run minecraft:tp @e[tag=%projectile_uuid%]
-      ~ ~ ~ ~ ~
+    - data merge entity %entity_uuid% {DisabledSlots:2039583,NoGravity:1b,Silent:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["%entity_uuid%"],HandItems:[{id:"minecraft:poppy",Count:1b,tag:{Enchantments:[{id:"minecraft:efficiency",lvl:1s}]}},{}]}
     - DELAYTICK 1
     - 'LOOP START: 30'
-    - execute at @e[tag=%projectile_uuid%] as %projectile_uuid% run minecraft:tp %projectile_uuid%
-      ~ ~ ~
-    - execute at @e[tag=%projectile_uuid%] as @e[tag=%projectile_uuid%] run minecraft:tp @e[tag=%projectile_uuid%]
+    - execute at %entity_uuid% as %entity_uuid% run minecraft:tp %entity_uuid%
       ^ ^ ^1
-    - execute at @e[tag=%projectile_uuid%] unless block ~ ~1 ~ air run minecraft:kill %projectile_uuid%
-    - execute at @e[tag=%projectile_uuid%] unless block ~ ~1 ~ air run minecraft:kill @e[tag=%projectile_uuid%]
-    - MOB_AROUND 1.5 BLACKLIST(ARMOR_STAND) DAMAGE 5 <+> execute at @e[tag=%projectile_uuid%]
-      unless entity @a[distance=..0.01,tag=%projectile_uuid%mark] run data merge entity
-      @e[tag=%projectile_uuid%,limit=1] {Tags:["%projectile_uuid%,%projectile_uuid%mark"]}
-      <+> execute at %around_target_uuid% unless entity @a[distance=..0.01,tag=%projectile_uuid%a]
-      run data merge entity %around_target_uuid% {Tags:["%projectile_uuid%a"]}
-    - execute at @e[tag=%projectile_uuid%mark] as @e[tag=%projectile_uuid%mark] facing
-      entity @e[distance=..10,limit=1,type=!player,type=!item,type=!armor_stand,type=!arrow,type=!experience_orb,tag=!%projectile_uuid%a]
-      eyes run minecraft:tp @e[tag=%projectile_uuid%mark] ~ ~ ~ ~ ~
+    - execute at @e[tag=%entity_uuid%] unless block ~ ~1 ~ air run minecraft:kill @e[tag=%entity_uuid%]
+    - MOB_AROUND 1.5 BLACKLIST(ARMOR_STAND) DAMAGE 5 <+> execute at @e[tag=%entity_uuid%]
+      unless entity @a[distance=..0.01,tag=%entity_uuid%mark] run data merge entity
+      @e[tag=%entity_uuid%,limit=1] {Tags:["%entity_uuid%","%entity_uuid%mark"]}
+      <+> execute at %around_target_uuid% unless entity @a[distance=..0.01,tag=%entity_uuid%a]
+      run data merge entity %around_target_uuid% {Tags:["%entity_uuid%a"]}
+    - execute at @e[tag=%entity_uuid%mark] as @e[tag=%entity_uuid%mark] facing
+      entity @e[distance=..10,limit=1,type=!player,type=!item,type=!armor_stand,type=!arrow,type=!experience_orb,tag=!%entity_uuid%a]
+      eyes run minecraft:tp @e[tag=%entity_uuid%mark] ~ ~ ~ ~ ~
     - DELAYTICK 1
     - LOOP END
-    - minecraft:kill %projectile_uuid%
-    - minecraft:kill @e[tag=%projectile_uuid%]
+    - minecraft:kill %entity_uuid%
     entityConditions: {}
     variablesModification: {}
 attributes: {}
