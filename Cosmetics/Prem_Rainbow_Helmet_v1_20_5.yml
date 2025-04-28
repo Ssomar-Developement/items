@@ -86,6 +86,7 @@ giveFirstJoin:
   giveFirstJoinAmount: 1
   giveFirstJoinSlot: 0
 restrictions:
+  cancel-item-place: true
   locked-in-inventory: false
 variables:
   color:
