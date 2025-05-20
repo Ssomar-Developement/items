@@ -80,74 +80,80 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - execute at %projectile_uuid% run playsound minecraft:entity.firework_rocket.large_blast
+    - minecraft:execute at %projectile_uuid% run minecraft:playsound minecraft:entity.firework_rocket.large_blast
       ambient @a[distance=..50] ~ ~ ~ 10
-    - execute at %projectile_uuid% facing entity %player% feet run minecraft:tp %projectile_uuid%
-      ~ ~ ~ ~ 0
-    - execute at %projectile_uuid% run particle dust 1 0.03 0.9 4 ^ ^1 ^ .2 .2 .2
-      0 10
-    - execute at %projectile_uuid% run particle dust 0.89 0.16 1 4 ^1 ^2 ^ .2 .2 .2
-      0 10
-    - execute at %projectile_uuid% run particle dust 0.89 0.16 1 4 ^ ^2 ^ .2 .2 .2
-      0 10
-    - execute at %projectile_uuid% run particle dust 0.89 0.16 1 4 ^-1 ^2 ^ .2 .2
-      .2 0 10
-    - execute at %projectile_uuid% run particle dust 0.13 0.45 1 4 ^ ^3 ^ .2 .2 .2
-      0 10
-    - execute at %projectile_uuid% run particle dust 0.13 0.45 1 4 ^1 ^3 ^ .2 .2 .2
-      0 10
-    - execute at %projectile_uuid% run particle dust 0.13 0.45 1 4 ^2 ^3 ^ .2 .2 .2
-      0 10
-    - execute at %projectile_uuid% run particle dust 0.13 0.45 1 4 ^-1 ^3 ^ .2 .2
-      .2 0 10
-    - execute at %projectile_uuid% run particle dust 0.13 0.45 1 4 ^-2 ^3 ^ .2 .2
-      .2 0 10
-    - execute at %projectile_uuid% run particle dust 0.08 1 0.14 4 ^ ^4 ^ .2 .2 .2
-      0 10
-    - execute at %projectile_uuid% run particle dust 0.08 1 0.14 4 ^1 ^4 ^ .2 .2 .2
-      0 10
-    - execute at %projectile_uuid% run particle dust 0.08 1 0.14 4 ^2 ^4 ^ .2 .2 .2
-      0 10
-    - execute at %projectile_uuid% run particle dust 0.08 1 0.14 4 ^3 ^4 ^ .2 .2 .2
-      0 10
-    - execute at %projectile_uuid% run particle dust 0.08 1 0.14 4 ^-1 ^4 ^ .2 .2
-      .2 0 10
-    - execute at %projectile_uuid% run particle dust 0.08 1 0.14 4 ^-2 ^4 ^ .2 .2
-      .2 0 10
-    - execute at %projectile_uuid% run particle dust 0.08 1 0.14 4 ^-3 ^4 ^ .2 .2
-      .2 0 10
-    - execute at %projectile_uuid% run particle dust 0.9 1 0 4 ^ ^5 ^ .2 .2 .2 0 10
-    - execute at %projectile_uuid% run particle dust 0.9 1 0 4 ^1 ^5 ^ .2 .2 .2 0
-      10
-    - execute at %projectile_uuid% run particle dust 0.9 1 0 4 ^2 ^5 ^ .2 .2 .2 0
-      10
-    - execute at %projectile_uuid% run particle dust 0.9 1 0 4 ^3 ^5 ^ .2 .2 .2 0
-      10
-    - execute at %projectile_uuid% run particle dust 0.9 1 0 4 ^-1 ^5 ^ .2 .2 .2 0
-      10
-    - execute at %projectile_uuid% run particle dust 0.9 1 0 4 ^-2 ^5 ^ .2 .2 .2 0
-      10
-    - execute at %projectile_uuid% run particle dust 0.9 1 0 4 ^-3 ^5 ^ .2 .2 .2 0
-      10
-    - execute at %projectile_uuid% run particle dust 1 0.61 0.02 4 ^ ^6 ^ .2 .2 .2
-      0 10
-    - execute at %projectile_uuid% run particle dust 1 0.61 0.02 4 ^1 ^6 ^ .2 .2 .2
-      0 10
-    - execute at %projectile_uuid% run particle dust 1 0.61 0.02 4 ^2 ^6 ^ .2 .2 .2
-      0 10
-    - execute at %projectile_uuid% run particle dust 1 0.61 0.02 4 ^3 ^6 ^ .2 .2 .2
-      0 10
-    - execute at %projectile_uuid% run particle dust 1 0.61 0.02 4 ^-1 ^6 ^ .2 .2
-      .2 0 10
-    - execute at %projectile_uuid% run particle dust 1 0.61 0.02 4 ^-2 ^6 ^ .2 .2
-      .2 0 10
-    - execute at %projectile_uuid% run particle dust 1 0.61 0.02 4 ^-3 ^6 ^ .2 .2
-      .2 0 10
-    - execute at %projectile_uuid% run particle dust 1 0 0 4 ^1 ^7 ^ .2 .2 .2 0 10
-    - execute at %projectile_uuid% run particle dust 1 0 0 4 ^2 ^7 ^ .2 .2 .2 0 10
-    - execute at %projectile_uuid% run particle dust 1 0 0 4 ^-1 ^7 ^ .2 .2 .2 0 10
-    - execute at %projectile_uuid% run particle dust 1 0 0 4 ^-2 ^7 ^ .2 .2 .2 0 10
-    - execute at %projectile_uuid% run particle flash ^ ^4 ^ .1 .1 .1 0 1
+    - minecraft:execute at %projectile_uuid% facing entity %player% feet run minecraft:tp
+      %projectile_uuid% ~ ~ ~ ~ 0
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[1.0,0.03,0.9],scale:4.0}
+      ^ ^1 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.89,0.16,1.0],scale:4.0}
+      ^1 ^2 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.89,0.16,1.0],scale:4.0}
+      ^ ^2 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.89,0.16,1.0],scale:4.0}
+      ^-1 ^2 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.13,0.45,1.0],scale:4.0}
+      ^ ^3 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.13,0.45,1.0],scale:4.0}
+      ^1 ^3 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.13,0.45,1.0],scale:4.0}
+      ^2 ^3 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.13,0.45,1.0],scale:4.0}
+      ^-1 ^3 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.13,0.45,1.0],scale:4.0}
+      ^-2 ^3 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.08,1.0,0.14],scale:4.0}
+      ^ ^4 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.08,1.0,0.14],scale:4.0}
+      ^1 ^4 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.08,1.0,0.14],scale:4.0}
+      ^2 ^4 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.08,1.0,0.14],scale:4.0}
+      ^3 ^4 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.08,1.0,0.14],scale:4.0}
+      ^-1 ^4 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.08,1.0,0.14],scale:4.0}
+      ^-2 ^4 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.08,1.0,0.14],scale:4.0}
+      ^-3 ^4 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.9,1.0,0.0],scale:4.0}
+      ^ ^5 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.9,1.0,0.0],scale:4.0}
+      ^1 ^5 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.9,1.0,0.0],scale:4.0}
+      ^2 ^5 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.9,1.0,0.0],scale:4.0}
+      ^3 ^5 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.9,1.0,0.0],scale:4.0}
+      ^-1 ^5 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.9,1.0,0.0],scale:4.0}
+      ^-2 ^5 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.9,1.0,0.0],scale:4.0}
+      ^-3 ^5 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[1.0,0.61,0.02],scale:4.0}
+      ^ ^6 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[1.0,0.61,0.02],scale:4.0}
+      ^1 ^6 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[1.0,0.61,0.02],scale:4.0}
+      ^2 ^6 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[1.0,0.61,0.02],scale:4.0}
+      ^3 ^6 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[1.0,0.61,0.02],scale:4.0}
+      ^-1 ^6 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[1.0,0.61,0.02],scale:4.0}
+      ^-2 ^6 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[1.0,0.61,0.02],scale:4.0}
+      ^-3 ^6 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[1.0,0.0,0.0],scale:4.0}
+      ^1 ^7 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[1.0,0.0,0.0],scale:4.0}
+      ^2 ^7 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[1.0,0.0,0.0],scale:4.0}
+      ^-1 ^7 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[1.0,0.0,0.0],scale:4.0}
+      ^-2 ^7 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle flash ^ ^4 ^ .1
+      .1 .1 0 1
     - minecraft:kill %projectile_uuid%
     playerConditions: {}
     worldConditions: {}
@@ -225,312 +231,318 @@ activators:
     - -1
     commands:
     - 'LOOP START: 2'
-    - execute at %projectile_uuid% run particle minecraft:firework ^-1 ^1 ^-0.2 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-1 ^1 ^-0.3 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.9 ^1 ^-0.4
-      0.001 0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^1 ^1 ^ 0.001 0.001
-      0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^1 ^1 ^0.1 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^1 ^1 ^0.2 0.001
-      0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-1 ^1 ^-0.2 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-1 ^1 ^-0.3 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.9 ^1 ^-0.4 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^1 ^1 ^ 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^1 ^1 ^0.1 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^1 ^1 ^0.2 0.001 0.001 0.001 0 1
     - DELAYTICK 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.9 ^1 ^-0.5
-      0.001 0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.8 ^1 ^-0.6
-      0.001 0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.7 ^1 ^-0.7
-      0.001 0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^1 ^1 ^0.3 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.9 ^1 ^0.4 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.9 ^1 ^0.5 0.001
-      0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.9 ^1 ^-0.5 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.8 ^1 ^-0.6 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.7 ^1 ^-0.7 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^1 ^1 ^0.3 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.9 ^1 ^0.4 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.9 ^1 ^0.5 0.001 0.001 0.001 0 1
     - DELAYTICK 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.6 ^1 ^-0.8
-      0.001 0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.5 ^1 ^-0.9
-      0.001 0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.4 ^1 ^-0.9
-      0.001 0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.8 ^1 ^0.6 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.7 ^1 ^0.7 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.6 ^1 ^0.8 0.001
-      0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.6 ^1 ^-0.8 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.5 ^1 ^-0.9 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.4 ^1 ^-0.9 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.8 ^1 ^0.6 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.7 ^1 ^0.7 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.6 ^1 ^0.8 0.001 0.001 0.001 0 1
     - DELAYTICK 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.3 ^1 ^-1 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.2 ^1 ^-1 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.1 ^1 ^-1 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.5 ^1 ^0.9 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.4 ^1 ^0.9 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.3 ^1 ^1 0.001
-      0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.3 ^1 ^-1 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.2 ^1 ^-1 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.1 ^1 ^-1 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.5 ^1 ^0.9 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.4 ^1 ^0.9 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.3 ^1 ^1 0.001 0.001 0.001 0 1
     - DELAYTICK 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^ ^1 ^-1 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.1 ^1 ^-1 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.2 ^1 ^-1 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.2 ^1 ^1 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.1 ^1 ^1 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^ ^1 ^1 0.001 0.001
-      0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^ ^1 ^-1 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.1 ^1 ^-1 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.2 ^1 ^-1 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.2 ^1 ^1 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.1 ^1 ^1 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^ ^1 ^1 0.001 0.001 0.001 0 1
     - DELAYTICK 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.3 ^1 ^-1 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.4 ^1 ^-0.9 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.5 ^1 ^-0.9 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.1 ^1 ^1 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.2 ^1 ^1 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.3 ^1 ^1 0.001
-      0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.3 ^1 ^-1 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.4 ^1 ^-0.9 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.5 ^1 ^-0.9 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.1 ^1 ^1 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.2 ^1 ^1 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.3 ^1 ^1 0.001 0.001 0.001 0 1
     - DELAYTICK 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.6 ^1 ^-0.8 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.7 ^1 ^-0.7 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.8 ^1 ^-0.6 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.4 ^1 ^0.9 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.5 ^1 ^0.9 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.6 ^1 ^0.8 0.001
-      0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.6 ^1 ^-0.8 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.7 ^1 ^-0.7 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.8 ^1 ^-0.6 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.4 ^1 ^0.9 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.5 ^1 ^0.9 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.6 ^1 ^0.8 0.001 0.001 0.001 0 1
     - DELAYTICK 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.9 ^1 ^-0.5 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.9 ^1 ^-0.4 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^1 ^1 ^-0.3 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.7 ^1 ^0.7 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.8 ^1 ^0.6 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.9 ^1 ^0.5 0.001
-      0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.9 ^1 ^-0.5 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.9 ^1 ^-0.4 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^1 ^1 ^-0.3 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.7 ^1 ^0.7 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.8 ^1 ^0.6 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.9 ^1 ^0.5 0.001 0.001 0.001 0 1
     - DELAYTICK 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^1 ^1 ^-0.2 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^1 ^1 ^-0.1 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^1 ^1 ^ 0.001 0.001
-      0.0 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^1 ^1 ^0.1 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^1 ^1 ^0.2 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.9 ^1 ^0.4 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-1 ^1 ^0.3 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-1 ^1 ^0.2 0.001
-      0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^1 ^1 ^-0.2 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^1 ^1 ^-0.1 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^1 ^1 ^ 0.001 0.001 0.0 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^1 ^1 ^0.1 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^1 ^1 ^0.2 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.9 ^1 ^0.4 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-1 ^1 ^0.3 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-1 ^1 ^0.2 0.001 0.001 0.001 0 1
     - DELAYTICK 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^1 ^1 ^0.3 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.9 ^1 ^0.4 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.9 ^1 ^0.5 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-1 ^1 ^0.1 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-1 ^1 ^ 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-1 ^1 ^-0.1 0.001
-      0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^1 ^1 ^0.3 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.9 ^1 ^0.4 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.9 ^1 ^0.5 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-1 ^1 ^0.1 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-1 ^1 ^ 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-1 ^1 ^-0.1 0.001 0.001 0.001 0 1
     - DELAYTICK 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.8 ^1 ^0.6 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.7 ^1 ^0.7 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.6 ^1 ^0.8 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-1 ^1 ^-0.2 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-1 ^1 ^-0.3 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.9 ^1 ^-0.4
-      0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.8 ^1 ^0.6 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.7 ^1 ^0.7 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.6 ^1 ^0.8 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-1 ^1 ^-0.2 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-1 ^1 ^-0.3 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.9 ^1 ^-0.4 0.001 0.001 0.001 0 1
     - DELAYTICK 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.5 ^1 ^0.9 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.4 ^1 ^0.9 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.3 ^1 ^1 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.9 ^1 ^-0.5
-      0.001 0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.8 ^1 ^-0.6
-      0.001 0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.7 ^1 ^-0.7
-      0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.5 ^1 ^0.9 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.4 ^1 ^0.9 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.3 ^1 ^1 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.9 ^1 ^-0.5 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.8 ^1 ^-0.6 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.7 ^1 ^-0.7 0.001 0.001 0.001 0 1
     - DELAYTICK 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.2 ^1 ^1 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.1 ^1 ^1 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^ ^1 ^1 0.001 0.001
-      0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.6 ^1 ^-0.8
-      0.001 0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.5 ^1 ^-0.9
-      0.001 0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.4 ^1 ^-0.9
-      0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.2 ^1 ^1 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.1 ^1 ^1 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^ ^1 ^1 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.6 ^1 ^-0.8 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.5 ^1 ^-0.9 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.4 ^1 ^-0.9 0.001 0.001 0.001 0 1
     - DELAYTICK 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.1 ^1 ^1 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.2 ^1 ^1 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.3 ^1 ^1 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.3 ^1 ^-1 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.2 ^1 ^-1 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.1 ^1 ^-1 0.001
-      0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.1 ^1 ^1 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.2 ^1 ^1 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.3 ^1 ^1 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.3 ^1 ^-1 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.2 ^1 ^-1 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.1 ^1 ^-1 0.001 0.001 0.001 0 1
     - DELAYTICK 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.4 ^1 ^0.9 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.5 ^1 ^0.9 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.6 ^1 ^0.8 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^ ^1 ^-1 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.1 ^1 ^-1 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.2 ^1 ^-1 0.001
-      0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.4 ^1 ^0.9 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.5 ^1 ^0.9 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.6 ^1 ^0.8 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^ ^1 ^-1 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.1 ^1 ^-1 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.2 ^1 ^-1 0.001 0.001 0.001 0 1
     - DELAYTICK 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.7 ^1 ^0.7 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.8 ^1 ^0.6 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.9 ^1 ^0.5 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.3 ^1 ^-1 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.4 ^1 ^-0.9 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.5 ^1 ^-0.9 0.001
-      0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.7 ^1 ^0.7 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.8 ^1 ^0.6 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.9 ^1 ^0.5 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.3 ^1 ^-1 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.4 ^1 ^-0.9 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.5 ^1 ^-0.9 0.001 0.001 0.001 0 1
     - DELAYTICK 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-0.9 ^1 ^0.4 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-1 ^1 ^0.3 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-1 ^1 ^0.2 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.6 ^1 ^-0.8 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.7 ^1 ^-0.7 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.8 ^1 ^-0.6 0.001
-      0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-0.9 ^1 ^0.4 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-1 ^1 ^0.3 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-1 ^1 ^0.2 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.6 ^1 ^-0.8 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.7 ^1 ^-0.7 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.8 ^1 ^-0.6 0.001 0.001 0.001 0 1
     - DELAYTICK 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-1 ^1 ^0.1 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-1 ^1 ^ 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^-1 ^1 ^-0.1 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.9 ^1 ^-0.5 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^0.9 ^1 ^-0.4 0.001
-      0.001 0.001 0 1
-    - execute at %projectile_uuid% run particle minecraft:firework ^1 ^1 ^-0.3 0.001
-      0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-1 ^1 ^0.1 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-1 ^1 ^ 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^-1 ^1 ^-0.1 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.9 ^1 ^-0.5 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^0.9 ^1 ^-0.4 0.001 0.001 0.001 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:firework
+      ^1 ^1 ^-0.3 0.001 0.001 0.001 0 1
     - LOOP END
-    - execute at %projectile_uuid% run playsound minecraft:entity.firework_rocket.large_blast
+    - minecraft:execute at %projectile_uuid% run minecraft:playsound minecraft:entity.firework_rocket.large_blast
       ambient @a[distance=..50] ~ ~ ~ 10
-    - execute at %projectile_uuid% facing entity %player% feet run minecraft:tp %projectile_uuid%
-      ~ ~ ~ ~ 0
-    - execute at %projectile_uuid% run particle dust 1 0.03 0.9 4 ^ ^1 ^ .2 .2 .2
-      0 10
-    - execute at %projectile_uuid% run particle dust 0.89 0.16 1 4 ^1 ^2 ^ .2 .2 .2
-      0 10
-    - execute at %projectile_uuid% run particle dust 0.89 0.16 1 4 ^ ^2 ^ .2 .2 .2
-      0 10
-    - execute at %projectile_uuid% run particle dust 0.89 0.16 1 4 ^-1 ^2 ^ .2 .2
-      .2 0 10
-    - execute at %projectile_uuid% run particle dust 0.13 0.45 1 4 ^ ^3 ^ .2 .2 .2
-      0 10
-    - execute at %projectile_uuid% run particle dust 0.13 0.45 1 4 ^1 ^3 ^ .2 .2 .2
-      0 10
-    - execute at %projectile_uuid% run particle dust 0.13 0.45 1 4 ^2 ^3 ^ .2 .2 .2
-      0 10
-    - execute at %projectile_uuid% run particle dust 0.13 0.45 1 4 ^-1 ^3 ^ .2 .2
-      .2 0 10
-    - execute at %projectile_uuid% run particle dust 0.13 0.45 1 4 ^-2 ^3 ^ .2 .2
-      .2 0 10
-    - execute at %projectile_uuid% run particle dust 0.08 1 0.14 4 ^ ^4 ^ .2 .2 .2
-      0 10
-    - execute at %projectile_uuid% run particle dust 0.08 1 0.14 4 ^1 ^4 ^ .2 .2 .2
-      0 10
-    - execute at %projectile_uuid% run particle dust 0.08 1 0.14 4 ^2 ^4 ^ .2 .2 .2
-      0 10
-    - execute at %projectile_uuid% run particle dust 0.08 1 0.14 4 ^3 ^4 ^ .2 .2 .2
-      0 10
-    - execute at %projectile_uuid% run particle dust 0.08 1 0.14 4 ^-1 ^4 ^ .2 .2
-      .2 0 10
-    - execute at %projectile_uuid% run particle dust 0.08 1 0.14 4 ^-2 ^4 ^ .2 .2
-      .2 0 10
-    - execute at %projectile_uuid% run particle dust 0.08 1 0.14 4 ^-3 ^4 ^ .2 .2
-      .2 0 10
-    - execute at %projectile_uuid% run particle dust 0.9 1 0 4 ^ ^5 ^ .2 .2 .2 0 10
-    - execute at %projectile_uuid% run particle dust 0.9 1 0 4 ^1 ^5 ^ .2 .2 .2 0
-      10
-    - execute at %projectile_uuid% run particle dust 0.9 1 0 4 ^2 ^5 ^ .2 .2 .2 0
-      10
-    - execute at %projectile_uuid% run particle dust 0.9 1 0 4 ^3 ^5 ^ .2 .2 .2 0
-      10
-    - execute at %projectile_uuid% run particle dust 0.9 1 0 4 ^-1 ^5 ^ .2 .2 .2 0
-      10
-    - execute at %projectile_uuid% run particle dust 0.9 1 0 4 ^-2 ^5 ^ .2 .2 .2 0
-      10
-    - execute at %projectile_uuid% run particle dust 0.9 1 0 4 ^-3 ^5 ^ .2 .2 .2 0
-      10
-    - execute at %projectile_uuid% run particle dust 1 0.61 0.02 4 ^ ^6 ^ .2 .2 .2
-      0 10
-    - execute at %projectile_uuid% run particle dust 1 0.61 0.02 4 ^1 ^6 ^ .2 .2 .2
-      0 10
-    - execute at %projectile_uuid% run particle dust 1 0.61 0.02 4 ^2 ^6 ^ .2 .2 .2
-      0 10
-    - execute at %projectile_uuid% run particle dust 1 0.61 0.02 4 ^3 ^6 ^ .2 .2 .2
-      0 10
-    - execute at %projectile_uuid% run particle dust 1 0.61 0.02 4 ^-1 ^6 ^ .2 .2
-      .2 0 10
-    - execute at %projectile_uuid% run particle dust 1 0.61 0.02 4 ^-2 ^6 ^ .2 .2
-      .2 0 10
-    - execute at %projectile_uuid% run particle dust 1 0.61 0.02 4 ^-3 ^6 ^ .2 .2
-      .2 0 10
-    - execute at %projectile_uuid% run particle dust 1 0 0 4 ^1 ^7 ^ .2 .2 .2 0 10
-    - execute at %projectile_uuid% run particle dust 1 0 0 4 ^2 ^7 ^ .2 .2 .2 0 10
-    - execute at %projectile_uuid% run particle dust 1 0 0 4 ^-1 ^7 ^ .2 .2 .2 0 10
-    - execute at %projectile_uuid% run particle dust 1 0 0 4 ^-2 ^7 ^ .2 .2 .2 0 10
-    - execute at %projectile_uuid% run particle flash ^ ^4 ^ .1 .1 .1 0 1
+    - minecraft:execute at %projectile_uuid% facing entity %player% feet run minecraft:tp
+      %projectile_uuid% ~ ~ ~ ~ 0
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[1.0,0.03,0.9],scale:4.0}
+      ^ ^1 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.89,0.16,1.0],scale:4.0}
+      ^1 ^2 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.89,0.16,1.0],scale:4.0}
+      ^ ^2 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.89,0.16,1.0],scale:4.0}
+      ^-1 ^2 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.13,0.45,1.0],scale:4.0}
+      ^ ^3 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.13,0.45,1.0],scale:4.0}
+      ^1 ^3 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.13,0.45,1.0],scale:4.0}
+      ^2 ^3 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.13,0.45,1.0],scale:4.0}
+      ^-1 ^3 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.13,0.45,1.0],scale:4.0}
+      ^-2 ^3 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.08,1.0,0.14],scale:4.0}
+      ^ ^4 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.08,1.0,0.14],scale:4.0}
+      ^1 ^4 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.08,1.0,0.14],scale:4.0}
+      ^2 ^4 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.08,1.0,0.14],scale:4.0}
+      ^3 ^4 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.08,1.0,0.14],scale:4.0}
+      ^-1 ^4 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.08,1.0,0.14],scale:4.0}
+      ^-2 ^4 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.08,1.0,0.14],scale:4.0}
+      ^-3 ^4 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.9,1.0,0.0],scale:4.0}
+      ^ ^5 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.9,1.0,0.0],scale:4.0}
+      ^1 ^5 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.9,1.0,0.0],scale:4.0}
+      ^2 ^5 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.9,1.0,0.0],scale:4.0}
+      ^3 ^5 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.9,1.0,0.0],scale:4.0}
+      ^-1 ^5 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.9,1.0,0.0],scale:4.0}
+      ^-2 ^5 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.9,1.0,0.0],scale:4.0}
+      ^-3 ^5 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[1.0,0.61,0.02],scale:4.0}
+      ^ ^6 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[1.0,0.61,0.02],scale:4.0}
+      ^1 ^6 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[1.0,0.61,0.02],scale:4.0}
+      ^2 ^6 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[1.0,0.61,0.02],scale:4.0}
+      ^3 ^6 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[1.0,0.61,0.02],scale:4.0}
+      ^-1 ^6 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[1.0,0.61,0.02],scale:4.0}
+      ^-2 ^6 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[1.0,0.61,0.02],scale:4.0}
+      ^-3 ^6 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[1.0,0.0,0.0],scale:4.0}
+      ^1 ^7 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[1.0,0.0,0.0],scale:4.0}
+      ^2 ^7 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[1.0,0.0,0.0],scale:4.0}
+      ^-1 ^7 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[1.0,0.0,0.0],scale:4.0}
+      ^-2 ^7 ^ .2 .2 .2 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle flash ^ ^4 ^ .1
+      .1 .1 0 1
     - minecraft:kill %projectile_uuid%
     playerConditions: {}
     worldConditions: {}
@@ -540,44 +552,44 @@ activators:
     detailedEntities: []
     entityCommands:
     - 'LOOP START: 2'
-    - execute at %projectile_uuid% run particle minecraft:dust 1 0 0 2 ~ ~ ~ 0.1 0.2
-      0.1 1 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:dust{color:[1.0,0.0,0.0],scale:2.0}
+      ~ ~ ~ 0.1 0.2 0.1 1 10
     - DELAYTICK 1
-    - execute at %projectile_uuid% run particle minecraft:dust 1 0.5 0 2 ~ ~ ~ 0.1
-      0.2 0.1 1 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:dust{color:[1.0,0.5,0.0],scale:2.0}
+      ~ ~ ~ 0.1 0.2 0.1 1 10
     - DELAYTICK 1
-    - execute at %projectile_uuid% run particle minecraft:dust 1 0.8 0 2 ~ ~ ~ 0.1
-      0.2 0.1 1 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:dust{color:[1.0,0.8,0.0],scale:2.0}
+      ~ ~ ~ 0.1 0.2 0.1 1 10
     - DELAYTICK 1
-    - execute at %projectile_uuid% run particle minecraft:dust 1 1 0 2 ~ ~ ~ 0.1 0.2
-      0.1 1 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:dust{color:[1.0,1.0,0.0],scale:2.0}
+      ~ ~ ~ 0.1 0.2 0.1 1 10
     - DELAYTICK 1
-    - execute at %projectile_uuid% run particle minecraft:dust 0 1 0 2 ~ ~ ~ 0.1 0.2
-      0.1 1 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:dust{color:[0.0,1.0,0.0],scale:2.0}
+      ~ ~ ~ 0.1 0.2 0.1 1 10
     - DELAYTICK 1
-    - execute at %projectile_uuid% run particle minecraft:dust 0 2 0 2 ~ ~ ~ 0.1 0.2
-      0.1 1 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:dust{color:[0.0,2.0,0.0],scale:2.0}
+      ~ ~ ~ 0.1 0.2 0.1 1 10
     - DELAYTICK 1
-    - execute at %projectile_uuid% run particle minecraft:dust 0 1 3 2 ~ ~ ~ 0.1 0.2
-      0.1 1 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:dust{color:[0.0,1.0,3.0],scale:2.0}
+      ~ ~ ~ 0.1 0.2 0.1 1 10
     - DELAYTICK 1
-    - execute at %projectile_uuid% run particle minecraft:dust 0 1 2 2 ~ ~ ~ 0.1 0.2
-      0.1 1 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:dust{color:[0.0,1.0,2.0],scale:2.0}
+      ~ ~ ~ 0.1 0.2 0.1 1 10
     - DELAYTICK 1
-    - execute at %projectile_uuid% run particle minecraft:dust 0 1 1 2 ~ ~ ~ 0.1 0.2
-      0.1 1 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:dust{color:[0.0,1.0,1.0],scale:2.0}
+      ~ ~ ~ 0.1 0.2 0.1 1 10
     - DELAYTICK 1
-    - execute at %projectile_uuid% run particle minecraft:dust 0 0 1 2 ~ ~ ~ 0.1 0.2
-      0.1 1 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:dust{color:[0.0,0.0,1.0],scale:2.0}
+      ~ ~ ~ 0.1 0.2 0.1 1 10
     - DELAYTICK 1
-    - execute at %projectile_uuid% run particle minecraft:dust 1 0 1 2 ~ ~ ~ 0.1 0.2
-      0.1 1 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:dust{color:[1.0,0.0,1.0],scale:2.0}
+      ~ ~ ~ 0.1 0.2 0.1 1 10
     - DELAYTICK 1
-    - execute at %projectile_uuid% run particle minecraft:dust 1 0 2 2 ~ ~ ~ 0.1 0.2
-      0.1 1 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:dust{color:[1.0,0.0,2.0],scale:2.0}
+      ~ ~ ~ 0.1 0.2 0.1 1 10
     - DELAYTICK 1
-    - execute at %projectile_uuid% run particle minecraft:dust 2 0 2 2 ~ ~ ~ 0.1 0.2
-      0.1 1 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle minecraft:dust{color:[2.0,0.0,2.0],scale:2.0}
+      ~ ~ ~ 0.1 0.2 0.1 1 10
     - DELAYTICK 1
     - LOOP END
     entityConditions: {}

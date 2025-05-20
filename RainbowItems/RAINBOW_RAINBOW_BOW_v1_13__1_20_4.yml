@@ -79,7 +79,8 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - execute at %projectile_uuid% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;16711680]}]}}}}
+    - minecraft:execute at %projectile_uuid% run minecraft:summon firework_rocket
+      ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;16711680]}]}}}}
     - minecraft:kill %projectile_uuid%
     playerConditions: {}
     worldConditions: {}
@@ -127,7 +128,7 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - execute at %target% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;16711680]}]}}}}
+    - minecraft:execute at %target% run minecraft:summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;16711680]}]}}}}
     playerConditions: {}
     worldConditions: {}
     itemConditions: {}
@@ -170,7 +171,8 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - execute at %entity_uuid% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;16711680]}]}}}}
+    - minecraft:execute at %entity_uuid% run minecraft:summon firework_rocket ~ ~
+      ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;16711680]}]}}}}
     playerConditions: {}
     worldConditions: {}
     itemConditions: {}
@@ -214,7 +216,8 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - execute at %projectile_uuid% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;16755200]}]}}}}
+    - minecraft:execute at %projectile_uuid% run minecraft:summon firework_rocket
+      ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;16755200]}]}}}}
     - minecraft:kill %projectile_uuid%
     playerConditions: {}
     worldConditions: {}
@@ -262,7 +265,7 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - execute at %target% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;16755200]}]}}}}
+    - minecraft:execute at %target% run minecraft:summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;16755200]}]}}}}
     playerConditions: {}
     worldConditions: {}
     itemConditions: {}
@@ -305,7 +308,8 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - execute at %entity_uuid% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;16755200]}]}}}}
+    - minecraft:execute at %entity_uuid% run minecraft:summon firework_rocket ~ ~
+      ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;16755200]}]}}}}
     playerConditions: {}
     worldConditions: {}
     itemConditions: {}
@@ -349,7 +353,8 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - execute at %projectile_uuid% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;15073024]}]}}}}
+    - minecraft:execute at %projectile_uuid% run minecraft:summon firework_rocket
+      ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;15073024]}]}}}}
     - minecraft:kill %projectile_uuid%
     playerConditions: {}
     worldConditions: {}
@@ -397,7 +402,7 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - execute at %target% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;15073024]}]}}}}
+    - minecraft:execute at %target% run minecraft:summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;15073024]}]}}}}
     playerConditions: {}
     worldConditions: {}
     itemConditions: {}
@@ -440,7 +445,8 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - execute at %entity_uuid% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;15073024]}]}}}}
+    - minecraft:execute at %entity_uuid% run minecraft:summon firework_rocket ~ ~
+      ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;15073024]}]}}}}
     playerConditions: {}
     worldConditions: {}
     itemConditions: {}
@@ -484,7 +490,8 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - execute at %projectile_uuid% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;65314]}]}}}}
+    - minecraft:execute at %projectile_uuid% run minecraft:summon firework_rocket
+      ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;65314]}]}}}}
     - minecraft:kill %projectile_uuid%
     playerConditions: {}
     worldConditions: {}
@@ -532,7 +539,7 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - execute at %target% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;65314]}]}}}}
+    - minecraft:execute at %target% run minecraft:summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;65314]}]}}}}
     playerConditions: {}
     worldConditions: {}
     itemConditions: {}
@@ -575,7 +582,8 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - execute at %entity_uuid% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;65314]}]}}}}
+    - minecraft:execute at %entity_uuid% run minecraft:summon firework_rocket ~ ~
+      ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;65314]}]}}}}
     playerConditions: {}
     worldConditions: {}
     itemConditions: {}
@@ -619,7 +627,8 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - execute at %projectile_uuid% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;240639]}]}}}}
+    - minecraft:execute at %projectile_uuid% run minecraft:summon firework_rocket
+      ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;240639]}]}}}}
     - minecraft:kill %projectile_uuid%
     playerConditions: {}
     worldConditions: {}
@@ -667,7 +676,7 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - execute at %target% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;240639]}]}}}}
+    - minecraft:execute at %target% run minecraft:summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;240639]}]}}}}
     playerConditions: {}
     worldConditions: {}
     itemConditions: {}
@@ -710,7 +719,8 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - execute at %entity_uuid% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;240639]}]}}}}
+    - minecraft:execute at %entity_uuid% run minecraft:summon firework_rocket ~ ~
+      ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;240639]}]}}}}
     playerConditions: {}
     worldConditions: {}
     itemConditions: {}
@@ -754,7 +764,8 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - execute at %projectile_uuid% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;6226943]}]}}}}
+    - minecraft:execute at %projectile_uuid% run minecraft:summon firework_rocket
+      ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;6226943]}]}}}}
     - minecraft:kill %projectile_uuid%
     playerConditions: {}
     worldConditions: {}
@@ -802,7 +813,7 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - execute at %target% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;6226943]}]}}}}
+    - minecraft:execute at %target% run minecraft:summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;6226943]}]}}}}
     playerConditions: {}
     worldConditions: {}
     itemConditions: {}
@@ -845,7 +856,8 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - execute at %entity_uuid% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;6226943]}]}}}}
+    - minecraft:execute at %entity_uuid% run minecraft:summon firework_rocket ~ ~
+      ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;6226943]}]}}}}
     playerConditions: {}
     worldConditions: {}
     itemConditions: {}
@@ -889,7 +901,8 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - execute at %projectile_uuid% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;12779775]}]}}}}
+    - minecraft:execute at %projectile_uuid% run minecraft:summon firework_rocket
+      ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;12779775]}]}}}}
     - minecraft:kill %projectile_uuid%
     playerConditions: {}
     worldConditions: {}
@@ -937,7 +950,7 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - execute at %target% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;12779775]}]}}}}
+    - minecraft:execute at %target% run minecraft:summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;12779775]}]}}}}
     playerConditions: {}
     worldConditions: {}
     itemConditions: {}
@@ -980,7 +993,8 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - execute at %entity_uuid% run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;12779775]}]}}}}
+    - minecraft:execute at %entity_uuid% run minecraft:summon firework_rocket ~ ~
+      ~ {NoGravity:1b,Silent:1b,Tags:["%player_uuid%"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;12779775]}]}}}}
     playerConditions: {}
     worldConditions: {}
     itemConditions: {}
@@ -1024,10 +1038,11 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - execute at %player% run data merge entity %projectile_uuid% {CustomName:"\"7a\""}
+    - minecraft:execute at %player% run minecraft:data merge entity %projectile_uuid%
+      {CustomName:"\"7a\""}
     - 'LOOP START: 100'
-    - execute at %projectile_uuid% run particle dust 0.7 0 0.7 1 ~ ~ ~ .01 .01 .01
-      0 5
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.7,0.0,0.7],scale:1.0}
+      ~ ~ ~ .01 .01 .01 0 5
     - DELAYTICK 1
     - LOOP END
     playerConditions: {}
@@ -1077,10 +1092,11 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - execute at %player% run data merge entity %projectile_uuid% {CustomName:"\"6a\""}
+    - minecraft:execute at %player% run minecraft:data merge entity %projectile_uuid%
+      {CustomName:"\"6a\""}
     - 'LOOP START: 100'
-    - execute at %projectile_uuid% run particle dust 0.45 0 0.9 1 ~ ~ ~ .01 .01 .01
-      0 5
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.45,0.0,0.9],scale:1.0}
+      ~ ~ ~ .01 .01 .01 0 5
     - DELAYTICK 1
     - LOOP END
     playerConditions: {}
@@ -1130,9 +1146,11 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - execute at %player% run data merge entity %projectile_uuid% {CustomName:"\"5a\""}
+    - minecraft:execute at %player% run minecraft:data merge entity %projectile_uuid%
+      {CustomName:"\"5a\""}
     - 'LOOP START: 100'
-    - execute at %projectile_uuid% run particle dust 0 0 1 1 ~ ~ ~ .01 .01 .01 0 5
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.0,0.0,1.0],scale:1.0}
+      ~ ~ ~ .01 .01 .01 0 5
     - DELAYTICK 1
     - LOOP END
     playerConditions: {}
@@ -1182,9 +1200,11 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - execute at %player% run data merge entity %projectile_uuid% {CustomName:"\"4a\""}
+    - minecraft:execute at %player% run minecraft:data merge entity %projectile_uuid%
+      {CustomName:"\"4a\""}
     - 'LOOP START: 100'
-    - execute at %projectile_uuid% run particle dust 0 1 0 1 ~ ~ ~ .01 .01 .01 0 5
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[0.0,1.0,0.0],scale:1.0}
+      ~ ~ ~ .01 .01 .01 0 5
     - DELAYTICK 1
     - LOOP END
     playerConditions: {}
@@ -1234,10 +1254,11 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - execute at %player% run data merge entity %projectile_uuid% {CustomName:"\"3a\""}
+    - minecraft:execute at %player% run minecraft:data merge entity %projectile_uuid%
+      {CustomName:"\"3a\""}
     - 'LOOP START: 100'
-    - execute at %projectile_uuid% run particle dust 1 1 0.2 1 ~ ~ ~ .01 .01 .01 0
-      5
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[1.0,1.0,0.2],scale:1.0}
+      ~ ~ ~ .01 .01 .01 0 5
     - DELAYTICK 1
     - LOOP END
     playerConditions: {}
@@ -1287,10 +1308,11 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - execute at %player% run data merge entity %projectile_uuid% {CustomName:"\"2a\""}
+    - minecraft:execute at %player% run minecraft:data merge entity %projectile_uuid%
+      {CustomName:"\"2a\""}
     - 'LOOP START: 100'
-    - execute at %projectile_uuid% run particle dust 1 0.5 0 1 ~ ~ ~ .01 .01 .01 0
-      5
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[1.0,0.5,0.0],scale:1.0}
+      ~ ~ ~ .01 .01 .01 0 5
     - DELAYTICK 1
     - LOOP END
     playerConditions: {}
@@ -1340,9 +1362,11 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - execute at %player% run data merge entity %projectile_uuid% {CustomName:"\"1a\""}
+    - minecraft:execute at %player% run minecraft:data merge entity %projectile_uuid%
+      {CustomName:"\"1a\""}
     - 'LOOP START: 100'
-    - execute at %projectile_uuid% run particle dust 1 0 0 1 ~ ~ ~ .01 .01 .01 0 5
+    - minecraft:execute at %projectile_uuid% run minecraft:particle dust{color:[1.0,0.0,0.0],scale:1.0}
+      ~ ~ ~ .01 .01 .01 0 5
     - DELAYTICK 1
     - LOOP END
     playerConditions: {}

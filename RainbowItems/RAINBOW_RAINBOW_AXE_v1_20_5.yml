@@ -117,69 +117,69 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - execute at %player% run summon armor_stand ~ ~ ~ {NoGravity:1b,CustomName:'{"text":"%player%"}',Invulnerable:1b,Invisible:1b,Marker:1b,Tags:["%projectile_uuid%"],ArmorItems:[{},{},{},{}]}
-    - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run minecraft:tp ^ ^0.2 ^0.0
+    - minecraft:execute at %player% run minecraft:summon armor_stand ~ ~ ~ {NoGravity:1b,CustomName:'{"text":"%player%"}',Invulnerable:1b,Invisible:1b,Marker:1b,Tags:["%projectile_uuid%"],ArmorItems:[{},{},{},{}]}
+    - minecraft:execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as
+      %projectile_uuid% run minecraft:tp ^ ^0.2 ^0.0
     - DELAYTICK 1
-    - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run minecraft:tp ^ ^0.2 ^1.0
+    - minecraft:execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as
+      %projectile_uuid% run minecraft:tp ^ ^0.2 ^1.0
     - DELAYTICK 1
-    - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run minecraft:tp ^ ^0.2 ^2.0
+    - minecraft:execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as
+      %projectile_uuid% run minecraft:tp ^ ^0.2 ^2.0
     - DELAYTICK 1
-    - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run minecraft:tp ^ ^0.2 ^3.0
+    - minecraft:execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as
+      %projectile_uuid% run minecraft:tp ^ ^0.2 ^3.0
     - DELAYTICK 1
-    - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run minecraft:tp ^ ^0.2 ^4.0
+    - minecraft:execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as
+      %projectile_uuid% run minecraft:tp ^ ^0.2 ^4.0
     - DELAYTICK 1
-    - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run minecraft:tp ^ ^0.2 ^5.0
+    - minecraft:execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as
+      %projectile_uuid% run minecraft:tp ^ ^0.2 ^5.0
     - DELAYTICK 1
-    - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run minecraft:tp ^ ^0.2 ^6.0
+    - minecraft:execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as
+      %projectile_uuid% run minecraft:tp ^ ^0.2 ^6.0
     - DELAYTICK 1
-    - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run minecraft:tp ^ ^0.2 ^7.0
+    - minecraft:execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as
+      %projectile_uuid% run minecraft:tp ^ ^0.2 ^7.0
     - DELAYTICK 1
-    - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run minecraft:tp ^ ^0.2 ^8.0
+    - minecraft:execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as
+      %projectile_uuid% run minecraft:tp ^ ^0.2 ^8.0
     - DELAYTICK 1
-    - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run minecraft:tp ^ ^0.2 ^9.0
+    - minecraft:execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as
+      %projectile_uuid% run minecraft:tp ^ ^0.2 ^9.0
     - DELAYTICK 1
-    - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run minecraft:tp ^ ^0.2 ^10.0
+    - minecraft:execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as
+      %projectile_uuid% run minecraft:tp ^ ^0.2 ^10.0
     - DELAYTICK 1
-    - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run minecraft:tp ^ ^0.2 ^11.0
+    - minecraft:execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as
+      %projectile_uuid% run minecraft:tp ^ ^0.2 ^11.0
     - DELAYTICK 1
-    - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run minecraft:tp ^ ^0.2 ^12.0
+    - minecraft:execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as
+      %projectile_uuid% run minecraft:tp ^ ^0.2 ^12.0
     - DELAYTICK 1
-    - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run minecraft:tp ^ ^0.2 ^13.0
+    - minecraft:execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as
+      %projectile_uuid% run minecraft:tp ^ ^0.2 ^13.0
     - DELAYTICK 1
-    - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run minecraft:tp ^ ^0.2 ^14.0
+    - minecraft:execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as
+      %projectile_uuid% run minecraft:tp ^ ^0.2 ^14.0
     - DELAYTICK 1
-    - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run minecraft:tp ^ ^0.2 ^15.0
+    - minecraft:execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as
+      %projectile_uuid% run minecraft:tp ^ ^0.2 ^15.0
     - DELAYTICK 1
-    - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run minecraft:tp ^ ^0.2 ^16.0
+    - minecraft:execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as
+      %projectile_uuid% run minecraft:tp ^ ^0.2 ^16.0
     - DELAYTICK 1
-    - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run minecraft:tp ^ ^0.2 ^17.0
+    - minecraft:execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as
+      %projectile_uuid% run minecraft:tp ^ ^0.2 ^17.0
     - DELAYTICK 1
-    - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run minecraft:tp ^ ^0.2 ^18.0
+    - minecraft:execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as
+      %projectile_uuid% run minecraft:tp ^ ^0.2 ^18.0
     - DELAYTICK 1
-    - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run minecraft:tp ^ ^0.2 ^19.0
+    - minecraft:execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as
+      %projectile_uuid% run minecraft:tp ^ ^0.2 ^19.0
     - DELAYTICK 1
-    - execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as %projectile_uuid%
-      run minecraft:tp ^ ^0.2 ^20.0
+    - minecraft:execute at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as
+      %projectile_uuid% run minecraft:tp ^ ^0.2 ^20.0
     playerConditions: {}
     worldConditions: {}
     itemConditions: {}
@@ -187,38 +187,91 @@ activators:
     placeholdersConditions: {}
     detailedEntities: []
     entityCommands:
-    - execute as @e[type=minecraft:armor_stand, tag=%projectile_uuid%] at %player%
-      run minecraft:tp @s ~ ~ ~ ~ 0
+    - minecraft:execute as @e[type=minecraft:armor_stand, tag=%projectile_uuid%] at
+      %player% run minecraft:tp @s ~ ~ ~ ~ 0
     - DELAYTICK 5
     - 'LOOP START: 21'
-    - execute at %projectile_uuid% run particle block{block_state:"minecraft:red_concrete"} ^1.5 ^ ^ .1 .1  
-      .1 0 10
-    - execute at %projectile_uuid% run particle block{block_state:"minecraft:orange_concrete"} ^1 ^ ^ .1 .1 
-      .1 0 10
-    - execute at %projectile_uuid% run particle block{block_state:"minecraft:yellow_concrete"} ^0.5 ^ ^ .1  
-      .1 .1 0 10
-    - execute at %projectile_uuid% run particle block{block_state:"minecraft:green_concrete"} ^ ^ ^ .1 .1 .1
-      0 10
-    - execute at %projectile_uuid% run particle block{block_state:"minecraft:blue_concrete"} ^-0.5 ^ ^ .1 .1
-      .1 0 10
-    - execute at %projectile_uuid% run particle block{block_state:"minecraft:purple_concrete"} ^-1 ^ ^ .1 .1
-      .1 0 10
-    - execute at %projectile_uuid% run particle block{block_state:"minecraft:magenta_concrete"} ^-1.5 ^ ^ .1
-      .1 .1 0 10
-    - execute at %projectile_uuid% if block ~ ~-1 ~ air run execute at @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%] as @e[type=minecraft:armor_stand, tag=%projectile_uuid%]
-      run minecraft:tp @e[type=minecraft:armor_stand, tag=%projectile_uuid%] ~ ~-1
-      ~
-    - execute at %projectile_uuid% unless block ^ ^ ^1 air run execute at @e[type=minecraft:armor_stand,
-      tag=%projectile_uuid%] as @e[type=minecraft:armor_stand, tag=%projectile_uuid%]
-      run minecraft:tp @e[type=minecraft:armor_stand, tag=%projectile_uuid%] ~ ~1
-      ~
-    - MOB_AROUND 2 BLACKLIST(ARMOR_STAND,ARROW) DAMAGE 12 <+> CUSTOMDASH1 %around_target_x% %around_target_y%+4 %around_target_z% <+> execute at %around_target_uuid% run particle explosion ~ ~ ~ .1 .1 .1 0 1 <+> execute at %around_target_uuid% run playsound minecraft:entity.zombie.attack_wooden_door ambient @a[distance=..10] <+> execute at %around_target_uuid% run particle minecraft:dust{color:[1.0,0.0,0.0],scale:2.0} ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK 2 <+> execute at %around_target_uuid% run particle minecraft:dust{color:[1.0,0.5,0.0],scale:2.0} ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK 2 <+> execute at %around_target_uuid% run particle minecraft:dust{color:[1.0,0.8,0.0],scale:2.0} ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK 2 <+> execute at %around_target_uuid% run particle minecraft:dust{color:[1.0,1.0,0.0],scale:2.0} ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK 2 <+> execute at %around_target_uuid% run particle minecraft:dust{color:[0.0,1.0,0.0],scale:2.0} ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK 2 <+> execute at %around_target_uuid% run particle minecraft:dust{color:[0.0,2.0,0.0],scale:2.0} ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK 2 <+> execute at %around_target_uuid% run particle minecraft:dust{color:[0.0,1.0,3.0],scale:2.0} ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK 2 <+> execute at %around_target_uuid% run particle minecraft:dust{color:[0.0,1.0,2.0],scale:2.0} ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK 2 <+> execute at %around_target_uuid% run particle minecraft:dust{color:[0.0,1.0,1.0],scale:2.0} ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK 2 <+> execute at %around_target_uuid% run particle minecraft:dust{color:[0.0,0.0,1.0],scale:2.0} ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK 2 <+> execute at %around_target_uuid% run particle minecraft:dust{color:[1.0,0.0,1.0],scale:2.0} ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK 2 <+> execute at %around_target_uuid% run particle minecraft:dust{color:[1.0,0.0,2.0],scale:2.0} ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK 2 <+> execute at %around_target_uuid% run particle minecraft:dust{color:[2.0,0.0,2.0],scale:2.0} ~ ~ ~ 0.1 0.2 0.1 1 10
-    - AROUND 2 DAMAGE 12 <+> CUSTOMDASH1 %around_target_x% %around_target_y%+4 %around_target_z% <+> execute at %around_target_uuid% run particle explosion ~ ~ ~ .1 .1 .1 0 1 <+> execute at %around_target_uuid% run playsound minecraft:entity.zombie.attack_wooden_door ambient @a[distance=..10] <+> execute at %around_target_uuid% run particle minecraft:dust{color:[1.0,0.0,0.0],scale:2.0} ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK 2 <+> execute at %around_target_uuid% run particle minecraft:dust{color:[1.0,0.5,0.0],scale:2.0} ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK 2 <+> execute at %around_target_uuid% run particle minecraft:dust{color:[1.0,0.8,0.0],scale:2.0} ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK 2 <+> execute at %around_target_uuid% run particle minecraft:dust{color:[1.0,1.0,0.0],scale:2.0} ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK 2 <+> execute at %around_target_uuid% run particle minecraft:dust{color:[0.0,1.0,0.0],scale:2.0} ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK 2 <+> execute at %around_target_uuid% run particle minecraft:dust{color:[0.0,2.0,0.0],scale:2.0} ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK 2 <+> execute at %around_target_uuid% run particle minecraft:dust{color:[0.0,1.0,3.0],scale:2.0} ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK 2 <+> execute at %around_target_uuid% run particle minecraft:dust{color:[0.0,1.0,2.0],scale:2.0} ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK 2 <+> execute at %around_target_uuid% run particle minecraft:dust{color:[0.0,1.0,1.0],scale:2.0} ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK 2 <+> execute at %around_target_uuid% run particle minecraft:dust{color:[0.0,0.0,1.0],scale:2.0} ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK 2 <+> execute at %around_target_uuid% run particle minecraft:dust{color:[1.0,0.0,1.0],scale:2.0} ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK 2 <+> execute at %around_target_uuid% run particle minecraft:dust{color:[1.0,0.0,2.0],scale:2.0} ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK 2 <+> execute at %around_target_uuid% run particle minecraft:dust{color:[2.0,0.0,2.0],scale:2.0} ~ ~ ~ 0.1 0.2 0.1 1 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle block{block_state:"minecraft:red_concrete"}
+      ^1.5 ^ ^ .1 .1 .1 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle block{block_state:"minecraft:orange_concrete"}
+      ^1 ^ ^ .1 .1 .1 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle block{block_state:"minecraft:yellow_concrete"}
+      ^0.5 ^ ^ .1 .1 .1 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle block{block_state:"minecraft:green_concrete"}
+      ^ ^ ^ .1 .1 .1 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle block{block_state:"minecraft:blue_concrete"}
+      ^-0.5 ^ ^ .1 .1 .1 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle block{block_state:"minecraft:purple_concrete"}
+      ^-1 ^ ^ .1 .1 .1 0 10
+    - minecraft:execute at %projectile_uuid% run minecraft:particle block{block_state:"minecraft:magenta_concrete"}
+      ^-1.5 ^ ^ .1 .1 .1 0 10
+    - minecraft:execute at %projectile_uuid% if block ~ ~-1 ~ air run minecraft:execute
+      at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
+      tag=%projectile_uuid%] run minecraft:tp @e[type=minecraft:armor_stand, tag=%projectile_uuid%]
+      ~ ~-1 ~
+    - minecraft:execute at %projectile_uuid% unless block ^ ^ ^1 air run minecraft:execute
+      at @e[type=minecraft:armor_stand, tag=%projectile_uuid%] as @e[type=minecraft:armor_stand,
+      tag=%projectile_uuid%] run minecraft:tp @e[type=minecraft:armor_stand, tag=%projectile_uuid%]
+      ~ ~1 ~
+    - MOB_AROUND 2 BLACKLIST(ARMOR_STAND,ARROW) DAMAGE 12 <+> CUSTOMDASH1 %around_target_x%
+      %around_target_y%+4 %around_target_z% <+> minecraft:execute at %around_target_uuid%
+      run minecraft:particle explosion ~ ~ ~ .1 .1 .1 0 1 <+> minecraft:execute at
+      %around_target_uuid% run minecraft:playsound minecraft:entity.zombie.attack_wooden_door
+      ambient @a[distance=..10] <+> minecraft:execute at %around_target_uuid% run
+      minecraft:particle minecraft:dust{color:[1.0,0.0,0.0],scale:2.0} ~ ~ ~ 0.1 0.2
+      0.1 1 10 <+> DELAYTICK 2 <+> minecraft:execute at %around_target_uuid% run minecraft:particle
+      minecraft:dust{color:[1.0,0.5,0.0],scale:2.0} ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK
+      2 <+> minecraft:execute at %around_target_uuid% run minecraft:particle minecraft:dust{color:[1.0,0.8,0.0],scale:2.0}
+      ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK 2 <+> minecraft:execute at %around_target_uuid%
+      run minecraft:particle minecraft:dust{color:[1.0,1.0,0.0],scale:2.0} ~ ~ ~ 0.1
+      0.2 0.1 1 10 <+> DELAYTICK 2 <+> minecraft:execute at %around_target_uuid% run
+      minecraft:particle minecraft:dust{color:[0.0,1.0,0.0],scale:2.0} ~ ~ ~ 0.1 0.2
+      0.1 1 10 <+> DELAYTICK 2 <+> minecraft:execute at %around_target_uuid% run minecraft:particle
+      minecraft:dust{color:[0.0,2.0,0.0],scale:2.0} ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK
+      2 <+> minecraft:execute at %around_target_uuid% run minecraft:particle minecraft:dust{color:[0.0,1.0,3.0],scale:2.0}
+      ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK 2 <+> minecraft:execute at %around_target_uuid%
+      run minecraft:particle minecraft:dust{color:[0.0,1.0,2.0],scale:2.0} ~ ~ ~ 0.1
+      0.2 0.1 1 10 <+> DELAYTICK 2 <+> minecraft:execute at %around_target_uuid% run
+      minecraft:particle minecraft:dust{color:[0.0,1.0,1.0],scale:2.0} ~ ~ ~ 0.1 0.2
+      0.1 1 10 <+> DELAYTICK 2 <+> minecraft:execute at %around_target_uuid% run minecraft:particle
+      minecraft:dust{color:[0.0,0.0,1.0],scale:2.0} ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK
+      2 <+> minecraft:execute at %around_target_uuid% run minecraft:particle minecraft:dust{color:[1.0,0.0,1.0],scale:2.0}
+      ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK 2 <+> minecraft:execute at %around_target_uuid%
+      run minecraft:particle minecraft:dust{color:[1.0,0.0,2.0],scale:2.0} ~ ~ ~ 0.1
+      0.2 0.1 1 10 <+> DELAYTICK 2 <+> minecraft:execute at %around_target_uuid% run
+      minecraft:particle minecraft:dust{color:[2.0,0.0,2.0],scale:2.0} ~ ~ ~ 0.1 0.2
+      0.1 1 10
+    - AROUND 2 DAMAGE 12 <+> CUSTOMDASH1 %around_target_x% %around_target_y%+4 %around_target_z%
+      <+> minecraft:execute at %around_target_uuid% run minecraft:particle explosion
+      ~ ~ ~ .1 .1 .1 0 1 <+> minecraft:execute at %around_target_uuid% run minecraft:playsound
+      minecraft:entity.zombie.attack_wooden_door ambient @a[distance=..10] <+> minecraft:execute
+      at %around_target_uuid% run minecraft:particle minecraft:dust{color:[1.0,0.0,0.0],scale:2.0}
+      ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK 2 <+> minecraft:execute at %around_target_uuid%
+      run minecraft:particle minecraft:dust{color:[1.0,0.5,0.0],scale:2.0} ~ ~ ~ 0.1
+      0.2 0.1 1 10 <+> DELAYTICK 2 <+> minecraft:execute at %around_target_uuid% run
+      minecraft:particle minecraft:dust{color:[1.0,0.8,0.0],scale:2.0} ~ ~ ~ 0.1 0.2
+      0.1 1 10 <+> DELAYTICK 2 <+> minecraft:execute at %around_target_uuid% run minecraft:particle
+      minecraft:dust{color:[1.0,1.0,0.0],scale:2.0} ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK
+      2 <+> minecraft:execute at %around_target_uuid% run minecraft:particle minecraft:dust{color:[0.0,1.0,0.0],scale:2.0}
+      ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK 2 <+> minecraft:execute at %around_target_uuid%
+      run minecraft:particle minecraft:dust{color:[0.0,2.0,0.0],scale:2.0} ~ ~ ~ 0.1
+      0.2 0.1 1 10 <+> DELAYTICK 2 <+> minecraft:execute at %around_target_uuid% run
+      minecraft:particle minecraft:dust{color:[0.0,1.0,3.0],scale:2.0} ~ ~ ~ 0.1 0.2
+      0.1 1 10 <+> DELAYTICK 2 <+> minecraft:execute at %around_target_uuid% run minecraft:particle
+      minecraft:dust{color:[0.0,1.0,2.0],scale:2.0} ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK
+      2 <+> minecraft:execute at %around_target_uuid% run minecraft:particle minecraft:dust{color:[0.0,1.0,1.0],scale:2.0}
+      ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK 2 <+> minecraft:execute at %around_target_uuid%
+      run minecraft:particle minecraft:dust{color:[0.0,0.0,1.0],scale:2.0} ~ ~ ~ 0.1
+      0.2 0.1 1 10 <+> DELAYTICK 2 <+> minecraft:execute at %around_target_uuid% run
+      minecraft:particle minecraft:dust{color:[1.0,0.0,1.0],scale:2.0} ~ ~ ~ 0.1 0.2
+      0.1 1 10 <+> DELAYTICK 2 <+> minecraft:execute at %around_target_uuid% run minecraft:particle
+      minecraft:dust{color:[1.0,0.0,2.0],scale:2.0} ~ ~ ~ 0.1 0.2 0.1 1 10 <+> DELAYTICK
+      2 <+> minecraft:execute at %around_target_uuid% run minecraft:particle minecraft:dust{color:[2.0,0.0,2.0],scale:2.0}
+      ~ ~ ~ 0.1 0.2 0.1 1 1
     - DELAYTICK 1
     - LOOP END
-    - execute in <<%world%>> run minecraft:kill @e[tag=%projectile_uuid%]
-    - execute in <<%world%>> run minecraft:kill %projectile_uuid%
+    - minecraft:execute in <<%world%>> run minecraft:kill @e[tag=%projectile_uuid%]
+    - minecraft:execute in <<%world%>> run minecraft:kill %projectile_uuid%
     entityConditions: {}
     variablesModification: {}
 recognitions: []

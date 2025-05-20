@@ -113,42 +113,50 @@ activators:
     detailedSlots:
     - -1
     commands:
-    - execute at %projectile_uuid% run playsound entity.ender_dragon.growl ambient
-      @a[distance=..20]
-    - execute at %player% as %projectile_uuid% run minecraft:tp %projectile_uuid%
+    - minecraft:execute at %projectile_uuid% run minecraft:playsound entity.ender_dragon.growl
+      ambient @a[distance=..20]
+    - minecraft:execute at %player% as %projectile_uuid% run minecraft:tp %projectile_uuid%
       %x% %y% %z% ~ ~
-    - execute at %projectile_uuid% run summon armor_stand ~ ~ ~ {DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Invisible:1b,Tags:["%projectile_uuid%1","%projectile_uuid%"],ArmorItems:[{},{},{},{id:"minecraft:beacon",Count:1b}]}
-    - execute at %projectile_uuid% run summon armor_stand ~ ~-1 ~ {DisabledSlots:4144959,NoGravity:1b,Invulnerable:1b,Tags:["%projectile_uuid%2","%projectile_uuid%"],Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:white_banner",Count:1b,tag:{BlockEntityTag:{Patterns:[{Color:1,Pattern:"hh"},{Color:14,Pattern:"ts"},{Color:5,Pattern:"hhb"},{Color:11,Pattern:"bs"},{Color:4,Pattern:"ms"}]}}}]}
-    - execute at %projectile_uuid% run summon armor_stand ~ ~ ~ {DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Invisible:1b,Tags:["%projectile_uuid%3","%projectile_uuid%"],ArmorItems:[{},{},{},{id:"minecraft:beacon",Count:1b}]}
-    - execute at %projectile_uuid% run summon armor_stand ~ ~-1 ~ {DisabledSlots:4144959,NoGravity:1b,Invulnerable:1b,Tags:["%projectile_uuid%4","%projectile_uuid%"],Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:white_banner",Count:1b,tag:{BlockEntityTag:{Patterns:[{Color:1,Pattern:"hh"},{Color:14,Pattern:"ts"},{Color:5,Pattern:"hhb"},{Color:11,Pattern:"bs"},{Color:4,Pattern:"ms"}]}}}]}
-    - execute at %projectile_uuid% run summon armor_stand ~ ~ ~ {DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Invisible:1b,Tags:["%projectile_uuid%5","%projectile_uuid%"],ArmorItems:[{},{},{},{id:"minecraft:beacon",Count:1b}]}
-    - execute at %projectile_uuid% run summon armor_stand ~ ~-1 ~ {DisabledSlots:4144959,NoGravity:1b,Invulnerable:1b,Tags:["%projectile_uuid%6","%projectile_uuid%"],Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:white_banner",Count:1b,tag:{BlockEntityTag:{Patterns:[{Color:1,Pattern:"hh"},{Color:14,Pattern:"ts"},{Color:5,Pattern:"hhb"},{Color:11,Pattern:"bs"},{Color:4,Pattern:"ms"}]}}}]}
-    - execute at %projectile_uuid% run summon armor_stand ~ ~ ~ {DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Invisible:1b,Tags:["%projectile_uuid%7","%projectile_uuid%"],ArmorItems:[{},{},{},{id:"minecraft:beacon",Count:1b}]}
-    - execute at %projectile_uuid% run summon armor_stand ~ ~-1 ~ {DisabledSlots:4144959,NoGravity:1b,Invulnerable:1b,Tags:["%projectile_uuid%8","%projectile_uuid%"],Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:white_banner",Count:1b,tag:{BlockEntityTag:{Patterns:[{Color:1,Pattern:"hh"},{Color:14,Pattern:"ts"},{Color:5,Pattern:"hhb"},{Color:11,Pattern:"bs"},{Color:4,Pattern:"ms"}]}}}]}
-    - execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%1] run minecraft:tp
-      @e[type=armor_stand,tag=%projectile_uuid%1] %projectile_x% %projectile_y%-3
-      %projectile_z%-1 180 0
-    - execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%2] run minecraft:tp
-      @e[type=armor_stand,tag=%projectile_uuid%2] %projectile_x% %projectile_y%-3
-      %projectile_z%-1.25 180 0
-    - execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%3] run minecraft:tp
-      @e[type=armor_stand,tag=%projectile_uuid%3] %projectile_x%+1 %projectile_y%-3
-      %projectile_z% 270 0
-    - execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%4] run minecraft:tp
-      @e[type=armor_stand,tag=%projectile_uuid%4] %projectile_x%+1.25 %projectile_y%-3
-      %projectile_z% 270 0
-    - execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%5] run minecraft:tp
-      @e[type=armor_stand,tag=%projectile_uuid%5] %projectile_x% %projectile_y%-3
-      %projectile_z%+1 0 0
-    - execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%6] run minecraft:tp
-      @e[type=armor_stand,tag=%projectile_uuid%6] %projectile_x% %projectile_y%-3
-      %projectile_z%+1.25 0 0
-    - execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%7] run minecraft:tp
-      @e[type=armor_stand,tag=%projectile_uuid%7] %projectile_x%-1 %projectile_y%-3
-      %projectile_z% 90 0
-    - execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%8] run minecraft:tp
-      @e[type=armor_stand,tag=%projectile_uuid%8] %projectile_x%-1.25 %projectile_y%-3
-      %projectile_z% 90 0
+    - minecraft:execute at %projectile_uuid% run minecraft:summon armor_stand ~ ~
+      ~ {DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Invisible:1b,Tags:["%projectile_uuid%1","%projectile_uuid%"],ArmorItems:[{},{},{},{id:"minecraft:beacon",Count:1b}]}
+    - minecraft:execute at %projectile_uuid% run minecraft:summon armor_stand ~ ~-1
+      ~ {DisabledSlots:4144959,NoGravity:1b,Invulnerable:1b,Tags:["%projectile_uuid%2","%projectile_uuid%"],Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:white_banner",Count:1b,tag:{BlockEntityTag:{Patterns:[{Color:1,Pattern:"hh"},{Color:14,Pattern:"ts"},{Color:5,Pattern:"hhb"},{Color:11,Pattern:"bs"},{Color:4,Pattern:"ms"}]}}}]}
+    - minecraft:execute at %projectile_uuid% run minecraft:summon armor_stand ~ ~
+      ~ {DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Invisible:1b,Tags:["%projectile_uuid%3","%projectile_uuid%"],ArmorItems:[{},{},{},{id:"minecraft:beacon",Count:1b}]}
+    - minecraft:execute at %projectile_uuid% run minecraft:summon armor_stand ~ ~-1
+      ~ {DisabledSlots:4144959,NoGravity:1b,Invulnerable:1b,Tags:["%projectile_uuid%4","%projectile_uuid%"],Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:white_banner",Count:1b,tag:{BlockEntityTag:{Patterns:[{Color:1,Pattern:"hh"},{Color:14,Pattern:"ts"},{Color:5,Pattern:"hhb"},{Color:11,Pattern:"bs"},{Color:4,Pattern:"ms"}]}}}]}
+    - minecraft:execute at %projectile_uuid% run minecraft:summon armor_stand ~ ~
+      ~ {DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Invisible:1b,Tags:["%projectile_uuid%5","%projectile_uuid%"],ArmorItems:[{},{},{},{id:"minecraft:beacon",Count:1b}]}
+    - minecraft:execute at %projectile_uuid% run minecraft:summon armor_stand ~ ~-1
+      ~ {DisabledSlots:4144959,NoGravity:1b,Invulnerable:1b,Tags:["%projectile_uuid%6","%projectile_uuid%"],Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:white_banner",Count:1b,tag:{BlockEntityTag:{Patterns:[{Color:1,Pattern:"hh"},{Color:14,Pattern:"ts"},{Color:5,Pattern:"hhb"},{Color:11,Pattern:"bs"},{Color:4,Pattern:"ms"}]}}}]}
+    - minecraft:execute at %projectile_uuid% run minecraft:summon armor_stand ~ ~
+      ~ {DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Invisible:1b,Tags:["%projectile_uuid%7","%projectile_uuid%"],ArmorItems:[{},{},{},{id:"minecraft:beacon",Count:1b}]}
+    - minecraft:execute at %projectile_uuid% run minecraft:summon armor_stand ~ ~-1
+      ~ {DisabledSlots:4144959,NoGravity:1b,Invulnerable:1b,Tags:["%projectile_uuid%8","%projectile_uuid%"],Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:white_banner",Count:1b,tag:{BlockEntityTag:{Patterns:[{Color:1,Pattern:"hh"},{Color:14,Pattern:"ts"},{Color:5,Pattern:"hhb"},{Color:11,Pattern:"bs"},{Color:4,Pattern:"ms"}]}}}]}
+    - minecraft:execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%1]
+      run minecraft:tp @e[type=armor_stand,tag=%projectile_uuid%1] %projectile_x%
+      %projectile_y%-3 %projectile_z%-1 180 0
+    - minecraft:execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%2]
+      run minecraft:tp @e[type=armor_stand,tag=%projectile_uuid%2] %projectile_x%
+      %projectile_y%-3 %projectile_z%-1.25 180 0
+    - minecraft:execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%3]
+      run minecraft:tp @e[type=armor_stand,tag=%projectile_uuid%3] %projectile_x%+1
+      %projectile_y%-3 %projectile_z% 270 0
+    - minecraft:execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%4]
+      run minecraft:tp @e[type=armor_stand,tag=%projectile_uuid%4] %projectile_x%+1.25
+      %projectile_y%-3 %projectile_z% 270 0
+    - minecraft:execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%5]
+      run minecraft:tp @e[type=armor_stand,tag=%projectile_uuid%5] %projectile_x%
+      %projectile_y%-3 %projectile_z%+1 0 0
+    - minecraft:execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%6]
+      run minecraft:tp @e[type=armor_stand,tag=%projectile_uuid%6] %projectile_x%
+      %projectile_y%-3 %projectile_z%+1.25 0 0
+    - minecraft:execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%7]
+      run minecraft:tp @e[type=armor_stand,tag=%projectile_uuid%7] %projectile_x%-1
+      %projectile_y%-3 %projectile_z% 90 0
+    - minecraft:execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%8]
+      run minecraft:tp @e[type=armor_stand,tag=%projectile_uuid%8] %projectile_x%-1.25
+      %projectile_y%-3 %projectile_z% 90 0
     playerConditions: {}
     worldConditions: {}
     itemConditions: {}
@@ -156,28 +164,34 @@ activators:
     placeholdersConditions: {}
     detailedEntities: []
     entityCommands:
-    - execute at %projectile_uuid% run summon armor_stand ~ ~ ~ {DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Invisible:1b,Tags:["%projectile_uuid%9","%projectile_uuid%"]}
-    - execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%9] run minecraft:tp
-      @e[type=armor_stand,tag=%projectile_uuid%9] %projectile_x% %projectile_y% %projectile_z%
+    - minecraft:execute at %projectile_uuid% run minecraft:summon armor_stand ~ ~
+      ~ {DisabledSlots:4144959,Invulnerable:1b,NoGravity:1b,Invisible:1b,Tags:["%projectile_uuid%9","%projectile_uuid%"]}
+    - minecraft:execute at %player% as @e[type=armor_stand,tag=%projectile_uuid%9]
+      run minecraft:tp @e[type=armor_stand,tag=%projectile_uuid%9] %projectile_x%
+      %projectile_y% %projectile_z%
     - 'LOOP START: 600'
-    - execute at @e[type=armor_stand,tag=%projectile_uuid%9] as @e[type=armor_stand,tag=%projectile_uuid%9]
+    - minecraft:execute at @e[type=armor_stand,tag=%projectile_uuid%9] as @e[type=armor_stand,tag=%projectile_uuid%9]
       run minecraft:tp @e[type=armor_stand,tag=%projectile_uuid%9] ~ ~ ~ ~10 0
-    - execute at @e[type=armor_stand,tag=%projectile_uuid%9] run particle firework
-      ^ ^1 ^1 .01 .01 .01 0 1
-    - execute at @e[type=armor_stand,tag=%projectile_uuid%9] run particle firework
-      ^ ^1 ^-1 .01 .01 .01 0 1
-    - execute at @e[type=armor_stand,tag=%projectile_uuid%9] run particle firework
-      ^1 ^1 ^ .01 .01 .01 0 1
-    - execute at @e[type=armor_stand,tag=%projectile_uuid%9] run particle firework
-      ^-1 ^1 ^ .01 .01 .01 0 1
-    - execute at %projectile_uuid% run particle firework ~ ~5 ~ .1 5 .1 0.2 10
-    - execute at %projectile_uuid% run effect give @a[distance=..12] speed 2 0
-    - execute at %projectile_uuid% run effect give @a[distance=..12] haste 2 0
-    - execute at %projectile_uuid% run effect give @a[distance=..12] regeneration
-      2 0
-    - execute at %projectile_uuid% run effect give @a[distance=..12] resistance 2
-      0
-    - execute at %projectile_uuid% run effect give @a[distance=..12] strength 2 0
+    - minecraft:execute at @e[type=armor_stand,tag=%projectile_uuid%9] run minecraft:particle
+      firework ^ ^1 ^1 .01 .01 .01 0 1
+    - minecraft:execute at @e[type=armor_stand,tag=%projectile_uuid%9] run minecraft:particle
+      firework ^ ^1 ^-1 .01 .01 .01 0 1
+    - minecraft:execute at @e[type=armor_stand,tag=%projectile_uuid%9] run minecraft:particle
+      firework ^1 ^1 ^ .01 .01 .01 0 1
+    - minecraft:execute at @e[type=armor_stand,tag=%projectile_uuid%9] run minecraft:particle
+      firework ^-1 ^1 ^ .01 .01 .01 0 1
+    - minecraft:execute at %projectile_uuid% run minecraft:particle firework ~ ~5
+      ~ .1 5 .1 0.2 10
+    - minecraft:execute at %projectile_uuid% run minecraft:effect give @a[distance=..12]
+      speed 2 0
+    - minecraft:execute at %projectile_uuid% run minecraft:effect give @a[distance=..12]
+      haste 2 0
+    - minecraft:execute at %projectile_uuid% run minecraft:effect give @a[distance=..12]
+      regeneration 2 0
+    - minecraft:execute at %projectile_uuid% run minecraft:effect give @a[distance=..12]
+      resistance 2 0
+    - minecraft:execute at %projectile_uuid% run minecraft:effect give @a[distance=..12]
+      strength 2 0
     - DELAYTICK 2
     - LOOP END
     - minecraft:kill @e[tag=%projectile_uuid%]
